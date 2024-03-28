@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../layouts/Layout.astro";
+import BlogPostPreview from "../components/BlogPostPreview.astro";
+
+const blog = await getCollection("blog");
+---
+
+<Layout title="Ruben Arakelyan’s home on the web" description="Welcome to Ruben Arakelyan’s home on the web">
+	<section class="mb-6">
+		<h1 class="text-4xl mb-6">Welcome to Ruben Arakelyan’s home on the web</h1>
+		<p class="mb-2">Hello, I’m Ruben and this is my website. I’m husband to Joanna, dad to Evie, dog-father to Saffy and a contract senior Ruby developer, originally from London but now living near St Ives in Cornwall.</p>
+		<p class="mb-2">I hope you enjoy browsing here and maybe finding something useful.</p>
+		<p>Want to chat? <a href="/contact">Hit me up!</a></p>
+	</section>
+	<section class="mb-6">
+		<h2 class="text-3xl mb-6">What’s new on the blog</h2>
+		{
+			blog.slice(-5).reverse().map((post) => (
+				<BlogPostPreview
+					homepage={true}
+					url={"/blog/" + post.slug}
+					title={post.data.title}
+					excerpt={post.data.excerpt}
+					date={post.data.date}
+					tags={post.data.tags}
+				/>
+			))
+		}
+		<p><a class="no-underline px-4 py-1 border rounded-full border-slate-600 bg-slate-600 text-white hover:border-slate-900 hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out" href="/blog">Read more blog posts &rarr;</a></p>
+	</section>
+</Layout>

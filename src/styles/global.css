@@ -1,0 +1,30 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Serif", serif;
+}
+
+code, kbd, pre, samp {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  @apply text-slate-600;
+  @apply underline;
+  @apply underline-offset-2;
+}
+
+a:hover, a:active, a:focus {
+  @apply text-slate-900;
+  @apply decoration-2;
+  @apply transition;
+  @apply duration-300;
+  @apply ease-in-out;
+}
+
+aside {
+  @apply text-sm;
+  @apply italic;
+}

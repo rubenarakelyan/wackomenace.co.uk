@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import { CollectionEntry } from "astro:content";
+
+import Layout from "../layouts/Layout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+interface Props {
+  page: CollectionEntry<"info">;
+}
+
+export async function getStaticPaths() {
+  const info = await getCollection("info");
+  return info.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<Layout title={page.data.title} description={page.data.description}>
+  <article>
+    <h1 class="text-4xl mb-6">{page.data.title}</h1>
+    <div class="prose prose-slate mb-6">
+      <Content />
+    </div>
+    <p class="text-sm mb-6">Last updated: <FormattedDate date={page.data.date} /></p>
+  </article>
+</Layout>

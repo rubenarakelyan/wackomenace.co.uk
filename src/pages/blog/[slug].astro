@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import { CollectionEntry } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+export async function getStaticPaths() {
+  const blog = await getCollection("blog");
+  return blog.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout title={post.data.title} description={post.data.excerpt}>
+  <article class="h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid={Astro.url}>
+    {post.data.cover && <Image src={post.data.cover} alt={post.data.title} class="mb-6" />}
+    <h1 class="text-4xl mb-6 p-name" itemprop="name">{post.data.title}</h1>
+    <p class="text-sm mb-6"><FormattedDate date={post.data.date} classes="dt-published" itemprop="datePublished" /> &middot; <span class="p-category" itemprop="keywords">{post.data.tags.join(", ")}</span></p>
+    <p class="text-xl mb-6 p-summary" itemprop="abstract">{post.data.excerpt}</p>
+    <div class="prose prose-slate e-content">
+      <Content />
+    </div>
+  </article>
+</Layout>

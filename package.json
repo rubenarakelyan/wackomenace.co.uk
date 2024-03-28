@@ -1,0 +1,31 @@
+{
+  "name": "wackomenace",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.9",
+    "@astrojs/cloudflare": "^9.1.0",
+    "@astrojs/mdx": "^2.2.1",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@vercel/og": "^0.6.2",
+    "astro": "^4.5.8",
+    "markdown-it": "^14.1.0",
+    "rehype-pretty-code": "^0.13.0",
+    "rehype-slug": "^6.0.0",
+    "sanitize-html": "^2.13.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}
