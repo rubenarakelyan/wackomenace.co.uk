@@ -12,7 +12,7 @@ export async function GET(context: APIContext) {
     title: "wackomenace",
     description: "Ruben Arakelyan’s home on the web",
     site: context.site!.toString(),
-    items: blog.reverse().map((post) => ({
+    items: blog.toReversed().map((post) => ({
       title: post.data.title,
       link: `/blog/${post.slug}`,
       description: post.data.excerpt,

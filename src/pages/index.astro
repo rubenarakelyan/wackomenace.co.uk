@@ -17,7 +17,7 @@ const blog = await getCollection("blog");
 	<section class="mb-6">
 		<h2 class="text-3xl mb-6">What’s new on the blog</h2>
 		{
-			blog.slice(-5).reverse().map((post) => (
+			blog.slice(-5).toReversed().map((post) => (
 				<BlogPostPreview
 					homepage={true}
 					url={"/blog/" + post.slug}

@@ -23,7 +23,7 @@ export async function GET(context: APIContext) {
   "language": "en-GB",
   "items": [
     ${
-      blog.reverse().map((post) =>
+      blog.toReversed().map((post) =>
         `{
           "id": "${context.site}blog/${post.slug}",
           "url": "${context.site}blog/${post.slug}",

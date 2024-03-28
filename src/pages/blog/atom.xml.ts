@@ -24,7 +24,7 @@ export async function GET(context: APIContext) {
   <rights>Copyright © 2024 Ruben Arakelyan. All work licensed under CC BY-SA 4.0 unless otherwise stated.</rights>
   <subtitle>Ruben Arakelyan’s home on the web</subtitle>
   ${
-    blog.reverse().map((post) =>
+    blog.toReversed().map((post) =>
       `<entry>
         <id>${context.site}blog/${post.slug}</id>
         <title>${post.data.title}</title>

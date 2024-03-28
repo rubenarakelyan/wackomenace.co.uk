@@ -11,7 +11,7 @@ const blog = await getCollection("blog");
   <section class="mb-6">
     <h1 class="text-4xl mb-6">Blog</h1>
     {
-      blog.reverse().map((post) => (
+      blog.toReversed().map((post) => (
         <BlogPostPreview
           homepage={false}
           url={"/blog/" + post.slug}
