@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const page_name = Astro.url.pathname.match(/^(\/[^\/]*)/g)[0];
+const page_name = Astro.url.pathname.match(/^(\/[^\/]*)/g)![0];
 const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 ---
 

@@ -6,6 +6,7 @@ import { ImageResponse } from "@vercel/og";
 interface Props {
   params: { slug: string };
   props: { post: CollectionEntry<"blog"> };
+  site: URL;
 }
 
 export async function GET({ props, site }: Props) {

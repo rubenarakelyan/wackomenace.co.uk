@@ -1,23 +1,23 @@
+import type { APIContext } from "astro";
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 
-export async function GET(context) {
+export async function GET(context: APIContext) {
   const blog = await getCollection("blog");
   const parser = new MarkdownIt();
   return rss({
     stylesheet: "/assets/rss.xsl",
     title: "wackomenace",
     description: "Ruben Arakelyan’s home on the web",
-    site: context.site,
-    items: blog.map((post) => ({
+    site: context.site!.toString(),
+    items: blog.reverse().map((post) => ({
       title: post.data.title,
       link: `/blog/${post.slug}`,
       description: post.data.excerpt,
       content: sanitizeHtml(parser.render(post.body)),
       pubDate: post.data.date,
-      customData: post.data.customData,
     })),
     customData: `
       <language>en-gb</language>

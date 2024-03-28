@@ -14,7 +14,7 @@ const postsCollection = defineCollection({
 
 const infoCollection = defineCollection({
   type: "content",
-  schema: ({ image }) =>
+  schema: () =>
     z.object({
       title: z.string(),
       description: z.string(),

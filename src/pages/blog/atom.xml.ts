@@ -1,8 +1,9 @@
+import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 
-export async function GET(context) {
+export async function GET(context: APIContext) {
   const blog = await getCollection("blog");
   const parser = new MarkdownIt();
   return new Response(
@@ -23,7 +24,7 @@ export async function GET(context) {
   <rights>Copyright © 2024 Ruben Arakelyan. All work licensed under CC BY-SA 4.0 unless otherwise stated.</rights>
   <subtitle>Ruben Arakelyan’s home on the web</subtitle>
   ${
-    blog.map((post) =>
+    blog.reverse().map((post) =>
       `<entry>
         <id>${context.site}blog/${post.slug}</id>
         <title>${post.data.title}</title>

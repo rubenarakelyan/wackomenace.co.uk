@@ -1,8 +1,9 @@
+import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 
-export async function GET(context) {
+export async function GET(context: APIContext) {
   const blog = await getCollection("blog");
   const parser = new MarkdownIt();
   return new Response(
@@ -22,7 +23,7 @@ export async function GET(context) {
   "language": "en-GB",
   "items": [
     ${
-      blog.map((post) =>
+      blog.reverse().map((post) =>
         `{
           "id": "${context.site}blog/${post.slug}",
           "url": "${context.site}blog/${post.slug}",
