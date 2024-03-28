@@ -6,10 +6,9 @@ import { ImageResponse } from "@vercel/og";
 interface Props {
   params: { slug: string };
   props: { post: CollectionEntry<"blog"> };
-  site: URL;
 }
 
-export async function GET({ props, site }: Props) {
+export async function GET({ props }: Props) {
   const { post } = props;
 
   const RubenPhoto = fs.readFileSync(path.resolve("./assets/images/ruben.png"));
@@ -72,7 +71,6 @@ export async function GET({ props, site }: Props) {
       tw: "w-full h-full flex items-center justify-center relative px-22",
       style: {
         background: "#ffffff",
-        //backgroundImage: `url(${site}images/bg.jpg)`,
         backgroundImage: `url(data:image/jpeg;base64,${BackgroundImage})`,
         fontFamily: "IBM Sans Regular",
       },
