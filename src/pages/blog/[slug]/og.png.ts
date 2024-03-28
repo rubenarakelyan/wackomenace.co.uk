@@ -12,8 +12,10 @@ interface Props {
 export async function GET({ props, site }: Props) {
   const { post } = props;
 
-  const IbmPlexSansRegular = fs.readFileSync(path.resolve("./fonts/IBMPlexSans-Regular.ttf"));
-  const IbmPlexSansBold = fs.readFileSync(path.resolve("./fonts/IBMPlexSans-Bold.ttf"));
+  const RubenPhoto = fs.readFileSync(path.resolve("./assets/images/ruben.png"));
+  const BackgroundImage = fs.readFileSync(path.resolve("./assets/images/bg.jpg"), "base64");
+  const IbmPlexSansRegular = fs.readFileSync(path.resolve("./assets/fonts/IBMPlexSans-Regular.ttf"));
+  const IbmPlexSansBold = fs.readFileSync(path.resolve("./assets/fonts/IBMPlexSans-Bold.ttf"));
 
   const html = {
     type: "div",
@@ -27,7 +29,7 @@ export async function GET({ props, site }: Props) {
               {
                 type: "img",
                 props: {
-                  src: `${site}images/ruben.png`,
+                  src: RubenPhoto.buffer,
                 },
               },
             ],
@@ -70,7 +72,8 @@ export async function GET({ props, site }: Props) {
       tw: "w-full h-full flex items-center justify-center relative px-22",
       style: {
         background: "#ffffff",
-        backgroundImage: `url(${site}images/bg.jpg)`,
+        //backgroundImage: `url(${site}images/bg.jpg)`,
+        backgroundImage: `url(data:image/jpeg;base64,${BackgroundImage})`,
         fontFamily: "IBM Sans Regular",
       },
     },
