@@ -1,9 +1,9 @@
 /*
 Access-Control-Allow-Origin: https://www.wackomenace.co.uk
-Content-Security-Policy: default-src 'self'; style-src 'self' https://fonts.googleapis.com 'sha256-IvIofnApvB2Qm9lRq6dWCCrW6xeoVpZesJOWhFlimfI='; script-src 'self' https://unpkg.com; font-src https://fonts.gstatic.com; connect-src https://api.websitecarbon.com; object-src 'none'
+Content-Security-Policy: default-src 'self'; style-src 'self' https://fonts.googleapis.com 'sha256-IvIofnApvB2Qm9lRq6dWCCrW6xeoVpZesJOWhFlimfI='; script-src 'self' https://beamanalytics.b-cdn.net https://unpkg.com; font-src https://fonts.gstatic.com; connect-src https://lb1.beamanalytics.io https://api.websitecarbon.com; object-src 'none'
 Cross-Origin-Embedder-Policy: require-corp
 Cross-Origin-Opener-Policy: same-origin
-Cross-Origin-Resource-Policy: same-site
+Cross-Origin-Resource-Policy: cross-origin
 Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), gamepad=(), geolocation=(), gyroscope=(), hid=(), idle-detection=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), speaker-selection=(), usb=(), web-share=(), xr-spatial-tracking=()
 Referrer-Policy: strict-origin-when-cross-origin
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
