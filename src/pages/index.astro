@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 
 import Layout from "../layouts/Layout.astro";
 import BlogPostPreview from "../components/BlogPostPreview.astro";
+import Recommendation from "../components/Recommendation.astro";
 
 const blog = await getCollection("blog");
 ---
@@ -30,5 +31,30 @@ const blog = await getCollection("blog");
 			))
 		}
 		<p><a class="no-underline px-4 py-1 border rounded-full border-slate-600 bg-slate-600 text-white hover:border-slate-900 hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out" href="/blog">Read more blog posts &rarr;</a></p>
+	</section>
+	<section class="mb-6">
+		<h2 class="text-3xl mb-6">Recommendations</h2>
+		<p class="mb-6">It’s becoming more and more difficult to companies that do a truly great job and are proud of their quality. Here are some I use that I can heartily recommend to others (with a UK bias):</p>
+		<Recommendation
+			homepage={true}
+			url="https://www.aa.net.uk"
+			name="Andrews & Arnold (A&A)"
+			description="A&A are a small UK-based ISP offering a variety of Internet access products with no filtering, but most importantly of all, common sense, genuinely knowledgeable customer service, and no reason to ever call them. Slightly more expensive that the major providers but you get what you pay for, and I pay for this without hesitation."
+			affiliate={false}
+		/>
+		<Recommendation
+			homepage={true}
+			url="https://ref.fm/u26958808"
+			name="Fastmail"
+			description="I use Fastmail for both my personal and business email addresses and am very happy with the service. Lots of functionality, constant improvement and stronger privacy than the big, free players."
+			affiliate={true}
+		/>
+		<Recommendation
+			homepage={true}
+			url="https://share.octopus.energy/sunny-bison-550"
+			name="Octopus Energy"
+			description="It’s normally difficult to get excited about an energy supplier, but Octopus Energy make it easier. They are more a technology company that happen to also supply electricity and gas. From their app which is head and shoulders above any other similar one, to their innovative tariffs and commitment to holding costs down, I don’t see why you’d want to go with anyone else."
+			affiliate={true}
+		/>
 	</section>
 </Layout>
