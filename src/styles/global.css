@@ -11,11 +11,11 @@ code, kbd, pre, samp {
 }
 
 a {
-  @apply text-slate-600 underline underline-offset-2;
+  @apply text-slate-600 dark:text-slate-200 underline underline-offset-2;
 }
 
 a:hover, a:active, a:focus {
-  @apply text-slate-900 underline underline-offset-2 decoration-2 transition duration-300 ease-in-out;
+  @apply text-slate-900 dark:text-slate-400 underline underline-offset-2 decoration-2 transition duration-300 ease-in-out;
 }
 
 aside {

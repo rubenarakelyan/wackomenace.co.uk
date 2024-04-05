@@ -24,7 +24,7 @@ const { Content } = await page.render();
 <Layout title={page.data.title} description={page.data.description}>
   <article>
     <h1 class="text-4xl mb-6">{page.data.title}</h1>
-    <div class="prose prose-slate mb-6">
+    <div class="prose prose-slate dark:prose-invert mb-6">
       <Content />
     </div>
     <p class="text-sm mb-6">Last updated: <FormattedDate date={page.data.date} /></p>
