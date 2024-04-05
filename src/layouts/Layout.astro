@@ -52,7 +52,7 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 		<!-- proven2adff2 -->
 		<script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="e14ceebb-0275-41d1-89d6-424034d2e560" async crossorigin="anonymous" integrity="sha512-OJjSmRi6N6f5vjkKT+Ky9d/l+Pl/VN3H5Yf/KV5Q8D6PyNRi/Amrk9BxP49ouw6SL2Jw+wx+x40xkUM8gyCx7w==" is:inline></script>
 	</head>
-	<body class="antialiased scroll-smooth text-slate-600 dark:bg-slate-600 dark:text-slate-200">
+	<body class="antialiased scroll-smooth text-slate-600 dark:bg-slate-600 dark:text-slate-200" id="top">
 		<div class="mb-2 p-2 bg-slate-50 dark:bg-slate-700 text-center">
 			<a href="#main-content">Skip to main content</a>
 		</div>
@@ -116,6 +116,7 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 			</nav>
 			<main class="pt-10 px-4 max-w-prose clear-both md:clear-none" id="main-content">
 				<slot />
+				<p class="mt-6 text-right text-sm"><a href="#top">&uarr; Back to top</a></p>
 			</main>
 			<footer class="mt-8 px-4 z-50 text-sm md:col-span-2">
 				<div class="mb-6 pt-4 border-t border-slate-200">
