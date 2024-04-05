@@ -1,7 +1,7 @@
 ---
 title: About me
 description: Everything you need to know about Ruben Arakelyan.
-date: 2024-03-27
+date: 2024-04-05
 ---
 
 I was born in [Wimbledon](https://en.wikipedia.org/wiki/Wimbledon,_London), south London — home of [The Championships](https://en.wikipedia.org/wiki/The_Championships,_Wimbledon) — and lived there for approximately 5 years before moving across the river to [Eastcote](https://en.wikipedia.org/wiki/Eastcote) where I lived, grew up and went to school (where my [year 11 ball](https://web.archive.org/web/20040717231151/http://education.independent.co.uk/news/story.jsp?story=539986) was featured in The Independent).
@@ -31,3 +31,5 @@ In May 2021, we moved to our newly built house, and we bought our first puppy, S
 In November 2022, along with a lot of others, I was made redundant from Hopin, and in December 2022, our daughter Evie was born. I took some involuntary time off to look after her for a few weeks.
 
 In January 2023, I started working as a Ruby contractor, and I currently work for the [Office for Product Safety and Standards](https://www.gov.uk/government/organisations/office-for-product-safety-and-standards).
+
+![Photo of Ruben](/images/ruben.png)
