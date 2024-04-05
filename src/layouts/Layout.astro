@@ -53,8 +53,8 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 		<script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="e14ceebb-0275-41d1-89d6-424034d2e560" async crossorigin="anonymous" integrity="sha512-OJjSmRi6N6f5vjkKT+Ky9d/l+Pl/VN3H5Yf/KV5Q8D6PyNRi/Amrk9BxP49ouw6SL2Jw+wx+x40xkUM8gyCx7w==" is:inline></script>
 	</head>
 	<body class="antialiased scroll-smooth text-slate-600 dark:bg-slate-600 dark:text-slate-200" id="top">
-		<div class="mb-2 p-2 bg-slate-50 dark:bg-slate-700 text-center">
-			<a href="#main-content">Skip to main content</a>
+		<div class="mb-2 bg-slate-50 dark:bg-slate-700 text-center">
+			<a class="block p-2" href="#main-content">Skip to main content</a>
 		</div>
 		<div class="md:max-w-3xl md:mx-auto md:grid md:grid-cols-[200px_60ch]">
 			<nav class="pt-8 px-4 md:sticky md:top-0 md:h-screen">
@@ -114,48 +114,48 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 					</li>
 				</ul>
 			</nav>
-			<main class="pt-10 px-4 max-w-prose clear-both md:clear-none" id="main-content">
+			<main class="pt-10 px-4 clear-both md:clear-none" id="main-content">
 				<slot />
 				<p class="mt-6 text-right text-sm"><a href="#top">&uarr; Back to top</a></p>
 			</main>
-			<footer class="mt-8 px-4 z-50 text-sm md:col-span-2">
-				<div class="mb-6 pt-4 border-t border-slate-200">
-					<div class="md:mb-1 md:flex md:flex-wrap">
-						<p>
-							Copyright © 2024 <a class="h-card" href="/contact" rel="me">Ruben Arakelyan</a>
-						</p>
-						<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-							All work licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferer license">CC BY-SA 4.0</a> unless otherwise stated
-						</p>
-					</div>
-					<div class="md:mb-1 md:flex md:flex-wrap">
-						<p>
-							<a href="/feeds">Blog feeds</a>
-						</p>
-						<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-							<a href="/privacy" rel="privacy-policy">Privacy policy</a>
-						</p>
-						<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-							<a href="/terms" rel="terms-of-service">Terms and conditions</a>
-						</p>
-						<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-							<a href="/disclaimer">Disclaimer</a>
-						</p>
-						<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-							<a href="https://github.com/rubenarakelyan/wackomenace.co.uk" target="_blank" rel="noopener noreferer">GitHub</a>
-						</p>
-					</div>
-					<div class="md:mb-1 md:flex md:flex-wrap">
-						<p>
-							Made with ❤️ in <a href="https://www.visitcornwall.com/things-to-do/beaches/carbis-bay-beach" target="_blank" rel="noopener noreferer">Carbis Bay, UK</a>
-						</p>
-					</div>
-					<div class="md:flex md:flex-wrap">
-						<div id="wcb" class="carbonbadge"></div>
-						<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer crossorigin="anonymous" integrity="sha512-7ytBpt4PE3pQ+QvyItix/zDDCADHXmPpX5dmbChhTTl01IQx9HJVPAZXepdSPGE9h/eHSIWjqwMQqjdJ+00JpA==" is:inline></script>
-					</div>
-				</div>
-			</footer>
 		</div>
+		<footer class="mt-8 px-4 text-sm md:max-w-3xl md:mx-auto">
+			<div class="mb-6 pt-4 border-t border-slate-200">
+				<div class="md:mb-1 md:flex md:flex-wrap">
+					<p>
+						Copyright © 2024 <a class="h-card" href="/contact" rel="me">Ruben Arakelyan</a>
+					</p>
+					<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+						All work licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferer license">CC BY-SA 4.0</a> unless otherwise stated
+					</p>
+				</div>
+				<div class="md:mb-1 md:flex md:flex-wrap">
+					<p>
+						<a href="/feeds">Blog feeds</a>
+					</p>
+					<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+						<a href="/privacy" rel="privacy-policy">Privacy policy</a>
+					</p>
+					<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+						<a href="/terms" rel="terms-of-service">Terms and conditions</a>
+					</p>
+					<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+						<a href="/disclaimer">Disclaimer</a>
+					</p>
+					<p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+						<a href="https://github.com/rubenarakelyan/wackomenace.co.uk" target="_blank" rel="noopener noreferer">GitHub</a>
+					</p>
+				</div>
+				<div class="md:mb-1 md:flex md:flex-wrap">
+					<p>
+						Made with ❤️ in <a href="https://www.visitcornwall.com/things-to-do/beaches/carbis-bay-beach" target="_blank" rel="noopener noreferer">Carbis Bay, UK</a>
+					</p>
+				</div>
+				<div class="flex flex-wrap">
+					<div id="wcb" class="carbonbadge"></div>
+					<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer crossorigin="anonymous" integrity="sha512-7ytBpt4PE3pQ+QvyItix/zDDCADHXmPpX5dmbChhTTl01IQx9HJVPAZXepdSPGE9h/eHSIWjqwMQqjdJ+00JpA==" is:inline></script>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
