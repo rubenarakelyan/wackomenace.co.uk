@@ -9,3 +9,4 @@ Here are some other places on the web where you can find me:
 * [GitHub](https://github.com/rubenarakelyan)
 * [LinkedIn](https://www.linkedin.com/in/rubenarakelyan/)
 * [Bluesky](https://bsky.app/profile/wackomenace.co.uk)
+* [Proven](https://proven.lol/2adff2)
