@@ -1,6 +1,6 @@
 /*
 Access-Control-Allow-Origin: https://www.wackomenace.co.uk
-Content-Security-Policy: default-src 'self'; style-src 'self' https://fonts.googleapis.com 'sha256-IvIofnApvB2Qm9lRq6dWCCrW6xeoVpZesJOWhFlimfI='; script-src 'self' https://beamanalytics.b-cdn.net https://unpkg.com; font-src https://fonts.gstatic.com; connect-src https://lb1.beamanalytics.io https://api.websitecarbon.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'
+Content-Security-Policy: default-src 'self'; style-src 'self' https://fonts.googleapis.com 'sha256-7barRrES7m55NaJA+10lZSg/HBaUbbHiHIw/Aq4dOMQ=' 'sha256-IvIofnApvB2Qm9lRq6dWCCrW6xeoVpZesJOWhFlimfI='; script-src 'self' https://beamanalytics.b-cdn.net https://unpkg.com; font-src https://fonts.gstatic.com; connect-src https://lb1.beamanalytics.io https://api.websitecarbon.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'
 Cross-Origin-Embedder-Policy: require-corp
 Cross-Origin-Opener-Policy: same-origin
 Cross-Origin-Resource-Policy: cross-origin
