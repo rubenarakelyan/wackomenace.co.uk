@@ -2,8 +2,9 @@
 Access-Control-Allow-Origin: https://www.wackomenace.co.uk
 # sha256-7barRrES7m55NaJA+10lZSg/HBaUbbHiHIw/Aq4dOMQ= -> styles from global.css inlined by Astro
 # sha256-IvIofnApvB2Qm9lRq6dWCCrW6xeoVpZesJOWhFlimfI= -> inline styles for Website Carbon button
-# sha256-ifBn/pQKCtH1aCKb6TQYRwi4Pf1EUkFxfDa8f9wmo58= -> inline styles in rss.xsl
-Content-Security-Policy: default-src 'self'; style-src 'self' https://fonts.googleapis.com 'sha256-7barRrES7m55NaJA+10lZSg/HBaUbbHiHIw/Aq4dOMQ=' 'sha256-IvIofnApvB2Qm9lRq6dWCCrW6xeoVpZesJOWhFlimfI=' 'sha256-ifBn/pQKCtH1aCKb6TQYRwi4Pf1EUkFxfDa8f9wmo58='; script-src 'self' https://beamanalytics.b-cdn.net https://unpkg.com; font-src https://fonts.gstatic.com; connect-src https://lb1.beamanalytics.io https://api.websitecarbon.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'
+# sha256-KFULEGQ3PRjjS0AcDB8xCQ8PtJXiZq7QbgsrjOg5+QI= -> inline styles in rss.xsl
+# sha256-cobsKDbYrEjqQTe2lKte84CvnWR1PMmINaHT7tl8QaU= -> inline styles in rss.xsl
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-hashes' https://fonts.googleapis.com 'sha256-7barRrES7m55NaJA+10lZSg/HBaUbbHiHIw/Aq4dOMQ=' 'sha256-IvIofnApvB2Qm9lRq6dWCCrW6xeoVpZesJOWhFlimfI=' 'sha256-KFULEGQ3PRjjS0AcDB8xCQ8PtJXiZq7QbgsrjOg5+QI=' 'sha256-cobsKDbYrEjqQTe2lKte84CvnWR1PMmINaHT7tl8QaU='; script-src 'self' https://beamanalytics.b-cdn.net https://unpkg.com; font-src https://fonts.gstatic.com; connect-src https://lb1.beamanalytics.io https://api.websitecarbon.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'
 Cross-Origin-Embedder-Policy: require-corp
 Cross-Origin-Opener-Policy: same-origin
 Cross-Origin-Resource-Policy: cross-origin
