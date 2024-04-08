@@ -8,17 +8,17 @@ const errors = { name: "", message: "" };
 if (Astro.request.method === "POST") {
   try {
     const formData = await Astro.request.formData();
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const website = formData.get("website");
-    const message = formData.get("message");
+    const name = (formData.get("name") as String).trim();
+    const email = (formData.get("email") as String).trim() || null;
+    const website = (formData.get("website") as String).trim() || null;
+    const message = (formData.get("message") as String).trim();
     if (typeof name !== "string" || name.length < 1) {
       errors.name = "Enter a name";
     }
     if (typeof message !== "string" || message.length < 1) {
       errors.message = "Enter a message";
     }
-    const hasErrors = Object.values(errors).some(msg => msg)
+    const hasErrors = Object.values(errors).some(msg => msg);
     if (!hasErrors) {
       await db.insert(GuestbookEntries).values({ name, email, website, message });
     }
