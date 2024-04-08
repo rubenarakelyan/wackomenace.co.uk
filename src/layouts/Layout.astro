@@ -1,6 +1,4 @@
 ---
-import childProcess from "child_process";
-
 import "../styles/global.css";
 
 interface Props {
@@ -11,7 +9,6 @@ interface Props {
 const { title, description } = Astro.props;
 const page_name = Astro.url.pathname.match(/^(\/[^\/]*)/g)![0];
 const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
-const commit_hash = childProcess.execSync("git rev-parse --short HEAD").toString().trim();
 ---
 
 <!doctype html>
@@ -158,9 +155,6 @@ const commit_hash = childProcess.execSync("git rev-parse --short HEAD").toString
 					<p>
 						Made with ❤️ in <a href="https://www.visitcornwall.com/things-to-do/beaches/carbis-bay-beach" target="_blank" rel="noopener noreferer">Carbis Bay, UK</a>
 					</p>
-          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-            Version <code>{commit_hash}</code>
-          </p>
 				</div>
 				<div class="flex flex-wrap">
 					<div id="wcb" class="carbonbadge"></div>
