@@ -1,5 +1,4 @@
 ---
-import { createHash } from "crypto";
 import { Image } from "astro:assets";
 
 import FormattedDate from "./FormattedDate.astro";
@@ -12,7 +11,7 @@ interface Props {
   created_at: Date;
 }
 
-const hashed_email = Astro.props.email == null ? "0" : createHash("sha256").update(Astro.props.email.trim().toLowerCase()).digest("hex");
+const hashed_email = Astro.props.email == null ? "0" : Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(Astro.props.email.trim().toLowerCase())))).map((b) => b.toString(16).padStart(2, "0")).join("");
 const { name, website, message, created_at } = Astro.props;
 ---
 
