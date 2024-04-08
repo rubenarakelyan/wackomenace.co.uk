@@ -47,7 +47,6 @@ const guestbook_entries = await db.select().from(GuestbookEntries).where(isNotNu
     {
       guestbook_entries.map((entry) => (
         <GuestbookEntry
-          id={entry.id}
           name={entry.name}
           email={entry.email}
           website={entry.website}

@@ -5,16 +5,15 @@ import { Image } from "astro:assets";
 import FormattedDate from "./FormattedDate.astro";
 
 interface Props {
-  id: number;
   name: string;
-  email?: string;
-  website?: string;
+  email: string | null;
+  website: string | null;
   message: string;
   created_at: Date;
 }
 
 const hashed_email = Astro.props.email == null ? "0" : createHash("sha256").update(Astro.props.email.trim().toLowerCase()).digest("hex");
-const { id, name, website, message, created_at } = Astro.props;
+const { name, website, message, created_at } = Astro.props;
 ---
 
 <article class="mb-6">
