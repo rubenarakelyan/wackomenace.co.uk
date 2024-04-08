@@ -85,6 +85,11 @@ const commit_hash = childProcess.execSync("git rev-parse --short HEAD").toString
 							{page_name == "/contact" && <Fragment set:html={`&rarr;`} />} Contact me
 						</a>
 					</li>
+          <li class="ml-4 mb-4 float-left md:float-none md:ml-0">
+            <a class="no-underline" href="/guestbook">
+              {page_name == "/guestbook" && <Fragment set:html={`&rarr;`} />} Guestbook
+            </a>
+          </li>
 					<li class="mb-4 float-left clear-left md:float-none md:float-none md:border-t md:border-slate-200 md:pt-4">
 						<a class="no-underline" href="/now">
 							{page_name == "/now" && <Fragment set:html={`&rarr;`} />} What I’m doing now
@@ -111,7 +116,7 @@ const commit_hash = childProcess.execSync("git rev-parse --short HEAD").toString
 						</a>
 					</li>
 					<li class="mb-4 float-left clear-left md:float-none md:float-none md:pt-4">
-						<a class="no-underline px-4 py-3 border rounded-full border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="https://tfnd.uk/?r=wackomenace" target="_blank" rel="noopener noreferer me">
+						<a class="no-underline px-4 py-3 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="https://tfnd.uk/?r=wackomenace" target="_blank" rel="noopener noreferer me">
 							Hire me
 						</a>
 					</li>

@@ -1,0 +1,83 @@
+---
+export const prerender = false;
+
+import { db, isNotNull, GuestbookEntries } from "astro:db";
+
+const errors = { name: "", message: "" };
+
+if (Astro.request.method === "POST") {
+  try {
+    const formData = await Astro.request.formData();
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const website = formData.get("website");
+    const message = formData.get("message");
+    if (typeof name !== "string" || name.length < 1) {
+      errors.name = "Enter a name";
+    }
+    if (typeof message !== "string" || message.length < 1) {
+      errors.message = "Enter a message";
+    }
+    const hasErrors = Object.values(errors).some(msg => msg)
+    if (!hasErrors) {
+      await db.insert(GuestbookEntries).values({ name, email, website, message });
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+
+import Layout from "../layouts/Layout.astro";
+import GuestbookEntry from "../components/GuestbookEntry.astro";
+
+const guestbook_entries = await db.select().from(GuestbookEntries).where(isNotNull(GuestbookEntries.approved_at));
+---
+
+<Layout title="Guestbook" description="Sign my guestbook if you enjoyed visiting my website.">
+  <div>
+    <h1 class="text-4xl mb-6">Guestbook</h1>
+    <p class="mb-6">Taking inspiration from <a href="https://kevquirk.com/guestbook" target="_blank" rel="noopener noreferer">Kev Quirk’s guestbook</a>, here’s my take on it. Pretty simple - if you like my website and would like to leave a message, sign my guestbook using the form below.</p>
+    <p class="mb-6">Note, your message will be moderated before being shown.</p>
+    <p class="mb-6">
+      <a class="no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="#sign-guestbook">Sign my guestbook &darr;</a>
+    </p>
+    <hr class="mb-6">
+    {
+      guestbook_entries.map((entry) => (
+        <GuestbookEntry
+          id={entry.id}
+          name={entry.name}
+          email={entry.email}
+          website={entry.website}
+          message={entry.message}
+          created_at={entry.created_at}
+        />
+      ))
+    }
+    <form method="post">
+      <h2 class="text-3xl mb-6" id="sign-guestbook">Sign my guestbook</h2>
+      <p class="mb-6 text-sm">Your name and a message are required; everything else is optional. If you provide your email address, it will be used to show your <a href="https://gravatar.com" target="_blank" rel="noopener noreferer">Gravatar</a> (if you have one) but will not be disclosed.</p>
+      <label class="block mb-4">
+        <span class="block text-sm font-medium">Name</span>
+        <input type="text" name="name" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required>
+        {errors.name && <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">{errors.name}</p>}
+      </label>
+      <label class="block mb-4">
+        <span class="block text-sm font-medium">Email address (optional)</span>
+        <input type="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+      </label>
+      <label class="block mb-4">
+        <span class="block text-sm font-medium">Website (optional)</span>
+        <input type="url" name="website" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+      </label>
+      <label class="block mb-4">
+        <span class="block text-sm font-medium">Message</span>
+        <textarea name="message" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required></textarea>
+        {errors.message && <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">{errors.message}</p>}
+      </label>
+      <button type="submit" class="px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out">Submit</button>
+    </form>
+  </div>
+</Layout>
