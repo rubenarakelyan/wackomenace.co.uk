@@ -11,7 +11,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: "hybrid",
   adapter: cloudflare({
-    imageService: "compile"
+    imageService: "passthrough"
   }),
   site: process.env.NODE_ENV === "development" ? "http://localhost:4321" : "https://www.wackomenace.co.uk",
   integrations: [db(), mdx({
