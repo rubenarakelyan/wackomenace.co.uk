@@ -5,7 +5,7 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
       <head>
-        <title><xsl:value-of select="/rss/channel/title"/> Web Feed</title>
+        <title><xsl:value-of select="/atom:feed/atom:title"/> Web Feed</title>
         <meta charset="utf-8"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -14,7 +14,7 @@
       <body class="bg-white">
         <nav class="container-md px-3 py-2 mt-2 mt-md-5 mb-5 markdown-body">
           <p class="bg-yellow-light ml-n1 px-1 py-1 mb-1">
-            <strong>This is a web feed,</strong> also known as an RSS feed. <strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.
+            <strong>This is a web feed,</strong> also known as an Atom feed. <strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.
           </p>
           <p class="text-gray">
             Visit <a href="https://aboutfeeds.com">About Feeds</a> to get started with newsreaders and subscribing. It’s free.
@@ -43,28 +43,28 @@
 
               Web Feed Preview
             </h1>
-            <h2><xsl:value-of select="/rss/channel/title"/></h2>
-            <p><xsl:value-of select="/rss/channel/description"/></p>
+            <h2><xsl:value-of select="/atom:feed/atom:title"/></h2>
+            <p><xsl:value-of select="/atom:feed/atom:subtitle"/></p>
             <a class="head_link" target="_blank">
               <xsl:attribute name="href">
-                <xsl:value-of select="/rss/channel/link"/>
+                <xsl:value-of select="/atom:feed/atom:link[2]/@href"/>
               </xsl:attribute>
               Visit Website &#x2192;
             </a>
           </header>
           <h2>Recent Items</h2>
-          <xsl:for-each select="/rss/channel/item">
+          <xsl:for-each select="/atom:feed/atom:entry">
             <div class="pb-5">
               <h3 class="mb-0">
                 <a target="_blank">
                   <xsl:attribute name="href">
-                    <xsl:value-of select="link"/>
+                    <xsl:value-of select="atom:link/@href"/>
                   </xsl:attribute>
-                  <xsl:value-of select="title"/>
+                  <xsl:value-of select="atom:title"/>
                 </a>
               </h3>
               <small class="text-gray">
-                Published: <xsl:value-of select="pubDate" />
+                Published: <xsl:value-of select="substring(atom:published, 0, 11)" />
               </small>
             </div>
           </xsl:for-each>
