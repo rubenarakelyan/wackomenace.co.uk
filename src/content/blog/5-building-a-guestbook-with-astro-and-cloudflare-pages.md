@@ -68,6 +68,12 @@ export default defineDb({
 
 It’s one table called `GuestbookEntries` that has some simple columns including an ID primary key, mandatory and optional columns and one with a default value.
 
+<figure>
+
+  ![Screenshot of the GuestbookEntries database in Astro Studio](./images/astro-studio.png)
+  <figcaption>Screenshot of the GuestbookEntries database in Astro Studio</figcaption>
+</figure>
+
 ## Create your guestbook page
 
 Now we come to the real work - creating the page that will display our guestbook with its entries and allow users to sign it by submitting a few details. I’ll provide the final code here then step through it below. I named it `guestbook.astro` and placed it in `pages` so it’s accessible as `/guestbook` on my site.
