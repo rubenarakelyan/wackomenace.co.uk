@@ -28,7 +28,7 @@ export async function GET(context: APIContext) {
           "id": "${context.site}blog/${post.slug}",
           "url": "${context.site}blog/${post.slug}",
           "title": "${post.data.title}",
-          "content_html": "${sanitizeHtml(parser.render(post.body)).replace(/"/g, '\\\"').trim()}",
+          "content_html": "${sanitizeHtml(parser.render(post.body)).replace(/"/g, '\\\"').replace(/\r?\n|\r/g, '\\n').trim()}",
           "summary": "${post.data.excerpt}",
           "date_published": "${new Date(post.data.date).toJSON()}"
         }`
