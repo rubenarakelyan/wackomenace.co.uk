@@ -60,20 +60,20 @@ const guestbook_entries = await db.select().from(GuestbookEntries).where(isNotNu
       <p class="mb-6 text-sm">Your name and a message are required; everything else is optional. If you provide your email address, it will be used to show your <a href="https://gravatar.com" target="_blank" rel="noopener noreferer">Gravatar</a> (if you have one) but will not be disclosed.</p>
       <label class="block mb-4">
         <span class="block text-sm font-medium">Name</span>
-        <input type="text" name="name" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required>
+        <input type="text" name="name" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required>
         {errors.name && <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">{errors.name}</p>}
       </label>
       <label class="block mb-4">
         <span class="block text-sm font-medium">Email address (optional)</span>
-        <input type="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+        <input type="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
       </label>
       <label class="block mb-4">
         <span class="block text-sm font-medium">Website (optional)</span>
-        <input type="url" name="website" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+        <input type="url" name="website" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
       </label>
       <label class="block mb-4">
         <span class="block text-sm font-medium">Message</span>
-        <textarea name="message" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required></textarea>
+        <textarea name="message" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required></textarea>
         {errors.message && <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">{errors.message}</p>}
       </label>
       <button type="submit" class="px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out">Submit</button>
