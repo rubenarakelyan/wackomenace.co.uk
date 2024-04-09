@@ -26,7 +26,7 @@ const { Content } = await post.render();
   <article class="h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid={Astro.request.url}>
     {post.data.cover && <Image src={post.data.cover} alt={post.data.title} class="mb-6" />}
     <h1 class="text-4xl mb-6 p-name" itemprop="name">{post.data.title}</h1>
-    <p class="text-sm mb-6"><em>by</em> <a rel="author" class="p-author" href="/contact">Ruben Arakelyan</a></a> &middot; <a class="u-url" href={Astro.request.url}><FormattedDate date={post.data.date} classes="dt-published" itemprop="datePublished" /></a> &middot; <span class="p-category" itemprop="keywords">{post.data.tags.join(", ")}</span></p>
+    <p class="text-sm mb-6"><em>by</em> <a rel="author" class="p-author" href="/contact/">Ruben Arakelyan</a></a> &middot; <a class="u-url no-external-icon" href={Astro.request.url}><FormattedDate date={post.data.date} classes="dt-published" itemprop="datePublished" /></a> &middot; <span class="p-category" itemprop="keywords">{post.data.tags.join(", ")}</span></p>
     <p class="text-xl mb-6 p-summary" itemprop="abstract">{post.data.excerpt}</p>
     <div class="prose prose-slate dark:prose-invert e-content">
       <Content />
