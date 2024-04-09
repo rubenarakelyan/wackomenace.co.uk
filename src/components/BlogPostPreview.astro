@@ -13,7 +13,7 @@ interface Props {
 const { homepage, url, title, excerpt, date, tags } = Astro.props;
 ---
 
-<article class="mb-6 h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid=`${Astro.site}${url.substring(1)}`>
+<article class="mb-6 p-6 border border-slate-200 h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid=`${Astro.site}${url.substring(1)}`>
   <a class="no-underline hover:no-underline active:no-underline focus:no-underline u-url" href={url}>
     <p class="text-sm"><FormattedDate date={date} classes="dt-published" itemprop="datePublished" /> &middot; <span class="p-category" itemprop="keywords">{tags.join(", ")}</span></p>
     {homepage &&
