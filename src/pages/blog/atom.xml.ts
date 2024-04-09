@@ -38,7 +38,7 @@ export async function GET(context: APIContext) {
         <summary>${post.data.excerpt}</summary>
         <published>${new Date(post.data.date).toJSON()}</published>
       </entry>`
-    )
+    ).join("")
   }
 </feed>
     `,
