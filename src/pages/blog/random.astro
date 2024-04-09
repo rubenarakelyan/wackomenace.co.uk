@@ -5,5 +5,5 @@ import { getCollection } from "astro:content";
 
 const blog = await getCollection("blog");
 
-return Astro.redirect(`/blog/${blog[Math.floor((Math.random() * blog.length))].slug}`);
+return Astro.redirect(`/blog/${blog[Math.floor((Math.random() * blog.length))].slug}/`);
 ---

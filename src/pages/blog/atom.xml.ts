@@ -26,7 +26,7 @@ export async function GET(context: APIContext) {
   ${
     blog.toReversed().map((post) =>
       `<entry>
-        <id>${context.site}blog/${post.slug}</id>
+        <id>${context.site}blog/${post.slug}/</id>
         <title>${post.data.title}</title>
         <updated>${new Date(post.data.date).toJSON()}</updated>
         <content type="xhtml">

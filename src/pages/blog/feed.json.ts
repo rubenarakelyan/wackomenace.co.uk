@@ -25,8 +25,8 @@ export async function GET(context: APIContext) {
     ${
       blog.toReversed().map((post) =>
         `{
-          "id": "${context.site}blog/${post.slug}",
-          "url": "${context.site}blog/${post.slug}",
+          "id": "${context.site}blog/${post.slug}/",
+          "url": "${context.site}blog/${post.slug}/",
           "title": "${post.data.title}",
           "content_html": "${sanitizeHtml(parser.render(post.body)).replace(/"/g, '\\\"').replace(/\r?\n|\r/g, '\\n').trim()}",
           "summary": "${post.data.excerpt}",

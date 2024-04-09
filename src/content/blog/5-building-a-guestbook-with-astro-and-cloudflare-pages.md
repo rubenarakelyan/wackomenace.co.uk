@@ -7,7 +7,7 @@ tags: [astro, website, guestbook]
 
 So far, my website has been a simple, static affair, built on deployment and hosted on Cloudflare Pages. However, I always knew that once I had the main site up and running as I wanted, I would start adding a little dynamic functionality since a purely static site is somewhat limiting.
 
-I wanted to start with something small and non-critical, and a guestbook happened to be the perfect candidate. I remembered reading about <a href="https://kevquirk.com/guestbook" target="_blank" rel="noopener noreferer">Kev Quirk’s guestbook</a> and wanting to have one of my own.
+I wanted to start with something small and non-critical, and a guestbook happened to be the perfect candidate. I remembered reading about [Kev Quirk’s guestbook](https://kevquirk.com/guestbook) and wanting to have one of my own.
 
 Here are the steps and code I used to build my guestbook:
 

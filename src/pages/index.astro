@@ -14,7 +14,7 @@ const blog = await getCollection("blog");
 		<p class="mb-2">Hello, I’m Ruben and this is my website. I’m 💜 husband to <a href="https://www.relocatetocornwall.co.uk/?utm_source=wackomenace.co.uk&utm_medium=website&utm_content=textlink" target="_blank" rel="noopener noreferer spouse">Joanna</a>, 👨🏻 dad to Evie, 🐕 dog-father to Saffy, ✟ Christian, 🇦🇲 Armenian, and a 💎 contract senior Ruby developer, in no particular order; originally from London but now living near 🌊 St Ives in Cornwall.</p>
 		<p class="mb-2">I hope you enjoy browsing here and maybe finding something useful.</p>
 		<p class="mb-2"><strong>Want to hire me?</strong> <a href="https://tfnd.uk/?r=wackomenace" target="_blank" rel="noopener noreferer me">Let’s chat</a> or start by looking at <a href="https://www.rubenarakelyan.com/?r=wackomenace" target="_blank" rel="noopener noreferer me">my CV</a>.</p>
-		<p><strong>Want to just chat?</strong> <a href="/contact">Hit me up!</a></p>
+		<p><strong>Want to just chat?</strong> <a href="/contact/">Hit me up!</a></p>
 	</section>
 	<section class="mb-6">
 		<h2 class="text-3xl mb-6">What’s new on the blog</h2>
@@ -22,7 +22,7 @@ const blog = await getCollection("blog");
 			blog.slice(-5).toReversed().map((post) => (
 				<BlogPostPreview
 					homepage={true}
-					url={"/blog/" + post.slug}
+					url={"/blog/" + post.slug + "/"}
 					title={post.data.title}
 					excerpt={post.data.excerpt}
 					date={post.data.date}
@@ -31,8 +31,8 @@ const blog = await getCollection("blog");
 			))
 		}
 		<p>
-			<a class="no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="/blog">Read more blog posts &rarr;</a>
-			<a class="no-underline ml-4 px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="/blog/random">Read a random blog post</a>
+			<a class="no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="/blog/">Read more blog posts &rarr;</a>
+			<a class="no-underline ml-4 px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="/blog/random/">Read a random blog post</a>
 		</p>
 	</section>
 	<section class="mb-6">

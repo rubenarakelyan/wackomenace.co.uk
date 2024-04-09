@@ -14,7 +14,7 @@ export async function GET(context: APIContext) {
     site: context.site!.toString(),
     items: blog.toReversed().map((post) => ({
       title: post.data.title,
-      link: `/blog/${post.slug}`,
+      link: `/blog/${post.slug}/`,
       description: post.data.excerpt,
       content: sanitizeHtml(parser.render(post.body)),
       pubDate: post.data.date,
