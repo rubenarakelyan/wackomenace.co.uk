@@ -5,7 +5,7 @@ import MarkdownIt from "markdown-it";
 
 export async function GET(context: APIContext) {
   const blog = await getCollection("blog");
-  const parser = new MarkdownIt();
+  const parser = new MarkdownIt({ html: true });
   return new Response(
       `<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="/assets/atom.xsl" type="text/xsl"?>
@@ -31,7 +31,9 @@ export async function GET(context: APIContext) {
         <updated>${new Date(post.data.date).toJSON()}</updated>
         <content type="xhtml">
           <div xmlns="http://www.w3.org/1999/xhtml">
-            ${sanitizeHtml(parser.render(post.body))}
+            ${sanitizeHtml(parser.render(post.body), {
+              allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"])
+            })}
           </div>
         </content>
         <link rel="alternate" href="${context.site}blog/${post.slug}" />

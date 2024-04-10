@@ -6,7 +6,7 @@ import MarkdownIt from "markdown-it";
 
 export async function GET(context: APIContext) {
   const blog = await getCollection("blog");
-  const parser = new MarkdownIt();
+  const parser = new MarkdownIt({ html: true });
   return rss({
     stylesheet: "/assets/rss.xsl",
     title: "wackomenace",
@@ -16,7 +16,9 @@ export async function GET(context: APIContext) {
       title: post.data.title,
       link: `/blog/${post.slug}/`,
       description: post.data.excerpt,
-      content: sanitizeHtml(parser.render(post.body)),
+      content: sanitizeHtml(parser.render(post.body), {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"])
+      }),
       pubDate: post.data.date,
     })),
     customData: `
