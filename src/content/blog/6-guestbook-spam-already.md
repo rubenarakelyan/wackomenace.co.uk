@@ -5,7 +5,7 @@ excerpt: I got my first piece of guestbook spam less than a day after making it 
 tags: [astro, website, guestbook]
 ---
 
-It was only yesterday that I wrote about [Building a guestbook with Astro and Cloudflare Pages](./5-building-a-guestbook-with-astro-and-cloudflare-pages/) and made it live, and I already have my first piece of guestbook spam!
+It was only yesterday that I wrote about [Building a guestbook with Astro and Cloudflare Pages](../5-building-a-guestbook-with-astro-and-cloudflare-pages/) and made it live, and I already have my first piece of guestbook spam!
 
 <figure>
 
