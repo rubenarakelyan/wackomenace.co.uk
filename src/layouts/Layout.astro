@@ -83,9 +83,19 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 							{page_name == "/contact" && <Fragment set:html={`&rarr;`} />} Contact me
 						</a>
 					</li>
+          <li class="mb-4 float-left clear-left md:float-none md:float-none md:border-t md:border-slate-200 md:pt-4">
+            <a class="no-underline" href="/search/">
+              {page_name == "/search" && <Fragment set:html={`&rarr;`} />} Search
+            </a>
+          </li>
           <li class="ml-4 mb-4 float-left md:float-none md:ml-0">
             <a class="no-underline" href="/guestbook/">
               {page_name == "/guestbook" && <Fragment set:html={`&rarr;`} />} Guestbook
+            </a>
+          </li>
+          <li class="ml-4 mb-4 float-left md:float-none md:ml-0">
+            <a class="no-underline" href="/blogroll/">
+              {page_name == "/blogroll" && <Fragment set:html={`&rarr;`} />} Blogroll
             </a>
           </li>
 					<li class="mb-4 float-left clear-left md:float-none md:float-none md:border-t md:border-slate-200 md:pt-4">
@@ -99,11 +109,6 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 						</a>
 					</li>
 					<li class="ml-4 mb-4 float-left md:float-none md:ml-0">
-						<a class="no-underline" href="/blogroll/">
-							{page_name == "/blogroll" && <Fragment set:html={`&rarr;`} />} Blogroll
-						</a>
-					</li>
-					<li class="ml-4 mb-4 float-left md:float-none md:ml-0">
 						<a class="no-underline" href="/elsewhere/">
 							{page_name == "/elsewhere" && <Fragment set:html={`&rarr;`} />} Elsewhere
 						</a>
@@ -113,7 +118,7 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 							{page_name == "/colophon" && <Fragment set:html={`&rarr;`} />} Colophon
 						</a>
 					</li>
-					<li class="mb-4 float-left clear-left md:float-none md:float-none md:pt-4">
+					<li class="mt-4 mb-4 float-left clear-left md:float-none md:float-none md:pt-4">
 						<a class="no-underline px-4 py-3 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out no-external-icon" href="https://tfnd.uk/?r=wackomenace" target="_blank" rel="noopener noreferer me">
 							Hire me
 						</a>
