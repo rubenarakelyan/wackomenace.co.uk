@@ -3,10 +3,11 @@ import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
+import MarkdownItFootnote from "markdown-it-footnote";
 
 export async function GET(context: APIContext) {
   const blog = await getCollection("blog");
-  const parser = new MarkdownIt({ html: true });
+  const parser = new MarkdownIt({ html: true }).use(MarkdownItFootnote);
   return rss({
     stylesheet: "/assets/rss.xsl",
     title: "wackomenace",
