@@ -1,12 +1,18 @@
 ---
 title: About me
 description: Everything you need to know about Ruben Arakelyan.
-date: 2024-04-09
+date: 2024-04-10
 ---
 
 <section class="mb-6 p-6 border border-slate-200 not-prose">
-  <p class="mb-6"><strong>How do you pronounce your name?</strong></p>
-  <audio src="/assets/ruben.m4a" controls></audio>
+  <p class="mb-5"><strong>The question I am most asked: how do you pronounce your name?</strong></p>
+  <p class="mb-5">If you speak English or a similar language, here’s audio of the pronunciation:</p>
+  <audio src="/assets/ruben.en.m4a" controls class="mb-5"></audio>
+  <p class="mb-5">If you speak Armenian or a similar language, here’s audio of the pronunciation:</p>
+  <audio src="/assets/ruben.hy.m4a" controls class="mb-5"></audio>
+  <p class="mb-5">And if you understand IPA, here’s what I think is the correct rendering:</p>
+  <p class="mb-5"><strong>ɻʊɓəɲ ɑɾɑkelʎɑɲ</strong> (<a href="http://ipa-reader.xyz" target="_blank" rel="noopener noreferer">hear it</a>)</p>
+  <p>Any corrections to the above to better match the Armenian pronunciation are welcome.</p>
 </section>
 
 I was born in [Wimbledon](https://en.wikipedia.org/wiki/Wimbledon,_London), south London — home of [The Championships](https://en.wikipedia.org/wiki/The_Championships,_Wimbledon) — and lived there for approximately 5 years before moving across the river to [Eastcote](https://en.wikipedia.org/wiki/Eastcote) where I lived, grew up and went to school (where my [year 11 ball](https://web.archive.org/web/20040717231151/http://education.independent.co.uk/news/story.jsp?story=539986) was featured in The Independent).
