@@ -29,7 +29,12 @@ export async function GET(context: APIContext) {
           "id": "${context.site}blog/${post.slug}/",
           "url": "${context.site}blog/${post.slug}/",
           "title": "${post.data.title}",
-          "content_html": "${sanitizeHtml(parser.render(post.body), { allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]) }).replace(/"/g, '\\\"').replace(/\r?\n|\r/g, '\\n').trim()}",
+          "content_html": "${sanitizeHtml(
+            parser.render(post.body).replace('src="/', `src="${context.site!.toString()}`).replace('href="/', `href="${context.site!.toString()}`),
+            {
+              allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"])
+            }
+          ).replace(/"/g, '\\\"').replace(/\r?\n|\r/g, '\\n').trim()}",
           "summary": "${post.data.excerpt}",
           "date_published": "${new Date(post.data.date).toJSON()}"
         }`

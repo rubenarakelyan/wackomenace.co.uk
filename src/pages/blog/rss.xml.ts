@@ -17,9 +17,12 @@ export async function GET(context: APIContext) {
       title: post.data.title,
       link: `/blog/${post.slug}/`,
       description: post.data.excerpt,
-      content: sanitizeHtml(parser.render(post.body), {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"])
-      }),
+      content: sanitizeHtml(
+        parser.render(post.body).replace('src="/', `src="${context.site!.toString()}`).replace('href="/', `href="${context.site!.toString()}`),
+        {
+          allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"])
+        }
+      ),
       pubDate: post.data.date,
     })),
     customData: `

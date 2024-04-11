@@ -25,8 +25,7 @@ At this point, I was able to follow the steps from the article to manually expan
 After what seemed like an eternity (and a few false starts), I was finally greeted with a sight that sent me right back to 1997 - the Packard Bell-customised Windows 95 desktop replete with all the bundled applications.
 
 <figure>
-
-  ![Screenshot of a fresh installation of a Packard Bell-customised Windows 95 in DOSBox-X](./images/packard-bell-windows-95-in-dosbox-x.png)
+  <img src="/images/blog/packard-bell-windows-95-in-dosbox-x.png" alt="Screenshot of a fresh installation of a Packard Bell-customised Windows 95 in DOSBox-X">
   <figcaption>Screenshot of a fresh installation of a Packard Bell-customised Windows 95 in DOSBox-X</figcaption>
 </figure>
 

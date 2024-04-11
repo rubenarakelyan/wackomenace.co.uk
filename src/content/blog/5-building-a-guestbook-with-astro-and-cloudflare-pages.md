@@ -69,8 +69,7 @@ export default defineDb({
 It’s one table called `GuestbookEntries` that has some simple columns including an ID primary key, mandatory and optional columns and one with a default value.
 
 <figure>
-
-  ![Screenshot of the GuestbookEntries database in Astro Studio](./images/astro-studio.png)
+  <img src="/images/blog/astro-studio.png" alt="Screenshot of the GuestbookEntries database in Astro Studio">
   <figcaption>Screenshot of the GuestbookEntries database in Astro Studio</figcaption>
 </figure>
 

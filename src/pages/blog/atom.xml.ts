@@ -32,9 +32,12 @@ export async function GET(context: APIContext) {
         <updated>${new Date(post.data.date).toJSON()}</updated>
         <content type="xhtml">
           <div xmlns="http://www.w3.org/1999/xhtml">
-            ${sanitizeHtml(parser.render(post.body), {
-              allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"])
-            })}
+            ${sanitizeHtml(
+              parser.render(post.body).replace('src="/', `src="${context.site!.toString()}`).replace('href="/', `href="${context.site!.toString()}`),
+              {
+                allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"])
+              }
+            )}
           </div>
         </content>
         <link rel="alternate" href="${context.site}blog/${post.slug}" />
