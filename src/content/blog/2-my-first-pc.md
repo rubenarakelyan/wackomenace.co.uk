@@ -30,6 +30,4 @@ After what seemed like an eternity (and a few false starts), I was finally greet
   <figcaption>Screenshot of a fresh installation of a Packard Bell-customised Windows 95 in DOSBox-X</figcaption>
 </figure>
 
-***
-
 [^1]: I must note that at this point, I also mounted another, custom floppy image in drive `B:` that I created to include the `SMARTDRV` application from Windows 95. This application is not on any of the boot floppies but, as alluded to at the start of the Windows 95 installation, attempting to proceed without it (especially in a VM) is a recipe for an eternal wait. If you value your time, find a copy and run it right before you kick-off the archive expansion and installation processes.
