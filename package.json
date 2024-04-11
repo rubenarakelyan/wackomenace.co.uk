@@ -19,6 +19,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/markdown-it": "^13.0.7",
+    "@types/markdown-it-footnote": "^3.0.4",
     "@types/sanitize-html": "^2.11.0",
     "@vercel/og": "^0.6.2",
     "astro": "^4.5.8",
