@@ -14,6 +14,7 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Iconfactory’s The Breakroom](https://blog.iconfactory.com)
 * [Kev Quirk](https://kevquirk.com)
 * [Microsoft On the Issues](https://blogs.microsoft.com/on-the-issues/)
+* [Paul Stamatiou](https://paulstamatiou.com)
 * [Scott Hanselman](https://www.hanselman.com/blog/)
 * [Scott Helme](https://scotthelme.co.uk)
 * [Terence Eden](https://shkspr.mobi/blog)
