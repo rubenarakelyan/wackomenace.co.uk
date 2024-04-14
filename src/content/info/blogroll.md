@@ -16,6 +16,7 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Microsoft On the Issues](https://blogs.microsoft.com/on-the-issues/)
 * [Scott Hanselman](https://www.hanselman.com/blog/)
 * [Scott Helme](https://scotthelme.co.uk)
+* [Terence Eden](https://shkspr.mobi/blog)
 * [The GitHub Blog](https://github.blog)
 * [Thurrott.com](https://www.thurrott.com)
 

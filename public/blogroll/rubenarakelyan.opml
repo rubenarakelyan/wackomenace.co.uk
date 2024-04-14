@@ -3,7 +3,7 @@
   <head>
     <title>Ruben Arakelyan's blogroll</title>
     <dateCreated>Fri, 05 Apr 2024 12:00:00 BST</dateCreated>
-    <dateModified>Fri, 05 Apr 2024 12:00:00 BST</dateModified>
+    <dateModified>Sun, 14 Apr 2024 15:05:00 BST</dateModified>
     <ownerName>Ruben Arakelyan</ownerName>
     <ownerEmail>ruben@arakelyan.uk</ownerEmail>
     <ownerId>https://www.wackomenace.co.uk/contact/</ownerId>
@@ -21,6 +21,7 @@
       <outline title="Microsoft On the Issues" text="Microsoft On the Issues" xmlUrl="https://blogs.microsoft.com/on-the-issues/feed/" htmlUrl="https://blogs.microsoft.com/on-the-issues/" type="rss"></outline>
       <outline title="Scott Hanselman" text="Scott Hanselman" xmlUrl="http://feeds.hanselman.com/ScottHanselman" htmlUrl="https://www.hanselman.com/blog/" type="rss"></outline>
       <outline title="Scott Helme" text="Scott Helme" xmlUrl="https://scotthelme.co.uk/rss/" htmlUrl="https://scotthelme.co.uk" type="rss"></outline>
+      <outline title="Terence Eden" text="Terence Eden" xmlUrl="https://shkspr.mobi/blog/feed/atom" htmlUrl="https://shkspr.mobi/blog" type="rss"></outline>
       <outline title="The GitHub Blog" text="The GitHub Blog" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog" type="rss"></outline>
       <outline title="Thurrott.com" text="Thurrott.com" xmlUrl="https://www.thurrott.com/blog/rss" htmlUrl="https://www.thurrott.com" type="rss"></outline>
     </outline>
