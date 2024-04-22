@@ -28,5 +28,6 @@ I use the following online tools to validate various parts of this website to en
 * [W3C Feed Validation Service](https://validator.w3.org/feed/) for RSS and Atom feeds
 * [JSON feed validator](https://validator.jsonfeed.org)
 * [Schema.org validator](https://validator.schema.org)
+* [OPML validator](http://validator.opml.org)
 * [Google Rich Results Test](https://search.google.com/test/rich-results)
 * [WAVE accessibility](https://wave.webaim.org/aim/)
