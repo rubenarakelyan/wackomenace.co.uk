@@ -1,0 +1,131 @@
+{
+  "@version": "1.0",
+  "@docs": "https://www.json-wf.org.uk/spec",
+  "title": "Ruben Arakelyan's blogroll",
+  "owner": {
+    "name": "Ruben Arakelyan",
+    "website": "https://www.wackomenace.co.uk"
+  },
+  "modified_at": "2024-04-23T17:25:00+0100",
+  "groups": [
+    {
+      "title": "All",
+      "feeds": [
+        {
+          "title": "A List Apart",
+          "type": "rss",
+          "website": "https://alistapart.com",
+          "feed": "https://alistapart.com/main/feed/"
+        },
+        {
+          "title": "Andy Croll",
+          "type": "atom",
+          "website": "https://andycroll.com",
+          "feed": "https://andycroll.com/index.xml"
+        },
+        {
+          "title": "Chris Coyier",
+          "type": "rss",
+          "website": "https://chriscoyier.net",
+          "feed": "https://chriscoyier.net/feed/"
+        },
+        {
+          "title": "Coding Horror",
+          "type": "rss",
+          "website": "https://blog.codinghorror.com",
+          "feed": "https://blog.codinghorror.com/rss/"
+        },
+        {
+          "title": "Daring Fireball",
+          "type": "atom",
+          "website": "https://daringfireball.net",
+          "feed": "https://daringfireball.net/feeds/main"
+        },
+        {
+          "title": "Derek Sivers",
+          "type": "atom",
+          "website": "https://sive.rs/blog",
+          "feed": "https://sive.rs/en.atom"
+        },
+        {
+          "title": "furbo.org",
+          "type": "rss",
+          "website": "https://furbo.org",
+          "feed": "https://furbo.org/feed/"
+        },
+        {
+          "title": "Iconfactory's The Breakroom",
+          "type": "rss",
+          "website": "https://blog.iconfactory.com",
+          "feed": "https://blog.iconfactory.com/feed"
+        },
+        {
+          "title": "Kev Quirk",
+          "type": "rss",
+          "website": "https://kevquirk.com",
+          "feed": "https://kevquirk.com/feed"
+        },
+        {
+          "title": "Microsoft On the Issues",
+          "type": "rss",
+          "website": "https://blogs.microsoft.com/on-the-issues/",
+          "feed": "https://blogs.microsoft.com/on-the-issues/feed/"
+        },
+        {
+          "title": "Paul Stamatiou",
+          "type": "atom",
+          "website": "https://paulstamatiou.com",
+          "feed": "https://paulstamatiou.com/posts.xml"
+        },
+        {
+          "title": "Piccalilli",
+          "type": "rss",
+          "website": "https://piccalil.li",
+          "feed": "https://piccalil.li/feed.xml"
+        },
+        {
+          "title": "Rands in Repose",
+          "type": "rss",
+          "website": "https://randsinrepose.com",
+          "feed": "https://randsinrepose.com/feed/"
+        },
+        {
+          "title": "Scott Hanselman",
+          "type": "rss",
+          "website": "https://www.hanselman.com/blog/",
+          "feed": "http://feeds.hanselman.com/ScottHanselman"
+        },
+        {
+          "title": "Scott Helme",
+          "type": "rss",
+          "website": "https://scotthelme.co.uk",
+          "feed": "https://scotthelme.co.uk/rss/"
+        },
+        {
+          "title": "Snook.ca",
+          "type": "rss",
+          "website": "https://snook.ca",
+          "feed": "https://snook.ca/jonathan/index.rdf"
+        },
+        {
+          "title": "Terence Eden",
+          "type": "atom",
+          "website": "https://shkspr.mobi/blo",
+          "feed": "https://shkspr.mobi/blog/feed/atom"
+        },
+        {
+          "title": "The GitHub Blog",
+          "type": "rss",
+          "website": "https://github.blog",
+          "feed": "https://github.blog/feed/"
+        },
+        {
+          "title": "Thurrott.com",
+          "type": "rss",
+          "website": "https://www.thurrott.com",
+          "feed": "https://www.thurrott.com/blog/rss"
+        }
+      ]
+    }
+  ]
+}
