@@ -28,4 +28,6 @@ I try to follow a variety of blogs from both individuals and organisations relat
 
 All these blogs are also available as an [OPML file](/blogroll/rubenarakelyan.opml) and [JSON-WF file](/blogroll/rubenarakelyan.json) to import into your favourite feed reader.
 
+If you want more recommendations of blogs to read, try [Ye Olde Blogroll](https://blogroll.org).
+
 More generally, I get my news from trusted outlets, mainly the [BBC](https://www.bbc.co.uk/news) and [Financial Times](https://www.ft.com).
