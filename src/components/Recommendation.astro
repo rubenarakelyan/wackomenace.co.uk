@@ -16,7 +16,7 @@ const { homepage, url, name, description, affiliate } = Astro.props;
       <h3 class="text-2xl underline mb-1 p-name" itemprop="name">{name}{affiliate && <span aria-hidden="true">*</span>}</h3>
     }
     {!homepage &&
-      <h2 class="text-3xl underline mb-1 p-name" itemprop="name">{name}</h2>
+      <h2 class="text-3xl underline mb-1 p-name" itemprop="name">{name}{affiliate && <span aria-hidden="true">*</span>}</h2>
     }
     <p class="mb-2 text-sm underline u-url" itemprop="url">{url}</p>
     <p class="p-note" itemprop="description">{description}</p>
