@@ -1,0 +1,23 @@
+---
+interface Props {
+  homepage: boolean;
+  url: string;
+  name: string;
+  description: string;
+}
+
+const { homepage, url, name, description } = Astro.props;
+---
+
+<section class="mb-6 p-6 border border-slate-200" itemscope itemtype="https://schema.org/Project">
+  <a class="no-underline hover:no-underline active:no-underline focus:no-underline no-external-icon" href={url} target="_blank" rel="noopener noreferer">
+    {homepage &&
+      <h3 class="text-2xl underline mb-1" itemprop="name">{name}</h3>
+    }
+    {!homepage &&
+      <h2 class="text-3xl underline mb-1" itemprop="name">{name}</h2>
+    }
+    <p class="mb-2 text-sm underline" itemprop="url">{url}</p>
+    <p class="p-note" itemprop="description">{description}</p>
+  </a>
+</section>
