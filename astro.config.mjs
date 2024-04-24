@@ -19,5 +19,8 @@ export default defineConfig({
     rehypePlugins: [rehypeSlug, [rehypePrettyCode, {
       theme: "github-dark"
     }]]
-  }), sitemap(), tailwind()]
+  }), sitemap(), tailwind()],
+  redirects: {
+    "/.well-known/webfinger": "/.well-known/webfinger.json"
+  }
 });
