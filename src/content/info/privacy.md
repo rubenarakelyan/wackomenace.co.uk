@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 description: The privacy policy for this website.
-date: 2024-04-03
+date: 2024-04-30
 ---
 
-This website uses [Beam](https://beamanalytics.io/) for privacy-first analytics. No cookies are used and no personal information is collected.
+The privacy policy is very simple - there are **no analytics** and **no cookies** on this website. No personal information is collected. Browse away in comfort.
