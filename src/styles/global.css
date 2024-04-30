@@ -38,7 +38,3 @@ a:not(.no-external-icon)[href^="http"]::after, a:not(.no-external-icon)[href^="h
     background-color: theme("textColor.slate.200");
   }
 }
-
-aside {
-  @apply text-sm italic;
-}

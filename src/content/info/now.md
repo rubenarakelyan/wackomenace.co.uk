@@ -4,7 +4,7 @@ description: A list of what I’m doing now.
 date: 2024-04-23
 ---
 
-<aside>
+<aside class="text-sm italic">
 
 (This is [a now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.)
 
