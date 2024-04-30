@@ -21,6 +21,7 @@ export default defineConfig({
     }]]
   }), sitemap(), tailwind()],
   redirects: {
-    "/.well-known/webfinger": "/.well-known/webfinger.json"
+    "/.well-known/webfinger": "/.well-known/webfinger.json",
+    "/blog": "/"
   }
 });

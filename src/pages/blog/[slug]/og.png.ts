@@ -13,8 +13,8 @@ export async function GET({ props }: Props) {
 
   const RubenPhoto = fs.readFileSync(path.resolve("./assets/images/ruben.png"));
   const BackgroundImage = fs.readFileSync(path.resolve("./assets/images/bg.jpg"), "base64");
-  const IbmPlexSansRegular = fs.readFileSync(path.resolve("./assets/fonts/IBMPlexSans-Regular.ttf"));
-  const IbmPlexSansBold = fs.readFileSync(path.resolve("./assets/fonts/IBMPlexSans-Bold.ttf"));
+  const PpNeueMontrealRegular = fs.readFileSync(path.resolve("./assets/fonts/PPNeueMontreal-Book.ttf"));
+  const PpNeueMontrealBold = fs.readFileSync(path.resolve("./assets/fonts/PPNeueMontreal-Bold.ttf"));
 
   const html = {
     type: "div",
@@ -44,7 +44,7 @@ export async function GET({ props }: Props) {
                 props: {
                   style: {
                     fontSize: "48px",
-                    fontFamily: "IBM Plex Sans Bold",
+                    fontFamily: "PP Neue Montreal Bold",
                   },
                   children: post.data.title,
                 },
@@ -72,7 +72,7 @@ export async function GET({ props }: Props) {
       style: {
         background: "#ffffff",
         backgroundImage: `url(data:image/jpeg;base64,${BackgroundImage})`,
-        fontFamily: "IBM Sans Regular",
+        fontFamily: "PP Neue Montreal Regular",
       },
     },
   };
@@ -82,13 +82,13 @@ export async function GET({ props }: Props) {
     height: 600,
     fonts: [
       {
-        name: "IBM Plex Sans Bold",
-        data: IbmPlexSansBold.buffer,
+        name: "PP Neue Montreal Bold",
+        data: PpNeueMontrealBold.buffer,
         style: "normal",
       },
       {
-        name: "IBM Plex Sans Regular",
-        data: IbmPlexSansRegular.buffer,
+        name: "PP Neue Montreal Regular",
+        data: PpNeueMontrealRegular.buffer,
         style: "normal",
       },
     ],

@@ -1,21 +1,57 @@
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url(/assets/fonts/PPNeueMontreal-Book.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(/assets/fonts/PPNeueMontreal-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url(/assets/fonts/PPNeueMontreal-Italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url(/assets/fonts/PPNeueMontreal-SemiBoldItalic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PP Eiko";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url(/assets/fonts/PPEiko-Medium.woff2) format("woff2");
+}
+
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "PP Neue Montreal", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "IBM Plex Serif", serif;
-}
-
-code, kbd, pre, samp {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "PP Eiko", serif;
 }
 
 a {
-  @apply text-slate-600 dark:text-slate-200 underline underline-offset-2;
+  @apply text-blue-600 dark:text-blue-300 underline underline-offset-2;
 }
 
 a:hover, a:active, a:focus {
-  @apply text-slate-900 dark:text-slate-400 underline underline-offset-2 decoration-2 transition duration-300 ease-in-out;
+  @apply decoration-2 transition duration-300 ease-in-out;
 }
 
 a:not(.no-external-icon)[href^="http"]::after, a:not(.no-external-icon)[href^="https://"]::after {
@@ -35,6 +71,6 @@ a:not(.no-external-icon)[href^="http"]::after, a:not(.no-external-icon)[href^="h
 
 @media (prefers-color-scheme: dark) {
   a:not(.no-external-icon)[href^="http"]::after, a:not(.no-external-icon)[href^="https://"]::after {
-    background-color: theme("textColor.slate.200");
+    background-color: theme("textColor.slate.300");
   }
 }

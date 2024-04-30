@@ -42,5 +42,3 @@ In May 2021, we moved to our newly built house, and we bought our first puppy, S
 In November 2022, along with a lot of others, I was made redundant from Hopin, and in December 2022, our daughter Evie was born. I took some involuntary time off to look after her for a few weeks.
 
 In January 2023, I started working as a Ruby contractor, and I currently work for the [Office for Product Safety and Standards](https://www.gov.uk/government/organisations/office-for-product-safety-and-standards).
-
-![Photo of Ruben](/images/ruben.png)

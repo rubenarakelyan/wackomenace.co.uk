@@ -3,28 +3,26 @@ import { getCollection } from "astro:content";
 
 import Layout from "../layouts/Layout.astro";
 import BlogPostPreview from "../components/BlogPostPreview.astro";
-import Project from "../components/Project.astro";
-import Recommendation from "../components/Recommendation.astro";
 
 const blog = await getCollection("blog");
 ---
 
 <Layout title="Ruben Arakelyan’s home on the web" description="Welcome to Ruben Arakelyan’s home on the web">
 	<section class="mb-6">
-		<h1 class="text-4xl mb-6">Welcome to Ruben Arakelyan’s home on the web</h1>
+		<h1 class="text-7xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6">Hi, I’m Ruben</h1>
     <div class="h-card">
       <img class="float-left mr-6 mb-6 u-photo" src="/images/ruben.png" width="100" height="100" alt="Photo of Ruben Arakelyan">
-		  <p class="mb-2">Hello, I’m <a class="p-name u-url u-uid" href="/">Ruben Arakelyan</a> and this is my website. <span class="p-note">I’m 💜&nbsp;husband to <a href="https://www.relocatetocornwall.co.uk/?utm_source=wackomenace.co.uk&utm_medium=website&utm_content=textlink" target="_blank" rel="noopener noreferer spouse">Joanna</a>, 👨🏻&nbsp;dad to Evie, 🐕&nbsp;dog-father to Saffy, ✟&nbsp;Christian, 🇦🇲&nbsp;Armenian, and a 💎&nbsp;contract senior Ruby developer, in no particular order; originally from London but now living near 🌊&nbsp;St Ives in Cornwall.</span></p>
+		  <p class="text-xl mb-2">Hello, I’m <a class="p-name u-url u-uid" href="/">Ruben Arakelyan</a> and this is my website. <span class="p-note">I’m 💜&nbsp;husband to <a href="https://www.relocatetocornwall.co.uk/?utm_source=wackomenace.co.uk&utm_medium=website&utm_content=textlink" target="_blank" rel="noopener noreferer spouse">Joanna</a>, 👨🏻&nbsp;dad to Evie, 🐕&nbsp;dog-father to Saffy, ✟&nbsp;Christian, 🇦🇲&nbsp;Armenian, and a 💎&nbsp;contract senior Ruby developer, in no particular order; originally from London but now living near 🌊&nbsp;St Ives in Cornwall.</span></p>
     </div>
-		<p class="mb-2">I hope you enjoy browsing here and maybe finding something useful.</p>
-		<p class="mb-2"><strong>Want to hire me?</strong> <a href="https://tfnd.uk/?r=wackomenace" target="_blank" rel="noopener noreferer me">Let’s chat</a> or start by looking at <a href="https://www.rubenarakelyan.com/?r=wackomenace" target="_blank" rel="noopener noreferer me">my CV</a>.</p>
-    <p class="mb-2"><strong>Want me to read your blog?</strong> If you’ve just started a blog, <a href="/contact/">send it to me</a> and I’ll happily be <a href="https://manuelmoreale.com/i-ll-read-it" target="_blank" rel="noopener noreferer">your first reader</a>.</p>
-		<p><strong>Want to just chat?</strong> <a href="/contact/">Hit me up!</a></p>
+		<p class="text-xl mb-2">I hope you enjoy browsing here and maybe finding something useful.</p>
+		<p class="text-xl mb-2"><strong>Want to hire me?</strong> <a href="https://tfnd.uk/?r=wackomenace" target="_blank" rel="noopener noreferer me">Let’s chat</a> or start by looking at <a href="https://www.rubenarakelyan.com/?r=wackomenace" target="_blank" rel="noopener noreferer me">my CV</a>.</p>
+    <p class="text-xl mb-2"><strong>Want me to read your blog?</strong> If you’ve just started a blog, <a href="/contact/">send it to me</a> and I’ll happily be <a href="https://manuelmoreale.com/i-ll-read-it" target="_blank" rel="noopener noreferer">your first reader</a>.</p>
+		<p class="text-xl"><strong>Want to just chat?</strong> <a href="/contact/">Hit me up!</a></p>
 	</section>
 	<section class="mb-6">
-		<h2 class="text-3xl mb-6">What’s new on the blog</h2>
+		<h2 class="text-5xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6">Posts</h2>
 		{
-			blog.slice(-5).toReversed().map((post) => (
+			blog.toReversed().map((post) => (
 				<BlogPostPreview
 					homepage={true}
 					url={"/blog/" + post.slug + "/"}
@@ -35,64 +33,8 @@ const blog = await getCollection("blog");
 				/>
 			))
 		}
-		<p class="mb-6 md:inline md:mb-0">
-			<a class="no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="/blog/">Read more blog posts &rarr;</a>
-    </p>
     <p class="md:inline md:ml-2">
-			<a class="no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-200 dark:bg-slate-200 text-white dark:text-slate-600 hover:border-slate-900 hover:bg-slate-900 hover:text-white dark:hover:border-slate-500 dark:hover:bg-slate-500 transition duration-300 ease-in-out" href="/blog/random/">Read a random blog post</a>
+			<a class="no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-300 dark:bg-slate-300 text-white dark:text-slate-600" href="/blog/random/">Read a random blog post</a>
 		</p>
-	</section>
-  <section class="mb-6">
-    <h2 class="text-3xl mb-6">Current projects</h2>
-    <p class="mb-6">I’m currently working on the following open source projects.</p>
-    <Project
-      homepage={true}
-      url="https://www.json-wf.org.uk"
-      name="JSON-WF"
-      description="JSON-WF is a JSON-based format aiming to be an alternative to OPML for blogroll interchange."
-    />
-    <Project
-      homepage={true}
-      url="https://github.com/rubenarakelyan/authmenace"
-      name="Authmenace"
-      description="A super-simple IndieAuth authorization and token endpoint with no database."
-    />
-    <Project
-      homepage={true}
-      url="https://github.com/rubenarakelyan/Yonce.novaextension"
-      name="Yoncé for Nova"
-      description="A Nova theme based on the Yoncé theme for Visual Studio Code (and others)."
-    />
-    <Project
-      homepage={true}
-      url="https://github.com/rubenarakelyan/titch"
-      name="Titch"
-      description="A simple, tiny URL shortener for private use."
-    />
-  </section>
-	<section class="mb-6">
-		<h2 class="text-3xl mb-6">Recommendations</h2>
-		<p class="mb-6">It’s becoming more and more difficult to companies that do a truly great job and are proud of their quality. Here are some I use that I can heartily recommend to others (with a UK bias).</p>
-		<Recommendation
-			homepage={true}
-			url="https://www.aa.net.uk"
-			name="Andrews & Arnold (A&A)"
-			description="A&A are a small UK-based ISP offering a variety of Internet access products with no filtering, but most importantly of all, common sense, genuinely knowledgeable customer service, and no reason to ever call them. Slightly more expensive that the major providers but you get what you pay for, and I pay for this without hesitation."
-			affiliate={false}
-		/>
-		<Recommendation
-			homepage={true}
-			url="https://ref.fm/u26958808"
-			name="Fastmail"
-			description="I use Fastmail for both my personal and business email addresses and am very happy with the service. Lots of functionality, constant improvement and stronger privacy than the big, free players."
-			affiliate={true}
-		/>
-		<Recommendation
-			homepage={true}
-			url="https://share.octopus.energy/sunny-bison-550"
-			name="Octopus Energy"
-			description="It’s normally difficult to get excited about an energy supplier, but Octopus Energy make it easier. They are more a technology company that happen to also supply electricity and gas. From their app which is head and shoulders above any other similar one, to their innovative tariffs and commitment to holding costs down, I don’t see why you’d want to go with anyone else."
-			affiliate={true}
-		/>
 	</section>
 </Layout>
