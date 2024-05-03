@@ -3,6 +3,7 @@ export const prerender = false;
 
 import { db, isNotNull, GuestbookEntries } from "astro:db";
 
+let submitted = false;
 const errors = { name: "", message: "" };
 
 if (Astro.request.method === "POST") {
@@ -22,6 +23,7 @@ if (Astro.request.method === "POST") {
     if (!hasErrors) {
       await db.insert(GuestbookEntries).values({ name, email, website, message });
     }
+    submitted = true;
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);
@@ -38,6 +40,11 @@ const guestbook_entries = await db.select().from(GuestbookEntries).where(isNotNu
 <Layout title="Guestbook" description="Sign my guestbook if you enjoyed visiting my website.">
   <div>
     <h1 class="text-7xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6">Guestbook</h1>
+    {submitted &&
+      <aside class="mb-6 p-6 border border-slate-200">
+        <p class="text-xl">Thank you for submitting your kind message. Once it’s been moderated, it’ll appear below.</p>
+      </aside>
+    }
     <p class="text-xl mb-6">Taking inspiration from <a href="https://manuelmoreale.com/guestbook" target="_blank" rel="noopener noreferer">Manuel Moreale’s</a> and <a href="https://kevquirk.com/guestbook" target="_blank" rel="noopener noreferer">Kev Quirk’s</a> guestbooks, here’s my take on it. Pretty simple - if you like my website and would like to leave a message, sign my guestbook using the form below.</p>
     <p class="text-xl mb-6">Note, your message will be moderated before being shown.</p>
     <p class="mb-6">
