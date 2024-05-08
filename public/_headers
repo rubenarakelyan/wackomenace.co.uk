@@ -1,9 +1,6 @@
 /*
 Access-Control-Allow-Origin: https://www.wackomenace.co.uk
-# sha256-I96qBrzBONXr5n/ASi06seKOl6T35C+bSRyZCRxKuQ0= -> styles from global.css inlined by Astro
-# sha256-KFULEGQ3PRjjS0AcDB8xCQ8PtJXiZq7QbgsrjOg5+QI= -> inline styles in rss.xsl
-# sha256-cobsKDbYrEjqQTe2lKte84CvnWR1PMmINaHT7tl8QaU= -> inline styles in rss.xsl
-Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-hashes' 'unsafe-inline' 'sha256-I96qBrzBONXr5n/ASi06seKOl6T35C+bSRyZCRxKuQ0=' 'sha256-KFULEGQ3PRjjS0AcDB8xCQ8PtJXiZq7QbgsrjOg5+QI=' 'sha256-cobsKDbYrEjqQTe2lKte84CvnWR1PMmINaHT7tl8QaU='; img-src 'self' data:; base-uri 'none'; frame-ancestors 'none'; object-src 'none'
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; frame-ancestors 'none'; object-src 'none'
 Cross-Origin-Embedder-Policy: require-corp
 Cross-Origin-Opener-Policy: same-origin
 Cross-Origin-Resource-Policy: same-site
