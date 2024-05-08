@@ -39,7 +39,7 @@ const guestbook_entries = await db.select().from(GuestbookEntries).where(isNotNu
 
 <Layout title="Guestbook" description="Sign my guestbook if you enjoyed visiting my website.">
   <div>
-    <h1 class="text-7xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6">Guestbook</h1>
+    <h1 class="text-7xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6 print:text-pink-600">Guestbook</h1>
     {submitted &&
       <aside class="mb-6 p-6 border border-slate-200">
         <p class="text-xl">Thank you for submitting your kind message. Once it’s been moderated, it’ll appear below.</p>
@@ -63,7 +63,7 @@ const guestbook_entries = await db.select().from(GuestbookEntries).where(isNotNu
       ))
     }
     <form method="post">
-      <h2 class="text-5xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6" id="sign-guestbook">Sign my guestbook</h2>
+      <h2 class="text-5xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6 print:text-pink-600" id="sign-guestbook">Sign my guestbook</h2>
       <p class="mb-6 text-sm">A name (it can be a nickname or pseudonym if you like) and message are required; everything else is optional. If you provide your email address, it will be used to show your <a href="https://gravatar.com" target="_blank" rel="noopener noreferer">Gravatar</a> (if you have one) but will not be disclosed.</p>
       <label class="block mb-4">
         <span class="block text-sm font-medium">Name</span>

@@ -9,7 +9,7 @@ const blog = await getCollection("blog");
 
 <Layout title="Ruben Arakelyan’s home on the web" description="Welcome to Ruben Arakelyan’s home on the web">
 	<section class="mb-6">
-		<h1 class="text-7xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6">Hi, I’m Ruben</h1>
+		<h1 class="text-7xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6 print:text-pink-600">Hi, I’m Ruben</h1>
     <section class="mb-6 p-6 border border-slate-200 not-prose">
       <p class="text-xl"><strong>I am now available for remote senior/lead Ruby developer contract work. Interested? <a href="https://tfnd.uk/?r=wackomenace" target="_blank" rel="noopener noreferer me">Let’s chat</a> or start by looking at <a href="https://www.rubenarakelyan.com/?r=wackomenace" target="_blank" rel="noopener noreferer me">my CV</a>.</strong></p>
     </section>
@@ -23,7 +23,7 @@ const blog = await getCollection("blog");
 		<p class="text-xl"><strong>Want to just chat?</strong> <a href="/contact/">Hit me up!</a></p>
 	</section>
 	<section class="mb-6">
-		<h2 class="text-5xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6">Posts</h2>
+		<h2 class="text-5xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6 print:text-pink-600">Posts</h2>
 		{
 			blog.toReversed().map((post) => (
 				<BlogPostPreview
