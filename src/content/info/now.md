@@ -21,3 +21,4 @@ Right now, I am:
 * Learning server-side JavaScript/TypeScript on Node.js and the Astro framework
 * Learning React
 * Learning Spanish on Duolingo
+* Writing [Politinotes](https://politinotes.wackomenace.co.uk)
