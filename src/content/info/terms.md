@@ -1,12 +1,12 @@
 ---
 title: Terms and conditions
 description: The terms and conditions for this website.
-date: 2024-03-27
+date: 2024-05-08
 ---
 
 The terms and conditions are very simple - there are **none**. You don’t need to agree to anything to browse this website.
 
-You are free to link any page without my permission. Anyone who attempts to curtail your freedom to link to their website is misguided - the [freedom to link](https://diff.wikimedia.org/2016/11/22/freedom-expression-link/) is a fundamental part of the open web.
+You are free to link to any page without my permission. Anyone who attempts to curtail your freedom to link to their website is misguided - the [freedom to link](https://diff.wikimedia.org/2016/11/22/freedom-expression-link/) is a fundamental part of the open web.
 
 Everything on this website is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) licence unless otherwise stated. This means:
 
