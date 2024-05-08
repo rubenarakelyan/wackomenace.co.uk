@@ -38,12 +38,32 @@
   src: url(/assets/fonts/PPEiko-Medium.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "Comic Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url(/assets/fonts/ComicMono.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Comic Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(/assets/fonts/ComicMono-Bold.woff2) format("woff2");
+}
+
 body {
   font-family: "PP Neue Montreal", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "PP Eiko", serif;
+}
+
+code, kbd, pre, samp {
+  font-family: "Comic Mono", monospace;
 }
 
 a {
