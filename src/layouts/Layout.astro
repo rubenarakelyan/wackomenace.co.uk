@@ -2,8 +2,8 @@
 import "../styles/global.css";
 
 interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const { title, description } = Astro.props;
@@ -12,68 +12,68 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 
 <!doctype html>
 <html lang="en-GB">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>{title} &middot; wackomenace</title>
-		<meta name="generator" content={Astro.generator}>
-		<meta name="description" content={description}>
-		{blog_post &&
-			<meta property="og:type" content="website">
-			<meta property="og:title" content=`${title} &middot; wackomenace`>
-			<meta property="og:description" content={description}>
-			<meta property="og:url" content={Astro.url}>
-			<meta property="og:image" content=`${Astro.url}og.png`>
-			<meta property="og:locale" content="en_GB">
-		}
-		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/rss.xml">
-		<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/blog/atom.xml">
-		<link rel="alternate" type="application/feed+json" title="JSON Feed" href="/blog/feed.json">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{title} &middot; wackomenace</title>
+    <meta name="generator" content={Astro.generator}>
+    <meta name="description" content={description}>
+    {blog_post &&
+      <meta property="og:type" content="website">
+      <meta property="og:title" content=`${title} &middot; wackomenace`>
+      <meta property="og:description" content={description}>
+      <meta property="og:url" content={Astro.url}>
+      <meta property="og:image" content=`${Astro.url}og.png`>
+      <meta property="og:locale" content="en_GB">
+    }
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/rss.xml">
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/blog/atom.xml">
+    <link rel="alternate" type="application/feed+json" title="JSON Feed" href="/blog/feed.json">
     <link rel="alternate" type="application/x-wf+json" title="Ruben Arakelyan's blogroll" href="/blogroll/rubenarakelyan.json">
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-		<link rel="manifest" href="/images/favicons/site.webmanifest">
-		<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-		<link rel="shortcut icon" href="/images/favicons/favicon.ico">
-		<meta name="apple-mobile-web-app-title" content="wackomenace">
-		<meta name="application-name" content="wackomenace">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
-		<link rel="sitemap" href="/sitemap-index.xml">
-		<link rel="me" type="text/html" href="https://www.rubenarakelyan.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="wackomenace">
+    <meta name="application-name" content="wackomenace">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="sitemap" href="/sitemap-index.xml">
+    <link rel="me" type="text/html" href="https://www.rubenarakelyan.com">
     <link rel="me" type="text/html" href="https://tfnd.uk">
-		<link rel="me" type="text/html" href="https://github.com/rubenarakelyan">
-		<link rel="me" type="text/html" href="https://www.linkedin.com/in/rubenarakelyan/">
-		<link rel="me" type="text/html" href="https://bsky.app/profile/wackomenace.co.uk">
+    <link rel="me" type="text/html" href="https://github.com/rubenarakelyan">
+    <link rel="me" type="text/html" href="https://www.linkedin.com/in/rubenarakelyan/">
+    <link rel="me" type="text/html" href="https://bsky.app/profile/wackomenace.co.uk">
     <link rel="me" type="text/html" href="https://ruby.social/@ruben">
     <link rel="authorization_endpoint" href="https://sso.wackomenace.co.uk/auth">
     <link rel="token_endpoint" href="https://sso.wackomenace.co.uk/token">
-		<!-- proven2adff2 -->
-	</head>
-	<body class="antialiased scroll-smooth text-slate-600 dark:bg-slate-600 dark:text-slate-300 selection:bg-pink-600 selection:text-white" id="top">
-		<div class="mb-2 bg-slate-100 dark:bg-slate-700 text-center border-b border-slate-200 dark:border-slate-800">
-			<a class="block p-2" href="#main-content">Skip to main content</a>
-		</div>
-		<div class="md:max-w-[80ch] md:mx-auto">
-			<nav class="pt-10 px-4 mx-auto">
+    <!-- proven2adff2 -->
+  </head>
+  <body class="antialiased scroll-smooth text-slate-600 dark:bg-slate-600 dark:text-slate-300 selection:bg-pink-600 selection:text-white" id="top">
+    <div class="mb-2 bg-slate-100 dark:bg-slate-700 text-center border-b border-slate-200 dark:border-slate-800">
+      <a class="block p-2" href="#main-content">Skip to main content</a>
+    </div>
+    <div class="md:max-w-[80ch] md:mx-auto">
+      <nav class="pt-10 px-4 mx-auto">
         <div class="mb-1 flex flex-wrap">
-				  <p>
-					  <a href="/">
-						  Home
-					  </a>
-				  </p>
-				  <p class="ml-4">
-					  <a href="/about/">
-						  About
-					  </a>
-				  </p>
-				  <p class="ml-4">
-					  <a href="/contact/">
-						  Contact
-					  </a>
-				  </p>
+          <p>
+            <a href="/">
+              Home
+            </a>
+          </p>
+          <p class="ml-4">
+            <a href="/about/">
+              About
+            </a>
+          </p>
+          <p class="ml-4">
+            <a href="/contact/">
+              Contact
+            </a>
+          </p>
           <p class="ml-4">
             <a href="/search/">
               Search
@@ -91,71 +91,71 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
               Blogroll
             </a>
           </p>
-				  <p class="ml-4">
-					  <a href="/now/">
-						  Now
-					  </a>
-				  </p>
-				  <p class="ml-4">
-					  <a href="/uses/">
-						  Uses
-					  </a>
-				  </p>
-				  <p class="ml-4">
-					  <a href="/elsewhere/">
-						  Elsewhere
-					  </a>
-				  </p>
-				  <p class="ml-4">
-					  <a href="/colophon/">
-						  Colophon
-					  </a>
-				  </p>
+          <p class="ml-4">
+            <a href="/now/">
+              Now
+            </a>
+          </p>
+          <p class="ml-4">
+            <a href="/uses/">
+              Uses
+            </a>
+          </p>
+          <p class="ml-4">
+            <a href="/elsewhere/">
+              Elsewhere
+            </a>
+          </p>
+          <p class="ml-4">
+            <a href="/colophon/">
+              Colophon
+            </a>
+          </p>
         </div>
-			</nav>
-			<main class="pt-10 px-4" id="main-content">
-				<slot />
-				<p class="mt-6 text-right text-sm"><a href="#top">&uarr; Back to top</a></p>
-			</main>
-		</div>
-		<footer class="mt-8 px-4 md:px-0 py-4 bg-slate-100 dark:bg-slate-700 text-sm border-t border-slate-200 dark:border-slate-800">
+      </nav>
+      <main class="pt-10 px-4" id="main-content">
+        <slot />
+        <p class="mt-6 text-right text-sm"><a href="#top">&uarr; Back to top</a></p>
+      </main>
+    </div>
+    <footer class="mt-8 px-4 md:px-0 py-4 bg-slate-100 dark:bg-slate-700 text-sm border-t border-slate-200 dark:border-slate-800">
       <div class="md:max-w-[80ch] md:mx-auto">
-			  <div class="md:mb-1 md:flex md:flex-wrap">
-				  <p>
-					  Copyright © 2024 <a href="/contact/">Ruben Arakelyan</a>. All work licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferer license">CC BY-SA 4.0</a> unless otherwise stated.
-				  </p>
-			  </div>
-			  <div class="md:mb-1 md:flex md:flex-wrap">
-				  <p>
-					  <a href="/feeds/">Blog feeds</a>
-				  </p>
-				  <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-					  <a href="/privacy/" rel="privacy-policy">Privacy policy</a>
-				  </p>
-				  <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-					  <a href="/terms/" rel="terms-of-service">Terms and conditions</a>
-				  </p>
-				  <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-					  <a href="/disclaimer/">Disclaimer</a>
-				  </p>
-				  <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-					  <a href="https://github.com/rubenarakelyan/wackomenace.co.uk" target="_blank" rel="noopener noreferer">GitHub</a>
-				  </p>
-			  </div>
-			  <div class="md:mb-1 md:flex md:flex-wrap">
+        <div class="md:mb-1 md:flex md:flex-wrap">
+          <p>
+            Copyright © 2024 <a href="/contact/">Ruben Arakelyan</a>. All work licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferer license">CC BY-SA 4.0</a> unless otherwise stated.
+          </p>
+        </div>
+        <div class="md:mb-1 md:flex md:flex-wrap">
+          <p>
+            <a href="/feeds/">Blog feeds</a>
+          </p>
+          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+            <a href="/privacy/" rel="privacy-policy">Privacy policy</a>
+          </p>
+          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+            <a href="/terms/" rel="terms-of-service">Terms and conditions</a>
+          </p>
+          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+            <a href="/disclaimer/">Disclaimer</a>
+          </p>
+          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+            <a href="https://github.com/rubenarakelyan/wackomenace.co.uk" target="_blank" rel="noopener noreferer">GitHub</a>
+          </p>
+        </div>
+        <div class="md:mb-1 md:flex md:flex-wrap">
           <p>
             <a class="no-external-icon" href="https://xn--sr8hvo.ws/previous" target="_blank" rel="noopener noreferer">←</a> An <a class="no-external-icon" href="https://xn--sr8hvo.ws" target="_blank" rel="noopener noreferer">IndieWeb Webring</a> 🕸💍 <a class="no-external-icon" href="https://xn--sr8hvo.ws/next" target="_blank" rel="noopener noreferer">→</a>
           </p>
           <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
             <a href="https://www.websitecarbon.com/website/wackomenace-co-uk/" target="_blank" rel="noopener noreferer">0.30g CO<sub>2</sub> per visit</a>
           </p>
-			  </div>
+        </div>
         <div class="md:mb-1 md:flex md:flex-wrap">
           <p>
             Made with ❤️ in Carbis Bay, UK
           </p>
         </div>
       </div>
-		</footer>
-	</body>
+    </footer>
+  </body>
 </html>
