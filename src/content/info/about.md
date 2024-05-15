@@ -1,12 +1,12 @@
 ---
 title: About me
 description: Everything you need to know about Ruben Arakelyan.
-date: 2024-05-13
+date: 2024-05-15
 ---
 
 <figure>
   <img src="/images/ruben-at-work.jpg" alt="Ruben sitting at a desk in front of a laptop">
-  <figcaption>Ruben sitting at a desk in front of a laptop</figcaption>
+  <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives" target="_blank" rel="noopener noreferer">James Warbey</a></figcaption>
 </figure>
 
 <section class="mb-6 p-6 border border-slate-200 not-prose">
