@@ -6,7 +6,7 @@ import MarkdownIt from "markdown-it";
 import MarkdownItFootnote from "markdown-it-footnote";
 
 export async function GET(context: APIContext) {
-  const blog = await getCollection("blog");
+  const blog = (await getCollection("blog")).sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
   const parser = new MarkdownIt({ html: true }).use(MarkdownItFootnote);
   return rss({
     stylesheet: "/assets/rss.xsl",
