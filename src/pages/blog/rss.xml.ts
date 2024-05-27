@@ -6,14 +6,14 @@ import MarkdownIt from "markdown-it";
 import MarkdownItFootnote from "markdown-it-footnote";
 
 export async function GET(context: APIContext) {
-  const blog = (await getCollection("blog")).sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
+  const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   const parser = new MarkdownIt({ html: true }).use(MarkdownItFootnote);
   return rss({
     stylesheet: "/assets/rss.xsl",
     title: "wackomenace",
     description: "Ruben Arakelyan’s home on the web",
     site: context.site!.toString(),
-    items: blog.toReversed().map((post) => ({
+    items: blog.map((post) => ({
       title: post.data.title,
       link: `/blog/${post.slug}/`,
       description: post.data.excerpt,
@@ -39,7 +39,11 @@ export async function GET(context: APIContext) {
         <width>111</width>
         <height>111</height>
       </image>
+      <source:blogroll>https://www.wackomenace.co.uk/blogroll/rubenarakelyan.opml</source:blogroll>
     `,
+    xmlns: {
+      source: "http://source.scripting.com/",
+    },
   });
 }
 

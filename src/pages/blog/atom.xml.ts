@@ -5,7 +5,7 @@ import MarkdownIt from "markdown-it";
 import MarkdownItFootnote from "markdown-it-footnote";
 
 export async function GET(context: APIContext) {
-  const blog = (await getCollection("blog")).sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
+  const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   const parser = new MarkdownIt({ html: true }).use(MarkdownItFootnote);
   return new Response(
       `<?xml version="1.0" encoding="UTF-8"?>
@@ -25,7 +25,7 @@ export async function GET(context: APIContext) {
   <rights>Copyright © 2024 Ruben Arakelyan. All work licensed under CC BY-SA 4.0 unless otherwise stated.</rights>
   <subtitle>Ruben Arakelyan’s home on the web</subtitle>
   ${
-    blog.toReversed().map((post) =>
+    blog.map((post) =>
       `<entry>
         <id>${context.site}blog/${post.slug}/</id>
         <title>${post.data.title}</title>
