@@ -19,4 +19,4 @@ Part of that involves determining which companies and industries don’t sit wel
 
 There may be ones I’ve missed out but those are the ones that immediately stand out to me. Some of this is to do with my Christian religion which wouldn’t look too kindly on working in pornography, for example, but a lot is also simply to do with the fact that all of those industries exploit people in one way or another and bring out their worst tendencies. And I just don’t want to be associated with that sort of behaviour.
 
-Have you sat down and thought about where you *wouldn’t* want to work?
+Have you sat down and thought about where you wouldn’t want to work?
