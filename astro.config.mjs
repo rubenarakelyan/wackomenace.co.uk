@@ -21,6 +21,8 @@ export default defineConfig({
     }]]
   }), sitemap(), tailwind()],
   redirects: {
+    "/.well-known/recommendations.json": "/blogroll/rubenarakelyan.json",
+    "/.well-known/recommendations.opml": "/blogroll/rubenarakelyan.opml",
     "/.well-known/webfinger": "/.well-known/webfinger.json",
     "/blog": "/"
   }
