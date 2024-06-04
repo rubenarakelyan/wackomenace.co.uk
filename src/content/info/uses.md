@@ -1,7 +1,7 @@
 ---
 title: What I use
 description: A list of hardware, software and services I use.
-date: 2024-05-07
+date: 2024-06-04
 ---
 
 My primary driver for business and pleasure is a 2022 MacBook Air expanded with 16GB RAM. It more than adequately handles anything I throw at it development-wise. I also have a 5th generation iPad Air for when I don’t want/need a laptop.
@@ -16,7 +16,7 @@ Software-wise, I use many of the built-in Apple apps like Safari and Mail mostly
 
 It’s becoming more and more difficult to companies that do a truly great job and are proud of their quality. Here are some I use that I can heartily recommend to others (with a UK bias).
 
-\* This is an affiliate link, so I may earn a small commission if you sign up to the product or service by following this link.
+Links marked with an * are affiliate links, so I may earn a small commission if you sign up to the product or service by following the link.
 
 ### Andrews & Arnold (A&A)
 
@@ -98,15 +98,15 @@ N/A - I just keep lots of open tabs
 
 📜 Word Processing
 
-[Pages](https://en.wikipedia.org/wiki/Pages_(word_processor))
+[Microsoft Word](https://www.microsoft.com/en-gb/microsoft-365/word)
 
 📈 Spreadsheets
 
-[Numbers](https://en.wikipedia.org/wiki/Numbers_(spreadsheet))
+[Microsoft Excel](https://www.microsoft.com/en-gb/microsoft-365/excel)
 
 📊 Presentations
 
-[Keynote](https://en.wikipedia.org/wiki/Keynote_(presentation_software))
+[Microsoft PowerPoint](https://www.microsoft.com/en-gb/microsoft-365/powerpoint)
 
 🛒 Shopping Lists
 
