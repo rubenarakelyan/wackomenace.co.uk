@@ -1,7 +1,7 @@
 ---
 title: What I’m doing now
 description: A list of what I’m up to at the moment.
-date: 2024-06-03
+date: 2024-06-24
 ---
 
 <aside class="text-sm italic">
@@ -12,11 +12,12 @@ date: 2024-06-03
 
 Right now, I am:
 
+* Building my new digital agency [Safran](https://www.safran.agency)
 * Looking for remote senior/lead Ruby developer contract work
 * Building [Titch](https://github.com/rubenarakelyan/titch), a URL shortener for my own use
 * Building [Webmention Workers](https://github.com/rubenarakelyan/webmention-workers), a simple way of adding Webmention support to static sites
 * Ploughing through the house DIY to-do list
 * Learning server-side JavaScript/TypeScript on Node.js and the Astro framework
-* Learning React
+* Learning React and React Native
 * Learning Spanish on Duolingo
 * Writing [Politinotes](https://politinotes.wackomenace.co.uk)
