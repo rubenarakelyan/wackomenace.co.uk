@@ -1,10 +1,12 @@
 ---
 title: Terms and conditions
 description: The terms and conditions for this website.
-date: 2024-05-08
+date: 2024-06-24
 ---
 
-The terms and conditions are very simple - there are **none**. You don’t need to agree to anything to browse this website.
+**NOTE: The content of this website is not permitted to be used for the development, training or use of any generative AI software, model, algorithm or tool.**
+
+The terms and conditions are very simple - you don’t need to agree to anything to just browse this website.
 
 You are free to link to any page without my permission. Anyone who attempts to curtail your freedom to link to their website is misguided - the [freedom to link](https://diff.wikimedia.org/2016/11/22/freedom-expression-link/) is a fundamental part of the open web.
 
