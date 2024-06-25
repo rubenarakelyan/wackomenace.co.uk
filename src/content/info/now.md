@@ -1,7 +1,7 @@
 ---
 title: What I’m doing now
 description: A list of what I’m up to at the moment.
-date: 2024-06-24
+date: 2024-06-25
 ---
 
 <aside class="text-sm italic">
@@ -20,4 +20,3 @@ Right now, I am:
 * Learning server-side JavaScript/TypeScript on Node.js and the Astro framework
 * Learning React and React Native
 * Learning Spanish on Duolingo
-* Writing [Politinotes](https://politinotes.wackomenace.co.uk)
