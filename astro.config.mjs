@@ -6,6 +6,7 @@ import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
+import { remarkMastodonEmbed } from "astro-mastodon";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,6 +14,11 @@ export default defineConfig({
   adapter: cloudflare({
     imageService: "passthrough"
   }),
+  markdown: {
+    remarkPlugins: [
+      remarkMastodonEmbed
+    ]
+  },
   site: process.env.NODE_ENV === "development" ? "http://localhost:4321" : "https://www.wackomenace.co.uk",
   integrations: [db(), mdx({
     syntaxHighlight: false,

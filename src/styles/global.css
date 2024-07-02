@@ -89,6 +89,10 @@ a:not(.no-external-icon)[href^="http"]::after, a:not(.no-external-icon)[href^="h
   display: inline-block;
 }
 
+.card a[href^="http"]::after, .card a[href^="https://"]::after {
+  content: none;
+}
+
 @media (prefers-color-scheme: dark) {
   a:not(.no-external-icon)[href^="http"]::after, a:not(.no-external-icon)[href^="https://"]::after {
     background-color: theme("textColor.slate.300");

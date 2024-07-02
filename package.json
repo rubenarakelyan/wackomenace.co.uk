@@ -23,6 +23,7 @@
     "@types/sanitize-html": "^2.11.0",
     "@vercel/og": "^0.6.2",
     "astro": "^4.5.8",
+    "astro-mastodon": "^0.3.2",
     "markdown-it": "^14.1.0",
     "markdown-it-footnote": "^4.0.0",
     "rehype-pretty-code": "^0.13.0",
