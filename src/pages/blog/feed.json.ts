@@ -1,12 +1,24 @@
 import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
-import sanitizeHtml from "sanitize-html";
-import MarkdownIt from "markdown-it";
-import MarkdownItFootnote from "markdown-it-footnote";
+import { unified } from "unified";
+import rehypeFormat from "rehype-format";
+import rehypeStringify from "rehype-stringify";
+import remarkGfm from "remark-gfm";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { rehypeCustomEmoji } from "@rubenarakelyan/rehype-custom-emoji";
+import { customEmoji } from "./plugins/custom-emoji.mjs";
 
 export async function GET(context: APIContext) {
   const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-  const parser = new MarkdownIt({ html: true }).use(MarkdownItFootnote);
+  const parser = unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype, { allowDangerousHtml: true, footnoteLabelTagName: "hr" })
+    .use(rehypeCustomEmoji, { emoji: customEmoji })
+    .use(rehypeFormat)
+    .use(rehypeStringify, { allowDangerousHtml: true });
+
   return new Response(
       `{
   "version": "https://jsonfeed.org/version/1.1",
@@ -24,21 +36,16 @@ export async function GET(context: APIContext) {
   "language": "en-GB",
   "items": [
     ${
-      blog.map((post) =>
+      await Promise.all(blog.map(async (post) =>
         `{
           "id": "${context.site}blog/${post.slug}/",
           "url": "${context.site}blog/${post.slug}/",
           "title": "${post.data.title}",
-          "content_html": "${sanitizeHtml(
-            parser.render(post.body).replace('src="/', `src="${context.site!.toString()}`).replace('href="/', `href="${context.site!.toString()}`),
-            {
-              allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"])
-            }
-          ).replace(/"/g, '\\\"').replace(/\r?\n|\r/g, '\\n').trim()}",
+          "content_html": "${String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replace(/"/g, '\\\"').replace(/\r?\n|\r/g, '\\n').trim()}",
           "summary": "${post.data.excerpt}",
           "date_published": "${new Date(post.data.date).toJSON()}"
         }`
-      )
+      ))
     }
   ]
 }`,

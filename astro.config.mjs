@@ -9,10 +9,7 @@ import tailwind from "@astrojs/tailwind";
 import { remarkMastodonEmbed } from "astro-mastodon";
 import { rehypeCustomEmoji } from "@rubenarakelyan/rehype-custom-emoji";
 import { remarkReadingTime } from "./plugins/remark-reading-time.mjs";
-
-const emoji = {
-  "ruby": "/assets/emoji/ruby.png"
-}
+import { customEmoji } from "./plugins/custom-emoji.mjs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -24,7 +21,7 @@ export default defineConfig({
     rehypePlugins: [
       rehypeSlug,
       [rehypePrettyCode, { theme: "github-dark" }],
-      [rehypeCustomEmoji, { emoji: emoji }]
+      [rehypeCustomEmoji, { emoji: customEmoji }]
     ],
     remarkPlugins: [
       remarkReadingTime,
