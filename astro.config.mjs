@@ -8,6 +8,7 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { remarkMastodonEmbed } from "astro-mastodon";
 import { rehypeCustomEmoji } from "@rubenarakelyan/rehype-custom-emoji";
+import { remarkReadingTime } from './plugins/remark-reading-time.mjs';
 
 const emoji = {
   "ruby": "/assets/emoji/ruby.png"
@@ -26,7 +27,8 @@ export default defineConfig({
       [rehypeCustomEmoji, { emoji: emoji }]
     ],
     remarkPlugins: [
-      remarkMastodonEmbed
+      remarkMastodonEmbed,
+      remarkReadingTime
     ]
   },
   site: process.env.NODE_ENV === "development" ? "http://localhost:4321" : "https://www.wackomenace.co.uk",
