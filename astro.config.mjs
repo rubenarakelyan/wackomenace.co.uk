@@ -7,6 +7,11 @@ import rehypeSlug from "rehype-slug";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { remarkMastodonEmbed } from "astro-mastodon";
+import { rehypeCustomEmoji } from "@rubenarakelyan/rehype-custom-emoji";
+
+const emoji = {
+  "ruby": "/assets/emoji/ruby.png"
+}
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,17 +20,17 @@ export default defineConfig({
     imageService: "passthrough"
   }),
   markdown: {
+    rehypePlugins: [
+      rehypeSlug,
+      [rehypePrettyCode, { theme: "github-dark" }],
+      [rehypeCustomEmoji, { emoji: emoji }]
+    ],
     remarkPlugins: [
       remarkMastodonEmbed
     ]
   },
   site: process.env.NODE_ENV === "development" ? "http://localhost:4321" : "https://www.wackomenace.co.uk",
-  integrations: [db(), mdx({
-    syntaxHighlight: false,
-    rehypePlugins: [rehypeSlug, [rehypePrettyCode, {
-      theme: "github-dark"
-    }]]
-  }), sitemap(), tailwind()],
+  integrations: [db(), mdx({ syntaxHighlight: false }), sitemap(), tailwind()],
   redirects: {
     "/.well-known/recommendations.json": "/blogroll/rubenarakelyan.json",
     "/.well-known/recommendations.opml": "/blogroll/rubenarakelyan.opml",
