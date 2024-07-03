@@ -7,7 +7,7 @@ import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { rehypeCustomEmoji } from "@rubenarakelyan/rehype-custom-emoji";
-import { customEmoji } from "./plugins/custom-emoji.mjs";
+import { customEmoji } from "../../../plugins/custom-emoji.mjs";
 
 export async function GET(context: APIContext) {
   const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
