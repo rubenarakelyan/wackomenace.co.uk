@@ -1,6 +1,6 @@
 import { getCollection, type CollectionEntry } from "astro:content";
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 import { ImageResponse } from "@vercel/og";
 
 interface Props {

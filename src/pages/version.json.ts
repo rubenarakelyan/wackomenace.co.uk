@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import childProcess from "child_process";
+import childProcess from "node:child_process";
 import { version } from "../../package.json";
 
 const hash = childProcess.execSync("git rev-parse --short HEAD").toString().trim();
