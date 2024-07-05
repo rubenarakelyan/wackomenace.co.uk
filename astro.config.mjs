@@ -35,5 +35,10 @@ export default defineConfig({
     "/.well-known/recommendations.opml": "/blogroll/rubenarakelyan.opml",
     "/.well-known/webfinger": "/.well-known/webfinger.json",
     "/blog": "/"
+  },
+  vite: {
+    ssr: {
+      external: ["node:child_process", "node:fs", "node:path"]
+    }
   }
 });
