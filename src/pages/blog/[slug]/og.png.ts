@@ -13,8 +13,8 @@ export async function GET({ props }: Props) {
 
   const RubenPhoto = fs.readFileSync(path.resolve("./assets/images/ruben.png"));
   const BackgroundImage = fs.readFileSync(path.resolve("./assets/images/bg.jpg"), "base64");
-  const PpNeueMontrealRegular = fs.readFileSync(path.resolve("./assets/fonts/PPNeueMontreal-Book.ttf"));
-  const PpNeueMontrealBold = fs.readFileSync(path.resolve("./assets/fonts/PPNeueMontreal-Bold.ttf"));
+  const RecursiveRegular = fs.readFileSync(path.resolve("./assets/fonts/RecursiveSansLnrSt-Regular.woff"));
+  const RecursiveBold = fs.readFileSync(path.resolve("./assets/fonts/RecursiveSansLnrSt-Bold.woff"));
 
   const html = {
     type: "div",
@@ -44,7 +44,7 @@ export async function GET({ props }: Props) {
                 props: {
                   style: {
                     fontSize: "48px",
-                    fontFamily: "PP Neue Montreal Bold",
+                    fontFamily: "Recursive Bold",
                   },
                   children: post.data.title,
                 },
@@ -72,7 +72,7 @@ export async function GET({ props }: Props) {
       style: {
         background: "#ffffff",
         backgroundImage: `url(data:image/jpeg;base64,${BackgroundImage})`,
-        fontFamily: "PP Neue Montreal Regular",
+        fontFamily: "Recursive Regular",
       },
     },
   };
@@ -82,13 +82,13 @@ export async function GET({ props }: Props) {
     height: 600,
     fonts: [
       {
-        name: "PP Neue Montreal Bold",
-        data: PpNeueMontrealBold.buffer,
+        name: "Recursive Bold",
+        data: RecursiveBold.buffer,
         style: "normal",
       },
       {
-        name: "PP Neue Montreal Regular",
-        data: PpNeueMontrealRegular.buffer,
+        name: "Recursive Regular",
+        data: RecursiveRegular.buffer,
         style: "normal",
       },
     ],
