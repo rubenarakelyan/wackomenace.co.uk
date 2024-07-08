@@ -58,6 +58,10 @@ body {
   font-family: "PP Neue Montreal", sans-serif;
 }
 
+body.rotated {
+  transform: rotate(180deg);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "PP Eiko", serif;
 }
