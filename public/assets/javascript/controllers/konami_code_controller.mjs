@@ -1,4 +1,4 @@
-import { Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js";
+import { Controller } from "../stimulus-3.2.2.mjs";
 
 export default class extends Controller {
   initialize() {
