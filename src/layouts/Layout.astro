@@ -61,61 +61,37 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
       <a class="block p-2" href="#main-content">Skip to main content</a>
     </div>
     <div class="md:max-w-[80ch] md:mx-auto">
-      <nav class="pt-10 px-4 mx-auto">
-        <div class="mb-1 flex flex-wrap">
-          <p>
-            <a href="/">
-              Home
-            </a>
-          </p>
-          <p class="ml-4">
-            <a href="/about/">
-              About
-            </a>
-          </p>
-          <p class="ml-4">
-            <a href="/contact/">
-              Contact
-            </a>
-          </p>
-          <p class="ml-4">
-            <a href="/search/">
-              Search
-            </a>
-          </p>
-          <p class="ml-4">
-            <a href="/guestbook/">
-              Guestbook
-            </a>
-          </p>
-        </div>
-        <div class="mb-1 flex flex-wrap">
-          <p>
-            <a href="/blogroll/">
-              Blogroll
-            </a>
-          </p>
-          <p class="ml-4">
-            <a href="/now/">
-              Now
-            </a>
-          </p>
-          <p class="ml-4">
-            <a href="/uses/">
-              Uses
-            </a>
-          </p>
-          <p class="ml-4">
-            <a href="/elsewhere/">
-              Elsewhere
-            </a>
-          </p>
-          <p class="ml-4">
-            <a href="/colophon/">
-              Colophon
-            </a>
-          </p>
-        </div>
+      <nav class="pt-10 px-4 mx-auto flex flex-wrap gap-4 justify-center">
+        <a href="/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Home
+        </a>
+        <a href="/about/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          About
+        </a>
+        <a href="/contact/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Contact
+        </a>
+        <a href="/search/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Search
+        </a>
+        <a href="/guestbook/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Guestbook
+        </a>
+        <a href="/blogroll/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Blogroll
+        </a>
+        <a href="/now/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Now
+        </a>
+        <a href="/uses/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Uses
+        </a>
+        <a href="/elsewhere/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Elsewhere
+        </a>
+        <a href="/colophon/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
+          Colophon
+        </a>
       </nav>
       <main class="pt-10 px-4" id="main-content">
         <slot />
