@@ -6,17 +6,17 @@ date: 2024-05-15
 
 <figure>
   <img src="/images/ruben-at-work.jpg" alt="Ruben sitting at a desk in front of a laptop">
-  <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives" target="_blank" rel="noopener noreferer">James Warbey</a></figcaption>
+  <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">James Warbey</a></figcaption>
 </figure>
 
 <section class="mb-6 p-6 border border-slate-200 not-prose">
-  <p class="mb-5"><strong>The question I am most asked: how do you pronounce your name?</strong></p>
+  <p class="mb-5"><strong role="heading">The question I am most asked: how do you pronounce your name?</strong></p>
   <p class="mb-5">If you speak English or a similar language, here’s audio of the pronunciation:</p>
   <audio src="/assets/ruben.en.m4a" controls class="mb-5"></audio>
   <p class="mb-5">If you speak Armenian or a similar language, here’s audio of the pronunciation:</p>
   <audio src="/assets/ruben.hy.m4a" controls class="mb-5"></audio>
   <p class="mb-5">And if you understand IPA, here’s what I think is the correct rendering:</p>
-  <p class="mb-5"><strong>ɻʊɓəɲ ɑɾɑkelʎɑɲ</strong> (<a href="http://ipa-reader.xyz" target="_blank" rel="noopener noreferer">hear it</a>)</p>
+  <p class="mb-5"><strong>ɻʊɓəɲ ɑɾɑkelʎɑɲ</strong> (<a href="http://ipa-reader.xyz" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">hear it</a>)</p>
   <p>Any corrections to the above to better match the Armenian pronunciation are welcome.</p>
 </section>
 

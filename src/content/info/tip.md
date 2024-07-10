@@ -10,4 +10,4 @@ A tip of any amount will help cover my time in building and maintaining current 
 
 Thank you 🙏
 
-<a class="not-prose no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-300 dark:bg-slate-300 text-white dark:text-slate-600" href="https://ko-fi.com/wackomenace" target="_blank" rel="noopener noreferer">Tip on Ko-fi</a>
+<a class="not-prose no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-300 dark:bg-slate-300 text-white dark:text-slate-600" href="https://ko-fi.com/wackomenace" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">Tip on Ko-fi</a>

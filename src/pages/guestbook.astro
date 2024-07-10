@@ -45,7 +45,7 @@ const guestbook_entries = await db.select().from(GuestbookEntries).where(isNotNu
         <p class="text-xl">Thank you for submitting your kind message. Once it’s been moderated, it’ll appear below.</p>
       </aside>
     }
-    <p class="text-xl mb-6">Taking inspiration from <a href="https://manuelmoreale.com/guestbook" target="_blank" rel="noopener noreferer">Manuel Moreale’s</a> and <a href="https://kevquirk.com/guestbook" target="_blank" rel="noopener noreferer">Kev Quirk’s</a> guestbooks, here’s my take on it. Pretty simple - if you like my website and would like to leave a message, sign my guestbook using the form below.</p>
+    <p class="text-xl mb-6">Taking inspiration from <a href="https://manuelmoreale.com/guestbook" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">Manuel Moreale’s</a> and <a href="https://kevquirk.com/guestbook" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">Kev Quirk’s</a> guestbooks, here’s my take on it. Pretty simple - if you like my website and would like to leave a message, sign my guestbook using the form below.</p>
     <p class="text-xl mb-6">Note, your message will be moderated before being shown.</p>
     <p class="mb-6">
       <a class="no-underline px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-300 dark:bg-slate-300 text-white dark:text-slate-600" href="#sign-guestbook">Sign my guestbook &darr;</a>
@@ -64,23 +64,23 @@ const guestbook_entries = await db.select().from(GuestbookEntries).where(isNotNu
     }
     <form method="post">
       <h2 class="text-5xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6 print:text-pink-600" id="sign-guestbook">Sign my guestbook</h2>
-      <p class="mb-6 text-sm">A name (it can be a nickname or pseudonym if you like) and message are required; everything else is optional. If you provide your email address, it will be used to show your <a href="https://gravatar.com" target="_blank" rel="noopener noreferer">Gravatar</a> (if you have one) but will not be disclosed.</p>
-      <label class="block mb-4">
+      <p class="mb-6 text-sm">A name (it can be a nickname or pseudonym if you like) and message are required; everything else is optional. If you provide your email address, it will be used to show your <a href="https://gravatar.com" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">Gravatar</a> (if you have one) but will not be disclosed.</p>
+      <label for="guestbook-name" class="block mb-4">
         <span class="block text-sm font-medium">Name</span>
-        <input type="text" name="name" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required>
+        <input type="text" name="name" id="guestbook-name" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required aria-required="true">
         {errors.name && <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">{errors.name}</p>}
       </label>
-      <label class="block mb-4">
+      <label for="guestbook-email" class="block mb-4">
         <span class="block text-sm font-medium">Email address (optional)</span>
-        <input type="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+        <input type="email" name="email" id="guestbook-email" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500" aria-required="false">
       </label>
-      <label class="block mb-4">
+      <label for="guestbook-website" class="block mb-4">
         <span class="block text-sm font-medium">Website (optional)</span>
-        <input type="url" name="website" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+        <input type="url" name="website" id="guestbook-website" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500" aria-required="false">
       </label>
-      <label class="block mb-4">
+      <label for="guestbook-message" class="block mb-4">
         <span class="block text-sm font-medium">Message</span>
-        <textarea name="message" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required></textarea>
+        <textarea name="message" id="guestbook-message" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm text-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 peer" required aria-required="true"></textarea>
         {errors.message && <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">{errors.message}</p>}
       </label>
       <button type="submit" class="px-4 py-2 border rounded-md border-slate-600 bg-slate-600 dark:border-slate-300 dark:bg-slate-300 text-white dark:text-slate-600">Submit</button>
