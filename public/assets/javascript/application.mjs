@@ -1,4 +1,4 @@
-import { Application, Controller } from "./stimulus-3.2.2.mjs";
+import { Application } from "./stimulus-3.2.2.mjs";
 
 import KonamiCodeController from "./controllers/konami_code_controller.mjs";
 
