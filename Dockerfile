@@ -11,7 +11,7 @@ RUN npm install
 
 FROM build-deps AS build
 COPY . .
-RUN --mount=type=secret,id=ASTRO_STUDIO_APP_TOKEN ASTRO_STUDIO_APP_TOKEN="$(cat /run/secrets/ASTRO_STUDIO_APP_TOKEN)" && npm run build
+RUN --mount=type=secret,id=ASTRO_STUDIO_APP_TOKEN export ASTRO_STUDIO_APP_TOKEN="$(cat /run/secrets/ASTRO_STUDIO_APP_TOKEN)" && npm run build
 
 FROM base AS runtime
 COPY --from=prod-deps /app/node_modules ./node_modules
