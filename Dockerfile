@@ -1,7 +1,7 @@
 FROM node:lts AS base
 WORKDIR /app
 
-RUN apk add git
+RUN apt install -y git
 RUN --mount=type=secret,id=ASTRO_STUDIO_APP_TOKEN \
   export ASTRO_STUDIO_APP_TOKEN=$(cat /run/secrets/ASTRO_STUDIO_APP_TOKEN)
 
