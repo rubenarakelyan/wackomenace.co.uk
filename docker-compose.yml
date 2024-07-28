@@ -1,0 +1,9 @@
+name: wackomenace
+
+services:
+  web:
+    image: ghcr.io/rubenarakelyan/wackomenace.co.uk:latest
+    env_file: .env
+    ports:
+      - "4000:4000"
+    restart: always

@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
-import cloudflare from "@astrojs/cloudflare";
 import db from "@astrojs/db";
 import mdx from "@astrojs/mdx";
+import node from "@astrojs/node";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import sitemap from "@astrojs/sitemap";
@@ -14,8 +14,8 @@ import { customEmoji } from "./plugins/custom-emoji.mjs";
 // https://astro.build/config
 export default defineConfig({
   output: "hybrid",
-  adapter: cloudflare({
-    imageService: "passthrough"
+  adapter: node({
+    mode: "standalone"
   }),
   markdown: {
     rehypePlugins: [
