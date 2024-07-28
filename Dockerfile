@@ -1,9 +1,7 @@
 FROM node:lts AS base
 WORKDIR /app
 
-RUN apt install -y git
-RUN --mount=type=secret,id=ASTRO_STUDIO_APP_TOKEN \
-  export ASTRO_STUDIO_APP_TOKEN=$(cat /run/secrets/ASTRO_STUDIO_APP_TOKEN)
+RUN --mount=type=secret,id=ASTRO_STUDIO_APP_TOKEN
 
 COPY package.json package-lock.json ./
 
@@ -15,7 +13,7 @@ RUN npm install
 
 FROM build-deps AS build
 COPY . .
-RUN npm run build
+RUN export ASTRO_STUDIO_APP_TOKEN=$(cat /run/secrets/ASTRO_STUDIO_APP_TOKEN) && npm run build
 
 FROM base AS runtime
 COPY --from=prod-deps /app/node_modules ./node_modules
