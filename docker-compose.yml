@@ -2,7 +2,7 @@ name: wackomenace
 
 services:
   web:
-    image: ghcr.io/rubenarakelyan/wackomenace.co.uk:latest
+    image: ghcr.io/rubenarakelyan/wackomenace.co.uk:main
     env_file: .env
     ports:
       - "4000:4000"
