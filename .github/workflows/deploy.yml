@@ -1,10 +1,9 @@
 name: Deploy Docker image to server
 
 on:
-  registry_package:
+  release:
     types:
-      - published
-      - updated
+      - released
 
 env:
   REGISTRY: ghcr.io
