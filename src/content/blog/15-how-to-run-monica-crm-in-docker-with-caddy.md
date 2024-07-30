@@ -1,13 +1,13 @@
 ---
 title: How to run Monica CRM in Docker with Caddy
 date: 2024-07-30
-excerpt: Turnout in UK elections is lower than it should be, but it doesn’t have to be that way.
+excerpt: Use Caddy to proxy requests to PHP-FPM in Docker containers.
 tags: [server, docker, caddy, monica-crm]
 ---
 
 [Monica](https://www.monicahq.com) is a CRM-style app for managing your personal relationships. It’s a hosted service that can also be self-hosted thanks to the open source code on GitHub.
 
-I’m in the process of moving my website to a VPS from Cloudflare Pages (which I’ll go into in a subsequent post), and as part of this move, I’m using Caddy as the web server, installed locally and proxying to Docker containers for each website. I also wanted to install Monica as another container to be proxied by Caddy. Unfortunately, there’s a real dearth of information about this setup.
+I’m in the process of moving my website to a VPS from Cloudflare Pages (which I’ll go into in a subsequent post), and as part of this move, I’m using [Caddy](https://caddyserver.com) as the web server, installed locally and proxying to Docker containers for each website. I also wanted to install Monica as another container to be proxied by Caddy. Unfortunately, there’s a real dearth of information about this setup.
 
 So, if you’re interested in a similar setup (or generally proxying from a local Caddy to PHP-FPM in a Docker container), here’s what I did.
 
