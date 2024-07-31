@@ -5,6 +5,8 @@ excerpt: Use Caddy to proxy requests to PHP-FPM in Docker containers.
 tags: [server, docker, caddy, monica-crm]
 ---
 
+> **IMPORTANT:** A previous version of this blog post inadvertently exposed port 9000 publicly which would have left it open to malware such as Kinsing. I have updated the Docker Compose file to fix the issue by only exposing the port to the local machine.
+
 [Monica](https://www.monicahq.com) is a CRM-style app for managing your personal relationships. It’s a hosted service that can also be self-hosted thanks to the open source code on GitHub.
 
 I’m in the process of moving my website to a VPS from Cloudflare Pages (which I’ll go into in a subsequent post), and as part of this move, I’m using [Caddy](https://caddyserver.com) as the web server, installed locally and proxying to Docker containers for each website. I also wanted to install Monica as another container to be proxied by Caddy. Unfortunately, there’s a real dearth of information about this setup.
@@ -26,7 +28,7 @@ services:
       - DB_USERNAME=monica
       - DB_PASSWORD=secret
     ports:
-      - "9000:9000"
+      - "127.0.0.1:9000:9000"
     depends_on:
       - db
     volumes:
