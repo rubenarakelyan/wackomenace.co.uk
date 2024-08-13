@@ -1,7 +1,7 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2024-06-24
+date: 2024-08-13
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
@@ -30,4 +30,4 @@ All these blogs are also available as an [OPML file](/blogroll/rubenarakelyan.op
 
 If you want more recommendations of blogs to read, try [Ye Olde Blogroll](https://blogroll.org).
 
-More generally, I get my news from trusted outlets, mainly the [BBC](https://www.bbc.co.uk/news), [Financial Times](https://www.ft.com) and [Wired](https://www.wired.com).
+More generally, I get my news from trusted outlets, mainly the [BBC](https://www.bbc.co.uk/news) for general news and [Wired](https://www.wired.com) for tech news.
