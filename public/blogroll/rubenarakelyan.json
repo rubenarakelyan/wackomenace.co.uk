@@ -6,7 +6,7 @@
     "name": "Ruben Arakelyan",
     "website": "https://www.wackomenace.co.uk"
   },
-  "modified_at": "2024-04-23T17:25:00+0100",
+  "modified_at": "2024-08-14T11:28:00+0100",
   "groups": [
     {
       "title": "All",
@@ -66,22 +66,10 @@
           "feed": "https://kevquirk.com/feed"
         },
         {
-          "title": "Microsoft On the Issues",
-          "type": "rss",
-          "website": "https://blogs.microsoft.com/on-the-issues/",
-          "feed": "https://blogs.microsoft.com/on-the-issues/feed/"
-        },
-        {
           "title": "Paul Stamatiou",
           "type": "atom",
           "website": "https://paulstamatiou.com",
           "feed": "https://paulstamatiou.com/posts.xml"
-        },
-        {
-          "title": "Piccalilli",
-          "type": "rss",
-          "website": "https://piccalil.li",
-          "feed": "https://piccalil.li/feed.xml"
         },
         {
           "title": "Rands in Repose",
@@ -102,22 +90,10 @@
           "feed": "https://scotthelme.co.uk/rss/"
         },
         {
-          "title": "Snook.ca",
-          "type": "rss",
-          "website": "https://snook.ca",
-          "feed": "https://snook.ca/jonathan/index.rdf"
-        },
-        {
           "title": "Terence Eden",
           "type": "atom",
           "website": "https://shkspr.mobi/blo",
           "feed": "https://shkspr.mobi/blog/feed/atom"
-        },
-        {
-          "title": "The GitHub Blog",
-          "type": "rss",
-          "website": "https://github.blog",
-          "feed": "https://github.blog/feed/"
         },
         {
           "title": "Thurrott.com",
