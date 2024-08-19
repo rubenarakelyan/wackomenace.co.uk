@@ -1,7 +1,5 @@
 import { defineConfig } from "astro/config";
-import db from "@astrojs/db";
 import mdx from "@astrojs/mdx";
-import node from "@astrojs/node";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import sitemap from "@astrojs/sitemap";
@@ -13,10 +11,7 @@ import { customEmoji } from "./plugins/custom-emoji.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "hybrid",
-  adapter: node({
-    mode: "standalone"
-  }),
+  output: "static",
   markdown: {
     rehypePlugins: [
       rehypeSlug,
@@ -29,7 +24,7 @@ export default defineConfig({
     ]
   },
   site: process.env.NODE_ENV === "development" ? "http://localhost:4321" : "https://www.wackomenace.co.uk",
-  integrations: [db(), mdx({ syntaxHighlight: false }), sitemap(), tailwind()],
+  integrations: [mdx({ syntaxHighlight: false }), sitemap(), tailwind()],
   redirects: {
     "/.well-known/recommendations.json": "/blogroll/rubenarakelyan.json",
     "/.well-known/recommendations.opml": "/blogroll/rubenarakelyan.opml",

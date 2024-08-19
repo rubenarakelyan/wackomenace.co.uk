@@ -1,24 +1,38 @@
-name: Deploy Docker image to server
+name: Deploy
 
 on:
-  release:
-    types:
-      - released
+  push:
+    branches:
+      - main
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
-  deploy-image:
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Install SSH key
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Install sshpass
+        run: sudo apt install sshpass
+      - name: Configure SSH known hosts
         run: |
-          install -m 600 -D /dev/null ~/.ssh/id_ed25519
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-          ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
-      - name: Connect via SSH, pull repository and Docker image
-        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && git pull && docker compose pull && docker compose up -d && exit"
-      - name: Clean up
-        run: rm -rf ~/.ssh
+          mkdir -p ~/.ssh/
+          cat >>~/.ssh/known_hosts <<END
+          $SSH_HOST ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNPXzl0OqliD00Hu2jtapMNpZVzBuN3vy1PBtS+XyHStmqc5c1tC8i0ne7RxMgzH/sGxMggJjHW0Jesehe4CTVU=
+          END
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+      - name: Build site
+        run: |
+          npm install
+          npm run build
+      - name: rsync local to remote
+        run: sshpass -p$SSH_PASSWORD rsync -rtvz ./dist/ $SSH_USER@$SSH_HOST:/home/lionheart/www/www.wackomenace.co.uk/
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
