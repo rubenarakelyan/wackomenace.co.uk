@@ -16,8 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - name: Install sshpass
-        run: sudo apt install sshpass
+        with:
+          node-version: "22.0.0"
       - name: Configure SSH known hosts
         run: |
           mkdir -p ~/.ssh/
