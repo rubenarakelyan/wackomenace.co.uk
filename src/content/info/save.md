@@ -1,7 +1,7 @@
 ---
 title: Recommendations
 description: A list of referral links for products and services I recommend.
-date: 2024-07-09
+date: 2024-08-22
 ---
 
 It’s becoming more and more difficult to companies that do a truly great job and are proud of their quality. Here are some I use that I can heartily recommend to others (with a UK bias).
@@ -19,6 +19,12 @@ A&A are a small UK-based ISP offering a variety of Internet access products with
 <https://ref.fm/u26958808>*
 
 I use Fastmail for both my personal and business email addresses and am very happy with the service. Lots of functionality, constant improvement and stronger privacy than the big, free players.
+
+## Mythic Beasts
+
+<https://www.mythic-beasts.com>
+
+I recently moved all my domains and hosting over to Mythic Beasts after years of hearing good things about them, and so far they have lived up to those high expectations. I set up some more niche services with them (such as secondary DNS and fallback MX servers) and their support was great.
 
 ## Octopus Energy
 
