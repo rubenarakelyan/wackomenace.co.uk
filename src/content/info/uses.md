@@ -30,7 +30,7 @@ A la [Robb Knight](https://defaults.rknight.me), here’s a very Apple-heavy lis
 
 ✅ To-Do
 
-[Reminders.app](https://en.wikipedia.org/wiki/Reminders_(Apple)), [Notes.app](https://en.wikipedia.org/wiki/Notes_(Apple)) and [Calendar.app](https://en.wikipedia.org/wiki/Calendar_(Apple)) (yes, it’s a mess)
+[Reminders.app](https://en.wikipedia.org/wiki/Reminders_(Apple)) (for recurring tasks) and [Notes.app](https://en.wikipedia.org/wiki/Notes_(Apple))
 
 📷 iPhone Photo Shooting
 
