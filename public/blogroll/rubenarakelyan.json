@@ -6,7 +6,7 @@
     "name": "Ruben Arakelyan",
     "website": "https://www.wackomenace.co.uk"
   },
-  "modified_at": "2024-08-14T11:28:00+0100",
+  "modified_at": "2024-08-25T21:08:00+0100",
   "groups": [
     {
       "title": "All",
@@ -34,12 +34,6 @@
           "type": "rss",
           "website": "https://blog.codinghorror.com",
           "feed": "https://blog.codinghorror.com/rss/"
-        },
-        {
-          "title": "Daring Fireball",
-          "type": "atom",
-          "website": "https://daringfireball.net",
-          "feed": "https://daringfireball.net/feeds/main"
         },
         {
           "title": "Derek Sivers",
