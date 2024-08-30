@@ -1,5 +1,5 @@
 Header add Access-Control-Allow-Origin "https://www.wackomenace.co.uk"
-Header add Content-Security-Policy "default-src 'none'; connect-src 'self'; font-src 'self'; img-src 'self' data: https://cdn.masto.host; manifest-src 'self'; media-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; report-to default"
+Header add Content-Security-Policy "default-src 'none'; connect-src 'self'; font-src 'self'; img-src 'self' data: https://cdn.masto.host; manifest-src 'self'; media-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self' https://search.wackomenace.co.uk; frame-ancestors 'none'; report-to default"
 Header add Cross-Origin-Embedder-Policy "credentialless; report-to=\"default\""
 Header add Cross-Origin-Opener-Policy "same-origin; report-to=\"default\""
 Header add Cross-Origin-Resource-Policy "cross-origin"
