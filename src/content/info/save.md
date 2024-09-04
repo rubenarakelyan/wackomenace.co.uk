@@ -1,7 +1,7 @@
 ---
 title: Recommendations
 description: A list of referral links for products and services I recommend.
-date: 2024-08-22
+date: 2024-09-04
 ---
 
 It’s becoming more and more difficult to companies that do a truly great job and are proud of their quality. Here are some I use that I can heartily recommend to others (with a UK bias).
@@ -24,7 +24,7 @@ I use Fastmail for both my personal and business email addresses and am very hap
 
 <https://www.mythic-beasts.com>
 
-I recently moved all my domains and hosting over to Mythic Beasts after years of hearing good things about them, and so far they have lived up to those high expectations. I set up some more niche services with them (such as secondary DNS and fallback MX servers) and their support was great.
+I recently moved all my domains and hosting over to Mythic Beasts after years of hearing good things about them, and so far they have lived up to those high expectations. Their support is timely and knowledgeable.
 
 ## Octopus Energy
 
