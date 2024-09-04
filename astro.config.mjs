@@ -29,7 +29,9 @@ export default defineConfig({
     "/.well-known/recommendations.json": "/blogroll/rubenarakelyan.json",
     "/.well-known/recommendations.opml": "/blogroll/rubenarakelyan.opml",
     "/.well-known/webfinger": "/.well-known/webfinger.json",
-    "/blog": "/"
+    "/blog": "/",
+    "/blog/random": "/blog/16-dynamic-to-static/#no-more-random-blog-posts",
+    "/guestbook": "/blog/16-dynamic-to-static/#guestbook---gone"
   },
   vite: {
     ssr: {
