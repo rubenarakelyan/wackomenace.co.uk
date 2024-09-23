@@ -1,6 +1,14 @@
 import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
 
+interface Props {
+  frontmatter: {
+    title: string;
+    date: string;
+  };
+  rawContent: Function;
+}
+
 export async function GET(context: APIContext) {
   const post = await import(`../../content/blog/${context.params.slug}.md`);
 
@@ -21,7 +29,7 @@ export async function getStaticPaths() {
   }));
 }
 
-function content(post) {
+function content(post: Props) {
   const response = `${post.frontmatter.title}
 ${"=".repeat(post.frontmatter.title.length)}
 
