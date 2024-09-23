@@ -33,7 +33,11 @@ function content(post: Props) {
   const response = `${post.frontmatter.title}
 ${"=".repeat(post.frontmatter.title.length)}
 
-Posted: ${new Date(post.frontmatter.date).toLocaleDateString("en-GB")}
+Posted: ${new Date(post.frontmatter.date).toLocaleDateString("en-gb", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+})}
 ${post.rawContent()}
   `;
 
