@@ -1,7 +1,7 @@
 ---
 title: About me
 description: Everything you need to know about Ruben Arakelyan.
-date: 2024-09-04
+date: 2024-10-11
 ---
 
 <figure>
@@ -9,16 +9,24 @@ date: 2024-09-04
   <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">James Warbey</a></figcaption>
 </figure>
 
-<section class="mb-6 p-6 border border-slate-200 not-prose">
-  <p class="mb-5"><strong role="heading">The question I am most asked: how do you pronounce your name?</strong></p>
-  <p class="mb-5">If you speak English or a similar language, here’s audio of the pronunciation:</p>
-  <audio src="/assets/ruben.en.m4a" controls class="mb-5"></audio>
-  <p class="mb-5">If you speak Armenian or a similar language, here’s audio of the pronunciation:</p>
-  <audio src="/assets/ruben.hy.m4a" controls class="mb-5"></audio>
-  <p class="mb-5">And if you understand IPA, here’s what I think is the correct rendering:</p>
-  <p class="mb-5"><strong>ɻʊɓəɲ ɑɾɑkelʎɑɲ</strong> (<a href="http://ipa-reader.xyz" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">hear it</a>)</p>
-  <p>Any corrections to the above to better match the Armenian pronunciation are welcome.</p>
-</section>
+<div itemscope itemtype="https://schema.org/Person">
+  <section class="mb-6 p-6 border border-slate-200 not-prose" itemprop="name">
+    <p class="mb-5"><strong role="heading">My full name is <span itemprop="givenName">Ruben</span> <span itemprop="familyName">Arakelyan</span>.</strong></p>
+    <p class="mb-5">The question I am most asked: how do you pronounce your name?</p>
+    <p class="mb-5">If you speak English or a similar language, here’s audio of the pronunciation:</p>
+    <audio src="/assets/ruben.en.m4a" controls class="mb-5" itemscope itemprop="additionalType" itemtype="https://schema.org/PronounceableText">
+      <meta itemprop="phoneticText" content="/ɻʊɓəɲ ɑɾɑkelʎɑɲ/">
+      <meta itemprop="inLanguage" content="en-GB">
+      <meta itemprop="textValue" content="Ruben Arakelyan">
+      <meta itemprop="speechToTextMarkup" content="IPA">
+    </audio>
+    <p class="mb-5">If you speak Armenian or a similar language, here’s audio of the pronunciation:</p>
+    <audio src="/assets/ruben.hy.m4a" controls class="mb-5"></audio>
+    <p class="mb-5">And if you understand IPA, here’s what I think is the correct rendering:</p>
+    <p class="mb-5"><strong>ɻʊɓəɲ ɑɾɑkelʎɑɲ</strong> (<a href="http://ipa-reader.xyz" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">hear it</a>)</p>
+    <p>Any corrections to the above to better match the Armenian pronunciation are welcome.</p>
+  </section>
+</div>
 
 I was born in [Wimbledon](https://en.wikipedia.org/wiki/Wimbledon,_London), south London — home of [The Championships](https://en.wikipedia.org/wiki/The_Championships,_Wimbledon) — and lived there for approximately 5 years before moving across the river to [Eastcote](https://en.wikipedia.org/wiki/Eastcote) where I lived, grew up and went to school (where my [year 11 ball](https://web.archive.org/web/20040717231151/http://education.independent.co.uk/news/story.jsp?story=539986) was featured in The Independent).
 
