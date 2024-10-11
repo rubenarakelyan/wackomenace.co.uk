@@ -15,7 +15,7 @@ date: 2024-10-11
     <p class="mb-5">The question I am most asked: how do you pronounce your name?</p>
     <p class="mb-5">If you speak English or a similar language, here’s audio of the pronunciation:</p>
     <audio src="/assets/ruben.en.m4a" controls class="mb-5" itemscope itemprop="additionalType" itemtype="https://schema.org/PronounceableText">
-      <meta itemprop="phoneticText" content="/ɻʊɓəɲ ɑɾɑkelʎɑɲ/">
+      <meta itemprop="phoneticText" content="/ɻʊɓən ɑɹɑkelʎɑn/">
       <meta itemprop="inLanguage" content="en-GB">
       <meta itemprop="textValue" content="Ruben Arakelyan">
       <meta itemprop="speechToTextMarkup" content="IPA">
@@ -23,7 +23,7 @@ date: 2024-10-11
     <p class="mb-5">If you speak Armenian or a similar language, here’s audio of the pronunciation:</p>
     <audio src="/assets/ruben.hy.m4a" controls class="mb-5"></audio>
     <p class="mb-5">And if you understand IPA, here’s what I think is the correct rendering:</p>
-    <p class="mb-5"><strong>ɻʊɓəɲ ɑɾɑkelʎɑɲ</strong> (<a href="http://ipa-reader.xyz" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">hear it</a>)</p>
+    <p class="mb-5"><strong>ɻʊɓən ɑɹɑkelʎɑn</strong> (<a href="http://ipa-reader.xyz" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">hear it</a>)</p>
     <p>Any corrections to the above to better match the Armenian pronunciation are welcome.</p>
   </section>
 </div>
