@@ -6,7 +6,7 @@
     "name": "Ruben Arakelyan",
     "website": "https://www.wackomenace.co.uk"
   },
-  "modified_at": "2024-08-25T21:08:00+0100",
+  "modified_at": "2024-10-17T10:45:00+0100",
   "groups": [
     {
       "title": "All",
@@ -22,6 +22,12 @@
           "type": "atom",
           "website": "https://andycroll.com",
           "feed": "https://andycroll.com/index.xml"
+        },
+        {
+          "title": "BBC News",
+          "type": "rss",
+          "website": "https://www.bbc.co.uk/news",
+          "feed": "http://feeds.bbci.co.uk/news/rss.xml?edition=uk"
         },
         {
           "title": "Chris Coyier",
@@ -84,9 +90,15 @@
           "feed": "https://scotthelme.co.uk/rss/"
         },
         {
+          "title": "Tedium",
+          "type": "rss",
+          "website": "https://tedium.co",
+          "feed": "https://feed.tedium.co/"
+        },
+        {
           "title": "Terence Eden",
           "type": "atom",
-          "website": "https://shkspr.mobi/blo",
+          "website": "https://shkspr.mobi/blog",
           "feed": "https://shkspr.mobi/blog/feed/atom"
         },
         {
@@ -94,6 +106,12 @@
           "type": "rss",
           "website": "https://www.thurrott.com",
           "feed": "https://www.thurrott.com/blog/rss"
+        },
+        {
+          "title": "Wired",
+          "type": "rss",
+          "website": "https://www.wired.com",
+          "feed": "https://www.wired.com/feed/rss"
         }
       ]
     }
