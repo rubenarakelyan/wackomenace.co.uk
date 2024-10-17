@@ -6,7 +6,7 @@
     "name": "Ruben Arakelyan",
     "website": "https://www.wackomenace.co.uk"
   },
-  "modified_at": "2024-10-17T10:45:00+0100",
+  "modified_at": "2024-10-17T20:33:00+0100",
   "groups": [
     {
       "title": "All",
@@ -22,12 +22,6 @@
           "type": "atom",
           "website": "https://andycroll.com",
           "feed": "https://andycroll.com/index.xml"
-        },
-        {
-          "title": "BBC News",
-          "type": "rss",
-          "website": "https://www.bbc.co.uk/news",
-          "feed": "http://feeds.bbci.co.uk/news/rss.xml?edition=uk"
         },
         {
           "title": "Chris Coyier",
@@ -64,6 +58,12 @@
           "type": "rss",
           "website": "https://kevquirk.com",
           "feed": "https://kevquirk.com/feed"
+        },
+        {
+          "title": "MetaFilter",
+          "type": "rss",
+          "website": "https://www.metafilter.com",
+          "feed": "https://rss.metafilter.com/metafilter.rss"
         },
         {
           "title": "Paul Stamatiou",
