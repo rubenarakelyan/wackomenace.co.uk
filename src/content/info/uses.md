@@ -1,7 +1,7 @@
 ---
 title: What I use
 description: A list of hardware, software and services I use.
-date: 2024-10-08
+date: 2024-10-18
 ---
 
 My primary driver for business and pleasure is a 2022 M2 MacBook Air expanded with 16GB RAM paired with an Apple Magic Keyboard and Mouse. It more than adequately handles anything I throw at it development-wise. I also have a 5th generation iPad Air for when I don’t want/need a laptop.
@@ -98,7 +98,7 @@ N/A - I do very rudimentary budgeting in my head
 
 📰 News
 
-[BBC](https://www.bbc.co.uk/news)
+[BBC](https://www.bbc.co.uk/news) and [Reuters](https://www.reuters.com)
 
 🎵 Music
 
@@ -106,7 +106,7 @@ N/A - I do very rudimentary budgeting in my head
 
 🎤 Podcasts
 
-N/A - I don’t really listen to podcasts
+[Overcast](https://overcast.fm)
 
 🔐 Password Management
 
