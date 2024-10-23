@@ -1,7 +1,7 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2024-10-17
+date: 2024-10-23
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
@@ -10,6 +10,7 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Andy Croll](https://andycroll.com)
 * [Chris Coyier](https://chriscoyier.net)
 * [Coding Horror](https://blog.codinghorror.com)
+* [David Heinemeier Hansson](https://world.hey.com/dhh)
 * [Derek Sivers](https://sive.rs/blog)
 * [furbo.org](https://furbo.org)
 * [Iconfactory’s The Breakroom](https://blog.iconfactory.com)

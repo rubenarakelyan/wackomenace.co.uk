@@ -6,7 +6,7 @@
     "name": "Ruben Arakelyan",
     "website": "https://www.wackomenace.co.uk"
   },
-  "modified_at": "2024-10-17T20:33:00+0100",
+  "modified_at": "2024-10-23T21:00:00+0100",
   "groups": [
     {
       "title": "All",
@@ -28,6 +28,12 @@
           "type": "rss",
           "website": "https://chriscoyier.net",
           "feed": "https://chriscoyier.net/feed/"
+        },
+        {
+          "title": "David Heinemeier Hansson",
+          "type": "atom",
+          "website": "https://world.hey.com/dhh",
+          "feed": "https://world.hey.com/dhh/feed.atom"
         },
         {
           "title": "Coding Horror",
