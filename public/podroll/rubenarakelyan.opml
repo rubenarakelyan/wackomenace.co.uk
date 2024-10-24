@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Ruben Arakelyan's podroll</title>
+    <dateCreated>Thu, 24 Oct 2024 12:20:00 BST</dateCreated>
+    <dateModified>Thu, 24 Oct 2024 12:20:00 BST</dateModified>
+    <ownerName>Ruben Arakelyan</ownerName>
+    <ownerEmail>ruben@arakelyan.uk</ownerEmail>
+    <ownerId>https://www.wackomenace.co.uk/contact/</ownerId>
+    <docs>http://opml.org/spec2.opml</docs>
+  </head>
+  <body>
+    <outline text="Podcasts">
+      <outline title="Accidental Tech Podcast" text="Accidental Tech Podcast" xmlUrl="https://atp.fm/rss" htmlUrl="https://atp.fm" type="rss"></outline>
+      <outline title="Rework" text="Rework" xmlUrl="https://feeds.buzzsprout.com/2260539.rss" htmlUrl="https://37signals.com/podcast/" type="rss"></outline>
+      <outline title="Scott &amp; Mark Learn To..." text="Scott &amp; Mark Learn To..." xmlUrl="https://feeds.acast.com/public/shows/scott-and-mark-learn-to" htmlUrl="https://shows.acast.com/scott-and-mark-learn-to" type="rss"></outline>
+    </outline>
+  </body>
+</opml>
