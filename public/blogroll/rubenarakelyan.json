@@ -6,11 +6,17 @@
     "name": "Ruben Arakelyan",
     "website": "https://www.wackomenace.co.uk"
   },
-  "modified_at": "2024-10-23T21:00:00+0100",
+  "modified_at": "2024-10-24T12:10:00+0100",
   "groups": [
     {
-      "title": "All",
+      "title": "Blogs",
       "feeds": [
+        {
+          "title": "37Signals Dev",
+          "type": "atom",
+          "website": "https://dev.37signals.com",
+          "feed": "https://dev.37signals.com/feed/posts.xml"
+        },
         {
           "title": "A List Apart",
           "type": "rss",
@@ -118,6 +124,35 @@
           "type": "rss",
           "website": "https://www.wired.com",
           "feed": "https://www.wired.com/feed/rss"
+        }
+      ]
+    },
+    {
+      "title": "Weeknotes",
+      "feeds": [
+        {
+          "title": "Alice Bartlett",
+          "type": "atom",
+          "website": "https://alicebartlett.co.uk",
+          "feed": "https://alicebartlett.co.uk/feed/weaknotes.xml"
+        },
+        {
+          "title": "Paul Mucur",
+          "type": "atom",
+          "website": "https://mudge.name",
+          "feed": "https://mudge.name/weeknotes.atom"
+        },
+        {
+          "title": "Phil Gyford",
+          "type": "rss",
+          "website": "https://www.gyford.com/phil/writing/",
+          "feed": "https://www.gyford.com/phil/writing/feeds/posts/rss/"
+        },
+        {
+          "title": "Tom Stuart",
+          "type": "atom",
+          "website": "https://tomstu.art",
+          "feed": "https://tomstu.art/feed.atom"
         }
       ]
     }

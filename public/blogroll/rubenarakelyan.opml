@@ -3,14 +3,15 @@
   <head>
     <title>Ruben Arakelyan's blogroll</title>
     <dateCreated>Fri, 05 Apr 2024 12:00:00 BST</dateCreated>
-    <dateModified>Wed, 23 Oct 2024 21:00:00 BST</dateModified>
+    <dateModified>Thu, 24 Oct 2024 12:10:00 BST</dateModified>
     <ownerName>Ruben Arakelyan</ownerName>
     <ownerEmail>ruben@arakelyan.uk</ownerEmail>
     <ownerId>https://www.wackomenace.co.uk/contact/</ownerId>
     <docs>http://opml.org/spec2.opml</docs>
   </head>
   <body>
-    <outline text="Ruben Arakelyan">
+    <outline text="Blogs">
+      <outline title="37Signals Dev" text="37Signals Dev" xmlUrl="https://dev.37signals.com/feed/posts.xml" htmlUrl="https://dev.37signals.com" type="rss"></outline>
       <outline title="A List Apart" text="A List Apart" xmlUrl="https://alistapart.com/main/feed/" htmlUrl="https://alistapart.com" type="rss"></outline>
       <outline title="Andy Croll" text="Andy Croll" xmlUrl="https://andycroll.com/index.xml" htmlUrl="https://andycroll.com" type="rss"></outline>
       <outline title="Chris Coyier" text="Chris Coyier" xmlUrl="https://chriscoyier.net/feed/" htmlUrl="https://chriscoyier.net" type="rss"></outline>
@@ -29,6 +30,12 @@
       <outline title="Terence Eden" text="Terence Eden" xmlUrl="https://shkspr.mobi/blog/feed/atom" htmlUrl="https://shkspr.mobi/blog" type="rss"></outline>
       <outline title="Thurrott.com" text="Thurrott.com" xmlUrl="https://www.thurrott.com/blog/rss" htmlUrl="https://www.thurrott.com" type="rss"></outline>
       <outline title="Wired" text="Wired" xmlUrl="https://www.wired.com/feed/rss" htmlUrl="https://www.wired.com" type="rss"></outline>
+    </outline>
+    <outline text="Weeknotes">
+      <outline title="Alice Bartlett" text="Alice Bartlett" xmlUrl="https://alicebartlett.co.uk/feed/weaknotes.xml" htmlUrl="https://alicebartlett.co.uk" type="rss"></outline>
+      <outline title="Paul Mucur" text="Paul Mucur" xmlUrl="https://mudge.name/weeknotes.atom" htmlUrl="https://mudge.name" type="rss"></outline>
+      <outline title="Phil Gyford" text="Phil Gyford" xmlUrl="https://www.gyford.com/phil/writing/feeds/posts/rss/" htmlUrl="https://www.gyford.com/phil/writing/" type="rss"></outline>
+      <outline title="Tom Stuart" text="Tom Stuart" xmlUrl="https://tomstu.art/feed.atom" htmlUrl="https://tomstu.art" type="rss"></outline>
     </outline>
   </body>
 </opml>

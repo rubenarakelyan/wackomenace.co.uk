@@ -1,11 +1,12 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2024-10-23
+date: 2024-10-24
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
 
+* [37Signals Dev](https://dev.37signals.com)
 * [A List Apart](https://alistapart.com)
 * [Andy Croll](https://andycroll.com)
 * [Chris Coyier](https://chriscoyier.net)
@@ -24,6 +25,13 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Terence Eden](https://shkspr.mobi/blog)
 * [Thurrott.com](https://www.thurrott.com)
 * [Wired](https://www.wired.com)
+
+I also follow a number of people writing weeknotes (and may start doing this myself at some point).
+
+* [Alice Bartlett](https://alicebartlett.co.uk)
+* [Paul Mucur](https://mudge.name)
+* [Phil Gyford](https://www.gyford.com/phil/writing/)
+* [Tom Stuart](https://tomstu.art)
 
 All these blogs are also available as an [OPML file](/blogroll/rubenarakelyan.opml) and [JSON-WF file](/blogroll/rubenarakelyan.json) to import into your favourite feed reader.
 
