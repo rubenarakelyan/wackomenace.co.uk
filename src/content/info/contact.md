@@ -1,7 +1,7 @@
 ---
 title: Contact me
 description: Details of how to contact Ruben Arakelyan.
-date: 2024-03-27
+date: 2024-11-26
 ---
 
 I encourage and welcome all readers (that includes you!) to contact me - if something I wrote about resonates with you, you want to comment on it or disagree with it, then I’m very happy to hear from you.
@@ -12,4 +12,6 @@ I try to reply to all emails as soon as I can but please allow some time before 
 
 [ruben@arakelyan.uk](mailto:ruben@arakelyan.uk)
 
-Want to contact me securely? Encrypt your email using [my PGP key](/pgpkey.asc).
+Want to contact me securely? Encrypt your email using [my PGP key](/pgpkey.asc) or get it via:
+
+`gpg --auto-key-locate wkd --locate-keys ruben@arakelyan.uk`
