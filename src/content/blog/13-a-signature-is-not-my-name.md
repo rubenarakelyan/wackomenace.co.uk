@@ -12,7 +12,10 @@ No matter how many times I tried to explain that a signature doesn’t even have
 
 Until now, I’ve only had my own opinion and that of some websites that are definitely **not** experts on the subject as proof, so after the latest bout, I decided to do something about it.
 
-`@ruben@ruby.social:112717498357194914`
+<figure>
+  <img src="/images/blog/mastodon-112717498357194914.png" alt="Screenshot of my toot on Mastodon">
+  <figcaption>Screenshot of my toot on Mastodon</figcaption>
+</figure>
 
 I tooted into the fediverse to see if anyone could provide me with a legal opinion that backed up my opinion, tagging in [Neil Brown](https://decoded.legal), a UK-based solicitor with a tech specialism who is active on Mastodon.
 
