@@ -6,6 +6,8 @@ tags: [retro, msn]
 cover: ./images/msn-logo.png
 ---
 
+> Update (10/12/2024): I’ve been informed by a reader that it’s no longer possible to use this technique to create new @msn.com addresses. It seems that this is a known issue and there are no plans to change it back, so for now, the rest of this post is just historic information.
+
 There are many things that I would have not got rid of if I had the chance again - for example, my first and second PCs or all those CDs and floppy disks, but those are well and truly gone. Another thing is my first MSN email address. I got rid of it years ago when I was moving on to email addresses on custom domains, and again, it was a mistake now that everything old is new again.
 
 Now, you haven’t been able to get a new MSN email address for many years, along with a live.com one (or even passport.com, you lucky people still with one). At least, that’s what I thought. If, like a normal person, you visit Microsoft Account and sign up, you get a choice of hotmail.com or outlook.com, all very pedestrian and common. I wanted that old school vibe with msn.com.
