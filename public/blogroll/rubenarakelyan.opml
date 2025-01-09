@@ -3,7 +3,7 @@
   <head>
     <title>Ruben Arakelyan's blogroll</title>
     <dateCreated>Fri, 05 Apr 2024 12:00:00 BST</dateCreated>
-    <dateModified>Thu, 24 Oct 2024 12:10:00 BST</dateModified>
+    <dateModified>Thu, 09 Jan 2025 21:13:00 GMT</dateModified>
     <ownerName>Ruben Arakelyan</ownerName>
     <ownerEmail>ruben@arakelyan.uk</ownerEmail>
     <ownerId>https://www.wackomenace.co.uk/contact/</ownerId>
@@ -23,6 +23,7 @@
       <outline title="Kev Quirk" text="Kev Quirk" xmlUrl="https://kevquirk.com/feed" htmlUrl="https://kevquirk.com" type="rss"></outline>
       <outline title="MetaFilter" text="MetaFilter" xmlUrl="https://rss.metafilter.com/metafilter.rss" htmlUrl="https://www.metafilter.com" type="rss"></outline>
       <outline title="Paul Stamatiou" text="Paul Stamatiou" xmlUrl="https://paulstamatiou.com/posts.xml" htmlUrl="https://paulstamatiou.com" type="rss"></outline>
+      <outline title="People and Blogs" text="People and Blogs" xmlUrl="https://manuelmoreale.com/feed/peopleandblogs" htmlUrl="https://peopleandblogs.com" type="rss"></outline>
       <outline title="Rands in Repose" text="Rands in Repose" xmlUrl="https://randsinrepose.com/feed/" htmlUrl="https://randsinrepose.com" type="rss"></outline>
       <outline title="Scott Hanselman" text="Scott Hanselman" xmlUrl="http://feeds.hanselman.com/ScottHanselman" htmlUrl="https://www.hanselman.com/blog/" type="rss"></outline>
       <outline title="Scott Helme" text="Scott Helme" xmlUrl="https://scotthelme.co.uk/rss/" htmlUrl="https://scotthelme.co.uk" type="rss"></outline>

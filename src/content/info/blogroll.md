@@ -18,6 +18,7 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Kev Quirk](https://kevquirk.com)
 * [MetaFilter](https://www.metafilter.com)
 * [Paul Stamatiou](https://paulstamatiou.com)
+* [People and Blogs](https://peopleandblogs.com)
 * [Rands in Repose](https://randsinrepose.com)
 * [Scott Hanselman](https://www.hanselman.com/blog/)
 * [Scott Helme](https://scotthelme.co.uk)
