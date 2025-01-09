@@ -1,7 +1,7 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2024-10-24
+date: 2025-01-09
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
@@ -33,7 +33,7 @@ I also follow a number of people writing weeknotes (and may start doing this mys
 * [Phil Gyford](https://www.gyford.com/phil/writing/)
 * [Tom Stuart](https://tomstu.art)
 
-All these blogs are also available as an [OPML file](/blogroll/rubenarakelyan.opml) and [JSON-WF file](/blogroll/rubenarakelyan.json) to import into your favourite feed reader.
+All these blogs are also available as an [OPML file](/blogroll/rubenarakelyan.opml) to import into your favourite feed reader.
 
 If you want more recommendations of blogs to read, try [Ye Olde Blogroll](https://blogroll.org).
 
