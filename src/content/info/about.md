@@ -11,7 +11,7 @@ date: 2024-10-14
 
 <div itemscope itemtype="https://schema.org/Person">
   <section class="mb-6 p-6 border border-slate-200 not-prose" itemprop="name">
-    <p class="mb-5"><strong role="heading">My full name is <span itemprop="givenName">Ruben</span> <span itemprop="familyName">Arakelyan</span> (Ռուբէն Առաքելեան in Armenian).</strong></p>
+    <p class="mb-5"><strong role="heading">My full name is <span itemprop="givenName">Ruben</span> <span itemprop="familyName">Arakelyan</span> (<span lang="hy">Ռուբէն Առաքելեան</span> in Armenian).</strong></p>
     <p class="mb-5">The question I am most asked: how do you pronounce your name?</p>
     <p class="mb-5">If you speak English or a similar language, here’s audio of the pronunciation:</p>
     <audio src="/assets/ruben.en.m4a" controls class="mb-5" itemscope itemprop="additionalType" itemtype="https://schema.org/PronounceableText">
