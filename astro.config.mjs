@@ -26,7 +26,6 @@ export default defineConfig({
   site: process.env.NODE_ENV === "development" ? "http://localhost:4321" : "https://www.wackomenace.co.uk",
   integrations: [mdx({ syntaxHighlight: false }), sitemap(), tailwind()],
   redirects: {
-    "/.well-known/recommendations.json": "/blogroll/rubenarakelyan.json",
     "/.well-known/recommendations.opml": "/blogroll/rubenarakelyan.opml",
     "/.well-known/webfinger": "/.well-known/webfinger.json",
     "/blog/random": "/blog/16-dynamic-to-static/#no-more-random-blog-posts",
