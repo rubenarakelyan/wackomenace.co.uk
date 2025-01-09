@@ -30,6 +30,7 @@ export default defineConfig({
     "/.well-known/webfinger": "/.well-known/webfinger.json",
     "/blog/random": "/blog/16-dynamic-to-static/#no-more-random-blog-posts",
     "/guestbook": "/blog/16-dynamic-to-static/#guestbook---gone",
+    "/save": "/",
     "/search": "/"
   },
   vite: {
