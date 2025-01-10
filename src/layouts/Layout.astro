@@ -79,9 +79,6 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
         <a href="/elsewhere/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
           Elsewhere
         </a>
-        <a href="/colophon/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
-          Colophon
-        </a>
       </nav>
       <main class="pt-10 px-4" id="main-content">
         <slot />
@@ -98,6 +95,9 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
         <div class="md:mb-1 md:flex md:flex-wrap">
           <p>
             <a href="/feeds/">Blog feeds</a>
+          </p>
+          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
+            <a href="/colophon/">Colophon</a>
           </p>
           <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
             <a href="/privacy/" rel="privacy-policy">Privacy policy</a>
