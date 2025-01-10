@@ -1,13 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: [
-    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
-    "./node_modules/astro-mastodon/dist/components/*.js",
+    "./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"
   ],
 	theme: {
-		extend: {},
+		extend: {}
 	},
 	plugins: [
-		require("@tailwindcss/typography"),
-	],
+		require("@tailwindcss/typography")
+	]
 }

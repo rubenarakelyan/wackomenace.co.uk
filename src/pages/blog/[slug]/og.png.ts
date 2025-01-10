@@ -83,12 +83,12 @@ export async function GET({ props }: Props) {
     fonts: [
       {
         name: "Recursive Bold",
-        data: RecursiveBold.buffer,
+        data: RecursiveBold.buffer as ArrayBuffer,
         style: "normal",
       },
       {
         name: "Recursive Regular",
-        data: RecursiveRegular.buffer,
+        data: RecursiveRegular.buffer as ArrayBuffer,
         style: "normal",
       },
     ],

@@ -6,8 +6,6 @@ import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
-import { rehypeCustomEmoji } from "@rubenarakelyan/rehype-custom-emoji";
-import { customEmoji } from "../../../plugins/custom-emoji.mjs";
 
 export async function GET(context: APIContext) {
   const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
@@ -15,7 +13,6 @@ export async function GET(context: APIContext) {
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true, footnoteLabelTagName: "hr" })
-    .use(rehypeCustomEmoji, { emoji: customEmoji })
     .use(rehypeFormat)
     .use(rehypeStringify, { allowDangerousHtml: true });
 
