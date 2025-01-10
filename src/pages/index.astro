@@ -33,7 +33,6 @@ const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() 
           title={post.data.title}
           excerpt={post.data.excerpt}
           date={post.data.date}
-          tags={post.data.tags}
         />
       ))
     }

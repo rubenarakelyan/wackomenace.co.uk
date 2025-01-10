@@ -2,7 +2,6 @@
 title: Removing until there’s nothing left to remove
 date: 2025-01-09
 excerpt: I’m trying to strip back my website back to its most basic form.
-tags: [website, simplicity]
 ---
 
 > It seems that perfection is attained, not when there is nothing more to add, but when there is nothing more to take away.

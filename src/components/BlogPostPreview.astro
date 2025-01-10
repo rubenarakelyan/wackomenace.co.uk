@@ -7,14 +7,13 @@ interface Props {
   title: string;
   excerpt: string;
   date: Date;
-  tags: string[];
 }
 
-const { homepage, url, title, excerpt, date, tags } = Astro.props;
+const { homepage, url, title, excerpt, date } = Astro.props;
 ---
 
 <article class="mb-6 h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid=`${Astro.site}${url.substring(1)}`>
-  <p class="text-sm"><FormattedDate date={date} classes="dt-published" itemprop="datePublished" /> &middot; <span class="p-category" itemprop="keywords">{tags.join(", ")}</span></p>
+  <p class="text-sm"><FormattedDate date={date} classes="dt-published" itemprop="datePublished" /></p>
   {homepage &&
     <h3 class="text-2xl mb-1 p-name" itemprop="name">
       <a class="u-url" href={url}>

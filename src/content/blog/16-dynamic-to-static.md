@@ -2,7 +2,6 @@
 title: Dynamic to static
 date: 2024-08-22
 excerpt: Why I’m moving away from dynamic sites back to static.
-tags: [server, hosting]
 ---
 
 When I built the new wackomenace site a few months ago, I decided to go with Astro as the framework (party because I wanted to learn it anyway), but had to make a decision about where and how to host it. Taking inspiration from the Astro documentation and the fact I was already using Cloudflare for domain registration and some static hosting, I want with Cloudflare Pages, where it was very convenient to set up the build process and see my site a minute or so later.

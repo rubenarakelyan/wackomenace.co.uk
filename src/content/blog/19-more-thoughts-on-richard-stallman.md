@@ -2,7 +2,6 @@
 title: More thoughts on Richard Stallman
 date: 2024-10-17
 excerpt: I wrote a piece a few months ago about Richard Stallman. In light of the Stallman Report, I revisit it with fresh eyes.
-tags: [software, freedom]
 ---
 
 A few months ago, I wrote a post, [Richard Stallman as a figurehead, or, knowing when you’re not the right person for the job](/blog/4-rms-as-a-figurehead/). In that post, I wrote about how in my view, Stallman has achieved a lot of good but is poor at articulating what he stands for in a way that is immediately understandable to the lay person.

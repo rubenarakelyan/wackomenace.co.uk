@@ -2,7 +2,6 @@
 title: A signature is not my name
 date: 2024-07-02
 excerpt: There are too many companies who insist my signature must resemble my name.
-tags: [signature, clueless]
 ---
 
 Over the last few years, as I have had the opportunity to sign more and more official documents (buying a house, getting a mortgage etc), I have come across a number of companies that seem to believe for no good reason that a signature must resemble the name of its owner.

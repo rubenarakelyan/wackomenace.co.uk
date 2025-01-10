@@ -2,7 +2,6 @@
 title: How to run Monica CRM in Docker with Caddy
 date: 2024-07-30
 excerpt: Use Caddy to proxy requests to PHP-FPM in Docker containers.
-tags: [server, docker, caddy, monica-crm]
 ---
 
 > **IMPORTANT:** A previous version of this blog post inadvertently exposed port 9000 publicly which would have left it open to malware such as Kinsing. I have updated the Docker Compose file to fix the issue by only exposing the port to the local machine.

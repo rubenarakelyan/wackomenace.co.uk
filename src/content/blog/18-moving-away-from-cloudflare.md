@@ -2,7 +2,6 @@
 title: Moving away from Cloudflare
 date: 2024-10-08
 excerpt: Why I’m moving away from Cloudflare to smaller providers.
-tags: [server, hosting, domains]
 ---
 
 Domain names (along with hosting) are one of those perpetual projects for me. No matter which company I decide to go with, a little later I’m back to square one, looking at alternatives.

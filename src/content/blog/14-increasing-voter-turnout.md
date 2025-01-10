@@ -2,7 +2,6 @@
 title: Increasing voter turnout
 date: 2024-07-09
 excerpt: Turnout in UK elections is lower than it should be, but it doesn’t have to be that way.
-tags: [election, voting, turnout]
 ---
 
 **NOTE:** Some concepts have been simplified to keep this post readable. For example, I use “polling station” to mean both “polling place” (the building) and “polling station” (the individual booth in the building) because most people don’t differentiate between the two.

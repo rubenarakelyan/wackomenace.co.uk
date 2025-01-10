@@ -2,7 +2,6 @@
 title: Where I won’t work
 date: 2024-05-14
 excerpt: There are some industries that are just too devoid of a social conscience to work in.
-tags: [work]
 ---
 
 I started my career at Shell - that’s a fact, however inconvenient. Back in 2010, although climate change was of course being talked about and companies having a conscience was also a known topic, it was nowhere near as advanced as it now is. Of course, we had the occasional Greenpeace protest outside the office and a few of my more activist friends would raise an eyebrow at my employer of choice, but by and large, it was a given that some people worked in this place and for most, it was just a career, not a lifestyle or political choice. Anyway, time went by and I eventually left, mostly due to the glacial pace of career advancement, and thought nothing more of it.

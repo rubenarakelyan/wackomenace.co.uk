@@ -2,7 +2,6 @@
 title: Why I left Monzo
 date: 2024-06-06
 excerpt: A darling startup grew up and forgot its roots.
-tags: [monzo, customer-service]
 ---
 
 I was one of the first people on the Monzo bandwagon when it first launched in 2015 and was still known as Mondo. My then boss was active in the startup scene and had heard they were seeking people who were open to alpha testing a bank! I eagerly joined up and even went to a couple of their in-person event in London to open my account, receive my first hot coral debit card and chat with other early adopters (plus I got the t-shirt!).

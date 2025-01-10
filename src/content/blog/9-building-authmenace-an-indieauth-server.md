@@ -2,7 +2,6 @@
 title: "Building Authmenace: an IndieAuth server"
 date: 2024-05-07
 excerpt: A super-simple IndieAuth authorization and token endpoint with no database.
-tags: [indieweb, indieauth, auth, server]
 ---
 
 Since starting to build wackomenace, I’ve wanted to participate as fully as possible in the IndieWeb ecosystem. The term “IndieWeb” encompasses a number of standards and services that can be added to websites to improve cross-collaboration and bypass usage of the largest players on the web for things like authenticating yourself on other websites.

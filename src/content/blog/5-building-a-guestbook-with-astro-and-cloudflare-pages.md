@@ -2,7 +2,6 @@
 title: Building a guestbook with Astro and Cloudflare Pages
 date: 2024-04-08
 excerpt: Here’s how I built a simple guestbook for my website using Astro and hosting on Cloudflare Pages.
-tags: [astro, website, guestbook]
 ---
 
 So far, my website has been a simple, static affair, built on deployment and hosted on Cloudflare Pages. However, I always knew that once I had the main site up and running as I wanted, I would start adding a little dynamic functionality since a purely static site is somewhat limiting.

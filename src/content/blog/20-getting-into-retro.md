@@ -2,7 +2,6 @@
 title: Getting into retro
 date: 2024-12-02
 excerpt: As I get older, I’m inevitably longing for the tech trappings of my youth.
-tags: [retro]
 ---
 
 When I was younger (as most good stories start), I couldn’t wait to be older. Technology was moving on at such a pace that I felt right in the middle of a massive upheaval, seeing my parents and their generation as mere luddites compared to my high-tech, fast-paced upbringing. I readily got rid of old tech as soon as something newer came along - computers, software boxes, mobile phones, music players, cameras and more. Holding on to old stuff was a waste of time - it was all about the future.

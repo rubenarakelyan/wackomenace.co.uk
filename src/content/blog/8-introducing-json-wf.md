@@ -2,7 +2,6 @@
 title: Introducing JSON-WF
 date: 2024-04-23
 excerpt: A new JSON-based format for sharing blogrolls.
-tags: [json-wf, blogroll]
 ---
 
 > This post is now of historic interest only since the JSON-WF format has been deprecated.

@@ -2,7 +2,6 @@
 title: "Linux: Don’t bite the hand that feeds you"
 date: 2024-04-22
 excerpt: The sheer arrogance of some in the community puts off everyday users and potential converts.
-tags: [linux, arrogance]
 ---
 
 I recently read Kev Quirk’s post [Linux Elitism...again](https://kevquirk.com/linux-elitism-again), which normally would have had me shaking my head at the sheer arrogance of the participants, but instead, it merely confirmed something I’ve been seeing for years.

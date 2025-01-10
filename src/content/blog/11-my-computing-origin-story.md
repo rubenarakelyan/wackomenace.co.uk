@@ -2,7 +2,6 @@
 title: My computing origin story
 date: 2024-05-29
 excerpt: How I started off on my lifelong computing journey.
-tags: [retro, pc]
 ---
 
 Inspired by Robb Knight’s [computing origin story](https://rknight.me/blog/my-computing-origin-story/), here’s **roughly** how my computing history goes. A lot of the dates are **very** approximate since I don’t have many photos or records of what I’ve owned over the years.

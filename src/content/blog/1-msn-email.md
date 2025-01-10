@@ -2,7 +2,6 @@
 title: Getting an msn.com email address in 2024
 date: 2024-02-15
 excerpt: How to rock that ’90s feeling with @msn.com.
-tags: [retro, msn]
 ---
 
 > Update (10/12/2024): I’ve been informed by a reader that it’s no longer possible to use this technique to create new @msn.com addresses. It seems that this is a known issue and there are no plans to change it back, so for now, the rest of this post is just historic information.
