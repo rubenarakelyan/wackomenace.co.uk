@@ -31,7 +31,7 @@ jobs:
           npm install
           npm run build
       - name: rsync local to remote
-        run: sshpass -p$SSH_PASSWORD rsync -rtvz ./dist/ $SSH_USER@$SSH_HOST:/home/lionheart/www/www.wackomenace.co.uk/
+        run: sshpass -p$SSH_PASSWORD rsync -rtvz ./dist/ $SSH_USER@$SSH_HOST:/home/fearless/www/www.wackomenace.co.uk/
         env:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
