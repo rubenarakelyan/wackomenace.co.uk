@@ -3,7 +3,6 @@ title: Recreating my first PC
 date: 2024-03-10
 excerpt: Looking back with fondness at my first Windows desktop.
 tags: [retro, pc]
-cover: ./images/packard-bell-pulsar-33.jpg
 ---
 
 Recently, I read Lothar Serra Mari’s article on [recreating his first PC](https://fabulous.systems/posts/2022/12/virtual-archaeology-recreating-my-first-computer/) and it got me thinking. He had a Packard Bell, which was also my first PC when I was 10 years old.

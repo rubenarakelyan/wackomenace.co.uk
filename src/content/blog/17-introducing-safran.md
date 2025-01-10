@@ -3,7 +3,6 @@ title: Introducing Safran
 date: 2024-10-02
 excerpt: My new web and mobile app agency is live!
 tags: [agency, development, apps, web, mobile]
-cover: ./images/safran.png
 ---
 
 Over the past few months, I have been working behind-the-scenes on a little project, and it’s now ready to reveal: [Safran](https://www.safran.agency), my new web and mobile app agency, working with the [Bayspace Platform](https://bayspace-stives.com/bayspace-platform/) and [Barclays Eagle Labs](https://labs.uk.barclays/about).

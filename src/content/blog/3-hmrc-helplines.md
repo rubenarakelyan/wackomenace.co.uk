@@ -3,7 +3,6 @@ title: "HMRC: can you be any more difficult to work with?"
 date: 2024-03-21
 excerpt: Wherein we discuss how HMRC seems hellbent on making it as difficult as possible to work with them.
 tags: [uk, hmrc]
-cover: ./images/hmrc.svg
 ---
 
 ***
