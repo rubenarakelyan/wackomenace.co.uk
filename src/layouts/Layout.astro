@@ -56,28 +56,14 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
       <a class="block p-2" href="#main-content">Skip to main content</a>
     </div>
     <div class="md:max-w-[80ch] md:mx-auto">
-      <nav class="pt-10 px-4 mx-auto flex flex-wrap gap-4 justify-center">
-        <a href="/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
-          Home
-        </a>
-        <a href="/about/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
-          About
-        </a>
-        <a href="/blogroll/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
-          Blogroll
-        </a>
-        <a href="/podroll/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
-          Podroll
-        </a>
-        <a href="/now/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
-          /now
-        </a>
-        <a href="/uses/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
-          /uses
-        </a>
-        <a href="/elsewhere/" class="p-4 border-4 border-slate-200 dark:border-slate-800">
-          Elsewhere
-        </a>
+      <nav class="pt-8 px-4 mx-auto flex flex-wrap gap-4 justify-center">
+        <a href="/" class="p-4">Home</a>
+        <a href="/about/" class="p-4">About</a>
+        <a href="/blogroll/" class="p-4">Blogroll</a>
+        <a href="/podroll/" class="p-4">Podroll</a>
+        <a href="/now/" class="p-4">/now</a>
+        <a href="/uses/" class="p-4">/uses</a>
+        <a href="/elsewhere/" class="p-4">Elsewhere</a>
       </nav>
       <main class="pt-10 px-4" id="main-content">
         <slot />
