@@ -21,7 +21,6 @@ export default defineConfig({
   integrations: [sitemap(), tailwind()],
   redirects: {
     "/.well-known/recommendations.opml": "/blogroll/rubenarakelyan.opml",
-    "/.well-known/webfinger": "/.well-known/webfinger.json",
     "/blog/random": "/blog/16-dynamic-to-static/#no-more-random-blog-posts",
     "/contact": "/",
     "/guestbook": "/blog/16-dynamic-to-static/#guestbook---gone",
