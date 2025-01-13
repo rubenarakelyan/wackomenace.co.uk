@@ -5,7 +5,10 @@ date: 2024-10-14
 ---
 
 <figure>
-  <img src="/images/ruben-at-work-dithered.png" alt="Ruben sitting at a desk in front of a laptop">
+  <picture>
+    <source srcset="/images/ruben-at-work-dithered.webp" alt="Ruben sitting at a desk in front of a laptop" type="image/webp">
+    <img src="/images/ruben-at-work-dithered.png" alt="Ruben sitting at a desk in front of a laptop">
+  </picture>
   <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">James Warbey</a></figcaption>
 </figure>
 
