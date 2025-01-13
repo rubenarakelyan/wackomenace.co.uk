@@ -9,7 +9,7 @@ const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() 
 
 <Layout title="Ruben Arakelyan’s home on the web" description="Welcome to Ruben Arakelyan’s home on the web">
   <section class="mb-6">
-    <h1 class="text-7xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6 print:text-pink-600">👋 Hi, I’m Ruben</h1>
+    <h1 class="text-7xl leading-snug hyphens-auto mb-6 text-[#bb2649]">👋 Hi, I’m Ruben</h1>
     <div class="mb-2 h-card">
       <div class="float-left">
         <picture>
@@ -26,7 +26,7 @@ const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() 
     <p class="text-xl"><strong role="heading" aria-level="2">Want to just chat?</strong> <a href="mailto:ruben@arakelyan.uk">Hit me up</a> (and use <a href="/pgpkey.asc">my PGP key</a> if you like).</p>
   </section>
   <section class="mb-6">
-    <h2 class="text-5xl leading-snug hyphens-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-300 mb-6 print:text-pink-600">Blog posts</h2>
+    <h2 class="text-5xl leading-snug hyphens-auto mb-6 text-[#bb2649]">Blog posts</h2>
     {
       blog.map((post) => (
         <BlogPostPreview
