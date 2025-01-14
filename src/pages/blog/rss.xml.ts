@@ -31,7 +31,7 @@ export async function GET(context: APIContext) {
     }))),
     customData: `
       <language>en-gb</language>
-      <copyright>Copyright © 2024 Ruben Arakelyan. All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright>
+      <copyright>Copyright © 2024-2025 Ruben Arakelyan. All work licensed under CC BY-SA 4.0 unless otherwise stated.</copyright>
       <category>Blogs</category>
       <generator>${context.generator}</generator>
       <docs>https://www.rssboard.org/rss-specification</docs>

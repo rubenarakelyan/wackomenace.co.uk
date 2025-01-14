@@ -31,7 +31,7 @@ export async function GET(context: APIContext) {
   <category term="blogs" />
   <generator>${context.generator}</generator>
   <icon>${context.site}images/logo.png</icon>
-  <rights>Copyright © 2024 Ruben Arakelyan. All work licensed under CC BY-SA 4.0 unless otherwise stated.</rights>
+  <rights>Copyright © 2024-2025 Ruben Arakelyan. All work licensed under CC BY-SA 4.0 unless otherwise stated.</rights>
   <subtitle>Ruben Arakelyan’s home on the web</subtitle>
   ${
     (await Promise.all(blog.map(async (post) =>
