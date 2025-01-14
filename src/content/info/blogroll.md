@@ -1,7 +1,7 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2025-01-09
+date: 2025-01-14
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
@@ -16,7 +16,6 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [furbo.org](https://furbo.org)
 * [Iconfactory’s The Breakroom](https://blog.iconfactory.com)
 * [Kev Quirk](https://kevquirk.com)
-* [MetaFilter](https://www.metafilter.com)
 * [Paul Stamatiou](https://paulstamatiou.com)
 * [People and Blogs](https://peopleandblogs.com)
 * [Rands in Repose](https://randsinrepose.com)
@@ -26,13 +25,6 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Terence Eden](https://shkspr.mobi/blog)
 * [Thurrott.com](https://www.thurrott.com)
 * [Wired](https://www.wired.com)
-
-I also follow a number of people writing weeknotes (and may start doing this myself at some point).
-
-* [Alice Bartlett](https://alicebartlett.co.uk)
-* [Paul Mucur](https://mudge.name)
-* [Phil Gyford](https://www.gyford.com/phil/writing/)
-* [Tom Stuart](https://tomstu.art)
 
 All these blogs are also available as an [OPML file](/blogroll/rubenarakelyan.opml) to import into your favourite feed reader.
 
