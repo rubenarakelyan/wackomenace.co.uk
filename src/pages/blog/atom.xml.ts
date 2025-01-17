@@ -18,7 +18,6 @@ export async function GET(context: APIContext) {
 
   return new Response(
       `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="/assets/atom.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>${context.site}</id>
   <title>wackomenace</title>
