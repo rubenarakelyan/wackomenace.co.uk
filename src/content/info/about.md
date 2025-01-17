@@ -9,7 +9,7 @@ date: 2024-10-14
     <source srcset="/images/ruben-at-work-dithered.webp" type="image/webp">
     <img src="/images/ruben-at-work-dithered.png" alt="Ruben sitting at a desk in front of a laptop">
   </picture>
-  <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">James Warbey</a></figcaption>
+  <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives" target="_blank" aria-label="opens in a new tab">James Warbey</a></figcaption>
 </figure>
 
 <aside itemscope itemtype="https://schema.org/Person">
@@ -26,7 +26,7 @@ date: 2024-10-14
     <p>If you speak Armenian or a similar language, here’s audio of the pronunciation:</p>
     <audio src="/assets/ruben.hy.m4a" controls></audio>
     <p>And if you understand IPA, here’s what I think is the correct rendering:</p>
-    <p><strong>ɻʊɓən ɑɹɑkelʎɑn</strong> (<a href="http://ipa-reader.xyz" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">hear it</a>)</p>
+    <p><strong>ɻʊɓən ɑɹɑkelʎɑn</strong> (<a href="http://ipa-reader.xyz" target="_blank" aria-label="opens in a new tab">hear it</a>)</p>
     <p>Any corrections to the above to better match the Armenian pronunciation are welcome.</p>
   </section>
 </aside>
