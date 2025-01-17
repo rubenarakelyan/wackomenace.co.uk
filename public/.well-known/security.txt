@@ -1,6 +1,0 @@
-Contact: mailto:ruben@arakelyan.uk
-Expires: 2026-01-01T00:00:00.000Z
-Encryption: https://www.wackomenace.co.uk/pgpkey.asc
-Acknowledgments: https://www.wackomenace.co.uk/colophon
-Preferred-Languages: en, hy
-Canonical: https://www.wackomenace.co.uk/.well-known/security.txt
