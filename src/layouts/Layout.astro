@@ -23,7 +23,6 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
       <meta property="og:title" content=`${title} &middot; wackomenace`>
       <meta property="og:description" content={description}>
       <meta property="og:url" content={Astro.url}>
-      <meta property="og:image" content=`${Astro.url}og.png`>
       <meta property="og:locale" content="en_GB">
     }
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/rss.xml">
