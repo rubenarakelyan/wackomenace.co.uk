@@ -9,7 +9,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 
 export async function GET(context: APIContext) {
-  const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   const parser = unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -21,11 +21,11 @@ export async function GET(context: APIContext) {
     title: "wackomenace",
     description: "Ruben Arakelyan’s home on the web",
     site: context.site!.toString(),
-    items: await Promise.all(blog.map(async (post) => ({
+    items: await Promise.all(posts.map(async post => ({
       title: post.data.title,
-      link: `/blog/${post.slug}/`,
+      link: `/blog/${post.id}/`,
       description: post.data.excerpt,
-      content: String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`),
+      content: String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replaceAll('href="#', `href="${context.site!.toString()}blog/${post.id}/#`),
       pubDate: post.data.date,
     }))),
     customData: `
@@ -36,13 +36,13 @@ export async function GET(context: APIContext) {
       <docs>https://www.rssboard.org/rss-specification</docs>
       <ttl>60</ttl>
       <image>
-        <url>https://www.wackomenace.co.uk/images/logo.png</url>
+        <url>${context.site}images/logo.png</url>
         <title>wackomenace</title>
-        <link>https://www.wackomenace.co.uk/</link>
+        <link>${context.site}</link>
         <width>111</width>
         <height>111</height>
       </image>
-      <source:blogroll>https://www.wackomenace.co.uk/blogroll/rubenarakelyan.opml</source:blogroll>
+      <source:blogroll>${context.site}blogroll/rubenarakelyan.opml</source:blogroll>
     `,
     xmlns: {
       source: "http://source.scripting.com/",
@@ -51,9 +51,9 @@ export async function GET(context: APIContext) {
 }
 
 export async function getStaticPaths() {
-  const blog = await getCollection("blog");
-  return blog.map((post) => ({
-    params: { slug: post.slug },
+  const posts = await getCollection("blog");
+  return posts.map(post => ({
+    params: { slug: post.id },
     props: { post },
   }));
 }

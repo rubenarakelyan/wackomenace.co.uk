@@ -8,7 +8,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 
 export async function GET(context: APIContext) {
-  const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   const parser = unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -33,12 +33,12 @@ export async function GET(context: APIContext) {
   "language": "en-GB",
   "items": [
     ${
-      await Promise.all(blog.map(async (post) =>
+      await Promise.all(posts.map(async post =>
         `{
-          "id": "${context.site}blog/${post.slug}/",
-          "url": "${context.site}blog/${post.slug}/",
+          "id": "${context.site}blog/${post.id}/",
+          "url": "${context.site}blog/${post.id}/",
           "title": "${post.data.title}",
-          "content_html": "${String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replace(/"/g, '\\\"').replace(/\r?\n|\r/g, '\\n').trim()}",
+          "content_html": "${String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replaceAll('href="#', `href="${context.site!.toString()}blog/${post.id}/#`).replace(/"/g, '\\\"').replace(/\r?\n|\r/g, '\\n').trim()}",
           "summary": "${post.data.excerpt}",
           "date_published": "${new Date(post.data.date).toJSON()}"
         }`
@@ -55,9 +55,9 @@ export async function GET(context: APIContext) {
 }
 
 export async function getStaticPaths() {
-  const blog = await getCollection("blog");
-  return blog.map((post) => ({
-    params: { slug: post.slug },
+  const posts = await getCollection("blog");
+  return posts.map(post => ({
+    params: { slug: post.id },
     props: { post },
   }));
 }

@@ -1,13 +1,7 @@
 ---
 import "../styles/global.css";
 
-interface Props {
-  title: string;
-  description: string;
-}
-
 const { title, description } = Astro.props;
-const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
 ---
 
 <!doctype html>
@@ -18,13 +12,11 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
     <title>{title} &middot; wackomenace</title>
     <meta name="generator" content={Astro.generator}>
     <meta name="description" content={description}>
-    {blog_post &&
-      <meta property="og:type" content="website">
-      <meta property="og:title" content=`${title} &middot; wackomenace`>
-      <meta property="og:description" content={description}>
-      <meta property="og:url" content={Astro.url}>
-      <meta property="og:locale" content="en_GB">
-    }
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=`${title} &middot; wackomenace`>
+    <meta property="og:description" content={description}>
+    <meta property="og:url" content={Astro.url}>
+    <meta property="og:locale" content="en_GB">
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/rss.xml">
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/blog/atom.xml">
     <link rel="alternate" type="application/feed+json" title="JSON Feed" href="/blog/feed.json">
@@ -48,64 +40,43 @@ const blog_post = Astro.url.pathname.match(/^\/blog\/.+/g);
     <link rel="me" type="text/html" href="https://www.linkedin.com/in/rubenarakelyan/">
     <link rel="me" type="text/html" href="mailto:ruben@arakelyan.uk">
   </head>
-  <body class="antialiased scroll-smooth text-slate-600 dark:bg-slate-600 dark:text-slate-300 selection:bg-[#bb2649] selection:text-white" id="top">
-    <div class="mb-2 bg-slate-100 dark:bg-slate-700 text-center border-b border-slate-200 dark:border-slate-800">
-      <a class="block p-2" href="#main-content">Skip to main content</a>
-    </div>
-    <div class="md:max-w-[80ch] md:mx-auto">
-      <nav class="pt-8 px-4 mx-auto flex flex-wrap gap-4 justify-center">
-        <a href="/" class="p-4">Home</a>
-        <a href="/about/" class="p-4">About</a>
-        <a href="/blogroll/" class="p-4">Blogroll</a>
-        <a href="/podroll/" class="p-4">Podroll</a>
-        <a href="/now/" class="p-4">/now</a>
-        <a href="/uses/" class="p-4">/uses</a>
-        <a href="/elsewhere/" class="p-4">Elsewhere</a>
-      </nav>
-      <main class="pt-10 px-4" id="main-content">
-        <slot />
-        <p class="mt-6 text-right text-sm"><a href="#top">&uarr; Back to top</a></p>
-      </main>
-    </div>
-    <footer class="mt-8 px-4 md:px-0 py-4 bg-slate-100 dark:bg-slate-700 text-sm border-t border-slate-200 dark:border-slate-800">
-      <div class="md:max-w-[80ch] md:mx-auto">
-        <div class="md:mb-1 md:flex md:flex-wrap">
-          <p>
-            © <span title="2024&mdash;2025">MMXXIV&mdash;MMXXV</span> <a href="mailto:ruben@arakelyan.uk">Ruben Arakelyan</a>. All work licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferer license" aria-label="opens in a new tab">CC BY-SA 4.0</a> unless otherwise stated.
-          </p>
-        </div>
-        <div class="md:mb-1 md:flex md:flex-wrap">
-          <p>
-            <a href="/feeds/">Blog feeds</a>
-          </p>
-          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-            <a href="/colophon/">Colophon</a>
-          </p>
-          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-            <a href="/privacy/" rel="privacy-policy">Privacy policy</a>
-          </p>
-          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-            <a href="/terms/" rel="terms-of-service">Terms and conditions</a>
-          </p>
-          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-            <a href="/disclaimer/">Disclaimer</a>
-          </p>
-          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-            <a href="https://github.com/rubenarakelyan/wackomenace.co.uk" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">GitHub</a>
-          </p>
-        </div>
-        <div class="md:mb-1 md:flex md:flex-wrap">
-          <p>
-            <a href="https://xn--sr8hvo.ws/previous" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">←</a> An <a href="https://xn--sr8hvo.ws" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">IndieWeb Webring</a> 🕸💍 <a href="https://xn--sr8hvo.ws/next" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">→</a>
-          </p>
-          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-            <a href="https://www.websitecarbon.com/website/wackomenace-co-uk/" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">0.26g CO<sub>2</sub> per visit</a>
-          </p>
-          <p class="md:ml-4 md:pl-4 md:border-l md:border-slate-200">
-            <a href="https://proven.lol/5d1311" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">proven.lol/5d1311</a>
-          </p>
-        </div>
-      </div>
+  <body id="top">
+    <p>
+      <a href="#main-content">Skip to main content</a>
+    </p>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/about/">About</a> |
+      <a href="/blogroll/">Blogroll</a> |
+      <a href="/podroll/">Podroll</a> |
+      <a href="/now/">/now</a> |
+      <a href="/uses/">/uses</a> |
+      <a href="/elsewhere/">Elsewhere</a>
+    </nav>
+    <main id="main-content">
+      <slot />
+      <p>
+        <a href="#top">&uarr; Back to top</a>
+      </p>
+    </main>
+    <footer>
+      <hr>
+      <p>
+        © <span title="2024&mdash;2025">MMXXIV&mdash;MMXXV</span> <a href="mailto:ruben@arakelyan.uk">Ruben Arakelyan</a>. All work licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferer license" aria-label="opens in a new tab">CC BY-SA 4.0</a> unless otherwise stated.
+      </p>
+      <p>
+        <a href="/feeds/">Blog feeds</a> |
+        <a href="/colophon/">Colophon</a> |
+        <a href="/privacy/" rel="privacy-policy">Privacy policy</a> |
+        <a href="/terms/" rel="terms-of-service">Terms and conditions</a> |
+        <a href="/disclaimer/">Disclaimer</a> |
+        <a href="https://github.com/rubenarakelyan/wackomenace.co.uk" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">GitHub</a>
+      </p>
+      <p>
+        <a href="https://xn--sr8hvo.ws/previous" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">←</a> An <a href="https://xn--sr8hvo.ws" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">IndieWeb Webring</a> 🕸💍 <a href="https://xn--sr8hvo.ws/next" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">→</a> |
+        <a href="https://www.websitecarbon.com/website/wackomenace-co-uk/" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">0.26g CO<sub>2</sub> per visit</a> |
+        <a href="https://proven.lol/5d1311" target="_blank" rel="noopener noreferer" aria-label="opens in a new tab">proven.lol/5d1311</a>
+      </p>
     </footer>
   </body>
 </html>

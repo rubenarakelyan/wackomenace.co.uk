@@ -4,17 +4,17 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import BlogPostPreview from "../../components/BlogPostPreview.astro";
 
-const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
 <Layout title="Blog" description="Ruben Arakelyan’s blog">
-  <section class="mb-6">
-    <h1 class="text-7xl leading-snug hyphens-auto mb-6 text-[#bb2649]">Blog posts</h1>
+  <section>
+    <h1>Blog posts</h1>
     {
-      blog.map((post) => (
+      posts.map(post => (
         <BlogPostPreview
           homepage={false}
-          url={"/blog/" + post.slug + "/"}
+          url={"/blog/" + post.id + "/"}
           title={post.data.title}
           excerpt={post.data.excerpt}
           date={post.data.date}

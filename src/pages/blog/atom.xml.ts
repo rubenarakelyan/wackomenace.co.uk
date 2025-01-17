@@ -8,7 +8,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 
 export async function GET(context: APIContext) {
-  const blog = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   const parser = unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -33,17 +33,17 @@ export async function GET(context: APIContext) {
   <rights>Copyright © 2024-2025 Ruben Arakelyan. All work licensed under CC BY-SA 4.0 unless otherwise stated.</rights>
   <subtitle>Ruben Arakelyan’s home on the web</subtitle>
   ${
-    (await Promise.all(blog.map(async (post) =>
+    (await Promise.all(posts.map(async post =>
       `<entry>
-        <id>${context.site}blog/${post.slug}/</id>
+        <id>${context.site}blog/${post.id}/</id>
         <title>${post.data.title}</title>
         <updated>${new Date(post.data.date).toJSON()}</updated>
         <content type="xhtml">
           <div xmlns="http://www.w3.org/1999/xhtml">
-            ${String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`)}
+            ${String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replaceAll('href="#', `href="${context.site!.toString()}blog/${post.id}/#`)}
           </div>
         </content>
-        <link rel="alternate" href="${context.site}blog/${post.slug}" />
+        <link rel="alternate" href="${context.site}blog/${post.id}/" />
         <summary>${post.data.excerpt}</summary>
         <published>${new Date(post.data.date).toJSON()}</published>
       </entry>`
@@ -60,9 +60,9 @@ export async function GET(context: APIContext) {
 }
 
 export async function getStaticPaths() {
-  const blog = await getCollection("blog");
-  return blog.map((post) => ({
-    params: { slug: post.slug },
+  const posts = await getCollection("blog");
+  return posts.map(post => ({
+    params: { slug: post.id },
     props: { post },
   }));
 }

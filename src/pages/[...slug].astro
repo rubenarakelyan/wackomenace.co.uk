@@ -1,0 +1,27 @@
+---
+import { getCollection, render } from "astro:content";
+
+import Layout from "../layouts/Layout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("info");
+  return pages.map(page => ({
+    params: { slug: page.id },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+
+<Layout title={page.data.title} description={page.data.description}>
+  <article>
+    <h1>{page.data.title}</h1>
+    <div>
+      <Content />
+    </div>
+    <p class="metadata">Last updated: <FormattedDate date={page.data.date} /></p>
+  </article>
+</Layout>

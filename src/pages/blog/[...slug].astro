@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map(post => ({
+    params: { slug: post.id },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(post);
+---
+
+<Layout title={post.data.title} description={post.data.excerpt}>
+  <article class="h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid={Astro.request.url}>
+    <h1 class="p-name" itemprop="name">{post.data.title}</h1>
+    <p class="metadata"><em>by</em> <a rel="author" class="p-author" href="mailto:ruben@arakelyan.uk">Ruben Arakelyan</a></a> &middot; <a class="u-url" href={Astro.request.url}><FormattedDate date={post.data.date} classes="dt-published" itemprop="datePublished" /></a> &middot; {remarkPluginFrontmatter.minutesRead}</p>
+    <p class="p-summary" itemprop="abstract" role="heading">{post.data.excerpt}</p>
+    <div class="e-content">
+      <Content />
+    </div>
+    <p class="asterism">⁂</p>
+    <p><a href=`mailto:ruben@arakelyan.uk?subject=Re:%20${encodeURIComponent(post.data.title)}`>Reply via email</a></p>
+  </article>
+</Layout>

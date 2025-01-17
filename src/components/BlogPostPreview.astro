@@ -1,32 +1,25 @@
 ---
 import FormattedDate from "./FormattedDate.astro";
 
-interface Props {
-  homepage: boolean;
-  url: string;
-  title: string;
-  excerpt: string;
-  date: Date;
-}
-
 const { homepage, url, title, excerpt, date } = Astro.props;
 ---
 
-<article class="mb-6 h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid=`${Astro.site}${url.substring(1)}`>
-  <p class="text-sm"><FormattedDate date={date} classes="dt-published" itemprop="datePublished" /></p>
+<article class="h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid=`${Astro.site}${url.substring(1)}`>
+  <p class="metadata"><FormattedDate date={date} classes="dt-published" itemprop="datePublished" /></p>
   {homepage &&
-    <h3 class="text-2xl mb-1 p-name" itemprop="name">
+    <h3 class="p-name" itemprop="name">
       <a class="u-url" href={url}>
         {title}
       </a>
     </h3>
   }
   {!homepage &&
-    <h2 class="text-3xl mb-1 p-name" itemprop="name">
+    <h2 class="p-name" itemprop="name">
       <a class="u-url" href={url}>
         {title}
       </a>
     </h2>
   }
-  <p class="text-xl p-summary" itemprop="abstract">{excerpt}</p>
+  <p class="p-summary" itemprop="abstract">{excerpt}</p>
 </article>
+<hr>

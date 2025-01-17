@@ -1,3 +1,43 @@
-a {
-  @apply text-blue-600 dark:text-blue-300 underline underline-offset-2;
+body {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 2rem;
+  max-width: 80ch;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+aside, footer, .metadata {
+  font-size: 1rem;
+}
+
+aside {
+  font-style: italic;
+}
+
+blockquote {
+  padding: 1rem;
+  outline: thick double #000;
+}
+
+.asterism {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+  }
 }

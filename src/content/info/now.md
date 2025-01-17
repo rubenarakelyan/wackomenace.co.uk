@@ -4,7 +4,7 @@ description: A list of what I’m up to at the moment.
 date: 2024-10-27
 ---
 
-<aside class="text-sm italic">
+<aside>
 
 (This is [a now page](https://nownownow.com/about), and if you have your own site, [you should make one](https://nownownow.com/about), too.)
 
