@@ -32,6 +32,10 @@ blockquote {
   outline: thick double #000;
 }
 
+pre {
+  padding: 1rem;
+}
+
 .asterism {
   text-align: center;
 }
