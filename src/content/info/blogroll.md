@@ -1,7 +1,7 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2025-01-14
+date: 2025-01-18
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
@@ -14,8 +14,10 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [David Heinemeier Hansson](https://world.hey.com/dhh)
 * [Derek Sivers](https://sive.rs/blog)
 * [furbo.org](https://furbo.org)
+* [Iron_Geek](https://irongeek.net)
 * [Iconfactory’s The Breakroom](https://blog.iconfactory.com)
 * [Kev Quirk](https://kevquirk.com)
+* [Manuel Moreale](https://manuelmoreale.com)
 * [Paul Stamatiou](https://paulstamatiou.com)
 * [People and Blogs](https://peopleandblogs.com)
 * [Rands in Repose](https://randsinrepose.com)
