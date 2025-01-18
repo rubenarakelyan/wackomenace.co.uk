@@ -1,7 +1,7 @@
 ---
 title: Colophon
 description: The tools and processes I use to build, maintain and host this website.
-date: 2025-01-10
+date: 2025-01-18
 ---
 
 > An inscription placed at the end of a book or manuscript and giving details of its publication.
@@ -10,7 +10,7 @@ date: 2025-01-10
 
 For the technology-minded, here are some details of how I build, maintain and host this website.
 
-* Built with the [Astro](https://astro.build) framework and [Tailwind CSS](https://tailwindcss.com)
+* Built with the [Astro](https://astro.build) framework
 * Maintained with [Nova](https://nova.app)
 * Hosted on [Mythic Beasts](https://www.mythic-beasts.com) via [GitHub](https://github.com/rubenarakelyan/wackomenace.co.uk)
 * Logo designed by [Jord Riekwel](https://larkef.com)
