@@ -13,7 +13,7 @@ date: 2024-10-14
 </figure>
 
 <aside itemscope itemtype="https://schema.org/Person">
-  <section itemprop="name">
+  <div itemprop="name">
     <p><strong role="heading">My full name is <span itemprop="givenName">Ruben</span> <span itemprop="familyName">Arakelyan</span> (<span lang="hy">Ռուբէն Առաքելեան</span> in Armenian).</strong></p>
     <p>The question I am most asked: how do you pronounce your name?</p>
     <p>If you speak English or a similar language, here’s audio of the pronunciation:</p>
@@ -28,7 +28,7 @@ date: 2024-10-14
     <p>And if you understand IPA, here’s what I think is the correct rendering:</p>
     <p><strong>ɻʊɓən ɑɹɑkelʎɑn</strong> (<a href="http://ipa-reader.xyz" target="_blank" aria-label="opens in a new tab">hear it</a>)</p>
     <p>Any corrections to the above to better match the Armenian pronunciation are welcome.</p>
-  </section>
+  </div>
 </aside>
 
 ***
