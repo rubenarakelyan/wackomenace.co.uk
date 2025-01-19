@@ -9,7 +9,10 @@ Inspired by Robb Knight’s [computing origin story](https://rknight.me/blog/my-
 ## VTech notebook
 
 <figure>
-  <img src="/images/blog/vtech-talking-whiz-kid-notebook.jpg" alt="VTech Talking Whiz-Kid Notebook">
+  <picture>
+    <source srcset="/images/blog/vtech-talking-whiz-kid-notebook-dithered.webp" type="image/webp">
+    <img src="/images/blog/vtech-talking-whiz-kid-notebook-dithered.png" alt="VTech Talking Whiz-Kid Notebook">
+  </picture>
   <figcaption>VTech Talking Whiz-Kid Notebook</figcaption>
 </figure>
 
@@ -18,7 +21,10 @@ The very first “computer” I had, given to me as a Christmas present, when th
 ## Hardcard computer
 
 <figure>
-  <img src="/images/blog/hardcard-computer.jpg" alt="The “hardcard” computer">
+  <picture>
+    <source srcset="/images/blog/hardcard-computer-dithered.webp" type="image/webp">
+    <img src="/images/blog/hardcard-computer-dithered.png" alt="The “hardcard” computer">
+  </picture>
   <figcaption>The “hardcard” computer</figcaption>
 </figure>
 
@@ -27,7 +33,10 @@ A generic PC clone my dad found in a charity shop and bought for £10. It ran so
 ## Packard Bell PC
 
 <figure>
-  <img src="/images/blog/packard-bell-pulsar-33.jpg" alt="Packard Bell Pulsar">
+  <picture>
+    <source srcset="/images/blog/packard-bell-pulsar-33-dithered.webp" type="image/webp">
+    <img src="/images/blog/packard-bell-pulsar-33-dithered.png" alt="Packard Bell Pulsar">
+  </picture>
   <figcaption>Packard Bell Pulsar</figcaption>
 </figure>
 
@@ -52,7 +61,10 @@ Having a Mac laptop didn’t stop my desire to build something again for myself,
 ## iMac
 
 <figure>
-  <img src="/images/blog/imac-aluminium.png" alt="Aluminium iMac">
+  <picture>
+    <source srcset="/images/blog/imac-aluminium-dithered.webp" type="image/webp">
+    <img src="/images/blog/imac-aluminium-dithered.png" alt="Aluminium iMac">
+  </picture>
   <figcaption>Aluminium iMac</figcaption>
 </figure>
 

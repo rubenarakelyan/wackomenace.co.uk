@@ -7,7 +7,10 @@ excerpt: I got my first piece of guestbook spam less than a day after making it 
 It was only yesterday that I wrote about [Building a guestbook with Astro and Cloudflare Pages](/blog/5-building-a-guestbook-with-astro-and-cloudflare-pages/) and made it live, and I already have my first piece of guestbook spam!
 
 <figure>
-  <img src="/images/blog/guestbook-spam.png" alt="Screenshot of guestbook spam entry in Astro Studio">
+  <picture>
+    <source srcset="/images/blog/guestbook-spam-dithered.webp" type="image/webp">
+    <img src="/images/blog/guestbook-spam-dithered.png" alt="Screenshot of guestbook spam entry in Astro Studio">
+  </picture>
   <figcaption>Screenshot of guestbook spam entry in Astro Studio</figcaption>
 </figure>
 
