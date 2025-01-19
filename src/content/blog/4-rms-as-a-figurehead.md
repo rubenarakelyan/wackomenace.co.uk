@@ -4,7 +4,7 @@ date: 2024-03-28
 excerpt: Richard Stallman has admirable grit and has achieved more than a lot of other people, but he is not the right person to be the public face of the software freedom movement.
 ---
 
-> I have written [More thoughts on Richard Stallman](/blog/19-more-thoughts-on-richard-stallman/) as a follow-up after the publishing of the Stallman Report. The original blog post below has not been changed for full transparency, but the follow-up adds some important updates.
+> **Update (17/10/2024):** I have written [More thoughts on Richard Stallman](/blog/19-more-thoughts-on-richard-stallman/) as a follow-up after the publishing of the Stallman Report. The original blog post below has not been changed for full transparency, but the follow-up adds some important updates.
 
 I happened to stumble upon Martin Tournoij’s excellent blog post [Stallman isn’t great, but not the devil](https://www.arp242.net/rms.html) recently and found myself agreeing vigorously with most of the points he makes. It re-reminded me of the great hoo-ha of Richard Stallman’s ouster from and re-admittance to the Free Software Foundation that I watched unfold from afar.
 

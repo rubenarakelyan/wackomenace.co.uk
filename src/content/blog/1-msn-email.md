@@ -4,7 +4,7 @@ date: 2024-02-15
 excerpt: How to rock that ’90s feeling with @msn.com.
 ---
 
-> Update (10/12/2024): I’ve been informed by a reader that it’s no longer possible to use this technique to create new @msn.com addresses. It seems that this is a known issue and there are no plans to change it back, so for now, the rest of this post is just historic information.
+> **Update (10/12/2024):** I’ve been informed by a reader that it’s no longer possible to use this technique to create new @msn.com addresses. It seems that this is a known issue and there are no plans to change it back, so for now, the rest of this post is just historic information.
 
 There are many things that I would have not got rid of if I had the chance again - for example, my first and second PCs or all those CDs and floppy disks, but those are well and truly gone. Another thing is my first MSN email address. I got rid of it years ago when I was moving on to email addresses on custom domains, and again, it was a mistake now that everything old is new again.
 

@@ -4,7 +4,7 @@ date: 2024-04-23
 excerpt: A new JSON-based format for sharing blogrolls.
 ---
 
-> This post is now of historic interest only since the JSON-WF format has been deprecated.
+> **Update (09/01/2025):** This post is now of historic interest only since the JSON-WF format has been deprecated.
 
 When I was perusing what is now known as Web 1.0, it was the heyday of personal blogs, and linking to your blogging friends was all the rage. As well as burnishing your own credentials as a top-dog blogger if you linked to and were linked to from other top-dog bloggers, it also provided a way for readers to expand their own list of blogs to read.
 
