@@ -1,7 +1,7 @@
 ---
 title: Colophon
 description: The tools and processes I use to build, maintain and host this website.
-date: 2025-01-19
+date: 2025-01-20
 ---
 
 > An inscription placed at the end of a book or manuscript and giving details of its publication.
@@ -13,7 +13,8 @@ For the technology-minded, here are some details of how I build, maintain and ho
 * Built with the [Astro](https://astro.build) framework
 * Maintained with [Nova](https://nova.app)
 * Images dithered with [Ditherista](https://github.com/robertkist/ditherista/) (using Bayer 32&times;32)
-* Hosted on [Mythic Beasts](https://www.mythic-beasts.com) via [GitHub](https://github.com/rubenarakelyan/wackomenace.co.uk)
+* Hosted on [Mythic Beasts](https://www.mythic-beasts.com) using [green energy](https://www.thegreenwebfoundation.org/green-web-check/?url=mythic-beasts.com)
+* Source code on [GitHub](https://github.com/rubenarakelyan/wackomenace.co.uk)
 * Logo designed by [Jord Riekwel](https://larkef.com)
 
 Thanks to [Dzmitry Kozhukh](https://www.kozhuhds.com/blog/how-to-build-a-static-lightweight-mdx-blog-with-astro-step-by-step-guide) for a brilliant guide on how to get started with Astro.
@@ -32,3 +33,5 @@ I use the following online tools to validate various parts of this website to en
 * [OPML validator](http://validator.opml.org)
 * [Google Rich Results Test](https://search.google.com/test/rich-results)
 * [WAVE accessibility](https://wave.webaim.org/aim/)
+
+This website also adheres to the [Sustainable Web Manifesto](https://www.sustainablewebmanifesto.com/).
