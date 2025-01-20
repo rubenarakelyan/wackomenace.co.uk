@@ -1,7 +1,7 @@
 ---
 title: Terms and conditions
 description: The terms and conditions for this website.
-date: 2024-06-24
+date: 2025-01-20
 ---
 
 **NOTE: The content of this website is not permitted to be used for the development, training or use of any generative AI software, model, algorithm or tool.**
@@ -23,3 +23,5 @@ To provide attribution, you can use something similar to:
 ```
 <p>Credit to <a href="https://www.wackomenace.co.uk">Ruben Arakelyan</a> for the original work.</p>
 ```
+
+**wackomenace** is a registered trademark in the UK.
