@@ -1,5 +1,5 @@
 Header add Access-Control-Allow-Origin "https://www.wackomenace.co.uk"
-Header add Content-Security-Policy "default-src 'none'; img-src 'self'; manifest-src 'self'; media-src 'self'; style-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
+Header add Content-Security-Policy "default-src 'none'; img-src 'self'; manifest-src 'self'; media-src 'self'; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
 Header add Cross-Origin-Embedder-Policy "require-corp"
 Header add Cross-Origin-Opener-Policy "same-origin"
 Header add Cross-Origin-Resource-Policy "same-origin"
