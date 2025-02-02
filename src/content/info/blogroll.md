@@ -1,7 +1,7 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2025-01-20
+date: 2025-02-02
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
@@ -19,7 +19,6 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Kev Quirk](https://kevquirk.com)
 * [Manuel Moreale](https://manuelmoreale.com)
 * [Paul Stamatiou](https://paulstamatiou.com)
-* [People and Blogs](https://peopleandblogs.com)
 * [Rands in Repose](https://randsinrepose.com)
 * [Scott Hanselman](https://www.hanselman.com/blog/)
 * [Scott Helme](https://scotthelme.co.uk)
