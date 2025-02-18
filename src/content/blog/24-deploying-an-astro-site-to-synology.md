@@ -1,10 +1,10 @@
 ---
 title: Deploying an Astro site to Synology
 date: 2025-02-17
-excerpt: A quick writeup on how I deploy my static Astro website to my Synology NAS.
+excerpt: A quick writeup on how I deploy my static Astro site to my Synology NAS.
 ---
 
-In the [last blog post](/blog/23-moving-to-local-hosting/), I went through the process of moving the hosting of this website to my Synology NAS, fronted by Fastly for speed, resilience and security. Now it’s time to deploy the site, which is built with Astro, to the Synology NAS.
+In the [last blog post](/blog/23-moving-to-local-hosting/), I went through the process of moving the hosting of this site to my Synology NAS, fronted by Fastly for speed, resilience and security. Now it’s time to deploy the site, which is built with Astro, to the Synology NAS.
 
 I started by removing the previous GitHub Action which deployed to my shared hosting since that’s no longer applicable. Since I didn’t to open my Synology NAS’ SSH ports to the Internet for deployment, I decided to make it a completely local process.
 
