@@ -4,6 +4,8 @@ date: 2025-02-16
 excerpt: I’ve made the plunge to host my website myself and have full control.
 ---
 
+> This post is part of a series on hosting my website locally - also see [deploying an Astro site to Synology](/blog/24-deploying-an-astro-site-to-synology/) and [sending HSTS headers over plain HTTP](/blog/25-sending-hsts-headers-over-plain-http/).
+
 In a [previous blog post](/blog/18-moving-away-from-cloudflare/), I wrote about moving to shared hosting with [Mythic Beasts](https://www.mythic-beasts.com) and turning the site static for simplicity.
 
 Since I never seem to tire of tweaking things and can never stay still (and since it was always in the back of my mind), I’ve now decided to go the whole way and host this site myself, on my own hardware, in my own house!

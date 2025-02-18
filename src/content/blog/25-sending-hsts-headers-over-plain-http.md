@@ -4,6 +4,8 @@ date: 2025-02-18
 excerpt: Why I’m sending the HSTS header over plain HTTP but not redirecting to HTTPS.
 ---
 
+> This post is part of a series on hosting my website locally - also see [moving to local hosting](/blog/23-moving-to-local-hosting/) and [deploying an Astro site to Synology](/blog/24-deploying-an-astro-site-to-synology/).
+
 [Last time](/blog/24-deploying-an-astro-site-to-synology/), I deployed my Astro site to my Synology NAS for hosting. I set it up to use Apache HTTP server which means I can use `.htaccess` files to control HTTP headers, amongst other things.
 
 I decided to use Fastly for a number of reasons to front the site, but one important one is that it makes managing TLS certificates much easier than doing it on the Synology NAS. However, I wanted to keep unencrypted HTTP access an option for old browsers that don’t support modern encryption. In Fastly, I made sure to disable the option to force redirects to HTTPS. This also disables the option to send HSTS headers, since they are both controlled by one setting. I can see the reasons behind this decision since on the first ever visit to a site, the user’s browser does not know about the header. By redirecting to HTTPS and also sending the header, site owners can be sure that their sites are always only being accessed over HTTPS.
