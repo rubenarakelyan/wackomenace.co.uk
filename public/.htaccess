@@ -13,6 +13,6 @@ Header add X-XSS-Protection "1; mode=block"
 
 ErrorDocument 404 /404.html
 
-<FilesMatch "\.(css|jpg|png|webp|svg|ico)$">
+<FilesMatch "\.(css|jpg|png|webp|svg|ico|m4a)$">
 Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
