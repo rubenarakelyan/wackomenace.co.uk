@@ -1,7 +1,7 @@
 ---
 title: What I’m doing now
 description: A list of what I’m up to at the moment.
-date: 2024-10-27
+date: 2025-02-26
 ---
 
 <aside>
@@ -12,7 +12,7 @@ date: 2024-10-27
 
 Right now, I am:
 
-* Building my digital agency [Safran](https://www.safran.agency) and taking it through Barclays Eagle Labs
+* Building my web agency [Safran](https://www.safran.agency)
 * Working as a contract senior Ruby developer at Indeed Flex
 * Learning Spanish on Duolingo
 * Ploughing through the house DIY to-do list
