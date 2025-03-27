@@ -1,7 +1,7 @@
 ---
 title: Colophon
 description: The tools and processes I use to build, maintain and host this website.
-date: 2025-02-26
+date: 2025-03-27
 ---
 
 > An inscription placed at the end of a book or manuscript and giving details of its publication.
@@ -11,7 +11,7 @@ date: 2025-02-26
 For the technology-minded, here are some details of how I build, maintain and host this website.
 
 * Built with the [Astro](https://astro.build) framework
-* Maintained with [Nova](https://nova.app)
+* Maintained with [WebStorm](https://www.jetbrains.com/webstorm/)
 * Images dithered with [Ditherista](https://github.com/robertkist/ditherista/) (using Bayer 32&times;32) and optimised with [ImageOptim](https://imageoptim.com/)
 * Hosted on my [Synology NAS](/blog/23-moving-to-local-hosting/) at home
 * Protected by [Fastly](https://www.fastly.com)
