@@ -1,7 +1,7 @@
 ---
 title: About me
 description: Everything you need to know about Ruben Arakelyan.
-date: 2024-10-14
+date: 2025-03-27
 ---
 
 <figure>
@@ -57,4 +57,4 @@ In April 2021, I moved to [Hopin](https://hopin.com/), where I worked as a Senio
 
 In November 2022, along with a lot of others, I was made redundant from Hopin, and in December 2022, our daughter Evie was born. I took some involuntary time off to look after her for a few weeks.
 
-In January 2023, after long having wanted to do so, I made the move to contract work, and worked for the [Office for Product Safety and Standards](https://www.gov.uk/government/organisations/office-for-product-safety-and-standards) until April 2024. I currently work for [Indeed Flex](https://indeedflex.co.uk) and spend my time helping look after my daughter and dog, as well as dabbling in various technical side-activities such as smart home automation.
+In January 2023, after long having wanted to do so, I made the move to contract work, and worked for the [Office for Product Safety and Standards](https://www.gov.uk/government/organisations/office-for-product-safety-and-standards) (OPSS) until April 2024. I then worked for [Indeed Flex](https://indeedflex.co.uk) for a little while before returning to OPSS in March 2025. I spend my non-work time helping look after my daughter and dog, as well as dabbling in various technical side-activities such as smart home automation.
