@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.14.0"
+      - name: Configure SSH known hosts
+        run: |
+          mkdir -p ~/.ssh/
+          cat >>~/.ssh/known_hosts <<END
+          $SSH_HOST ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNPXzl0OqliD00Hu2jtapMNpZVzBuN3vy1PBtS+XyHStmqc5c1tC8i0ne7RxMgzH/sGxMggJjHW0Jesehe4CTVU=
+          END
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+      - name: Build site
+        run: |
+          npm install
+          npm run build
+      - name: rsync local to remote
+        run: sshpass -p$SSH_PASSWORD rsync -rtvz ./dist/ $SSH_USER@$SSH_HOST:/home/anoush/www/www.wackomenace.co.uk/
+        env:
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
