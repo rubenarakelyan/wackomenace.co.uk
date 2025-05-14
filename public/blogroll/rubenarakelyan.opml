@@ -17,7 +17,7 @@
       <outline title="Derek Sivers" text="Derek Sivers" xmlUrl="https://sive.rs/en.atom" htmlUrl="https://sive.rs/blog" type="rss"></outline>
       <outline title="Paul Stamatiou" text="Paul Stamatiou" xmlUrl="https://paulstamatiou.com/posts.xml" htmlUrl="https://paulstamatiou.com" type="rss"></outline>
       <outline title="Rands in Repose" text="Rands in Repose" xmlUrl="https://randsinrepose.com/feed/" htmlUrl="https://randsinrepose.com" type="rss"></outline>
-      <outline title="Sam Altman" text="Sam Altman" xmlUrl="http://blog.samaltman.com/posts.atom" htmlUrl="http://blog.samaltman.com" type="atom"></outline>
+      <outline title="Sam Altman" text="Sam Altman" xmlUrl="https://blog.samaltman.com/posts.atom" htmlUrl="https://blog.samaltman.com" type="atom"></outline>
       <outline title="Scott Hanselman" text="Scott Hanselman" xmlUrl="http://feeds.hanselman.com/ScottHanselman" htmlUrl="https://www.hanselman.com/blog/" type="rss"></outline>
       <outline title="Scott Helme" text="Scott Helme" xmlUrl="https://scotthelme.co.uk/rss/" htmlUrl="https://scotthelme.co.uk" type="rss"></outline>
       <outline title="Tedium" text="Tedium" xmlUrl="https://feed.tedium.co/" htmlUrl="https://tedium.co" type="rss"></outline>
