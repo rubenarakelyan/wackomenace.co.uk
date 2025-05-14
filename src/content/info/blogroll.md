@@ -12,6 +12,7 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Derek Sivers](https://sive.rs/blog)
 * [Paul Stamatiou](https://paulstamatiou.com)
 * [Rands in Repose](https://randsinrepose.com)
+* [Sam Altman](http://blog.samaltman.com)
 * [Scott Hanselman](https://www.hanselman.com/blog/)
 * [Scott Helme](https://scotthelme.co.uk)
 * [Tedium](https://tedium.co)
