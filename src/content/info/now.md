@@ -1,7 +1,7 @@
 ---
 title: What I’m doing now
 description: A list of what I’m up to at the moment.
-date: 2025-04-17
+date: 2025-06-05
 ---
 
 <aside>
@@ -14,4 +14,5 @@ Right now, I am:
 
 * Working as a contract senior Ruby developer at the Office for Product Safety and Standards
 * Learning Spanish on Duolingo
-* Ploughing through the house DIY to-do list
+* Ploughing through my to-do list
+* Streamlining my personal and home tech
