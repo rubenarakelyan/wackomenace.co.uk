@@ -9,6 +9,7 @@ import { remarkReadingTime } from "./plugins/remark-reading-time.mjs";
 // https://astro.build/config
 export default defineConfig({
   adapter: vercel(),
+  integrations: [sitemap()],
   markdown: {
     rehypePlugins: [
       rehypeSlug,
@@ -18,8 +19,8 @@ export default defineConfig({
       remarkReadingTime
     ]
   },
+  output: "server",
   site: process.env.NODE_ENV === "development" ? "http://localhost:4321" : "https://www.wackomenace.co.uk",
-  integrations: [sitemap()],
   redirects: {
     "/.well-known/recommendations.opml": "/blogroll/rubenarakelyan.opml",
     "/blog/random": "/blog/16-dynamic-to-static/#no-more-random-blog-posts",
