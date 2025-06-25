@@ -26,7 +26,6 @@ export default defineConfig({
     "/blog/random": "/blog/16-dynamic-to-static/#no-more-random-blog-posts",
     "/contact": "/",
     "/guestbook": "/blog/16-dynamic-to-static/#guestbook---gone",
-    "/save": "/",
-    "/search": "/"
+    "/save": "/"
   }
 });
