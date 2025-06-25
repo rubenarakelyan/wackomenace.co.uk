@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const search = Astro.url.searchParams.get("q")! || "";
+
+if (search.length > 0) {
+  return Astro.redirect(`https://www.ecosia.org/search?q=site%3Awackomenace.co.uk+${encodeURIComponent(search)}`);
+}
+---
+
+<Layout title="Search wackomenace" description="Search this site using Ecosia.">
+  <section>
+    <h1>Search</h1>
+    <form method="get">
+      <input type="text" name="q">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+</Layout>
