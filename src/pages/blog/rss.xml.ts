@@ -18,6 +18,7 @@ export async function GET(context: APIContext) {
     .use(rehypeStringify, { allowDangerousHtml: true });
 
   return rss({
+    stylesheet: "/assets/rss.xsl",
     title: "wackomenace",
     description: "Ruben Arakelyan’s home on the web",
     site: context.site!.toString(),
