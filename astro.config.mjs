@@ -3,10 +3,12 @@ import { defineConfig } from "astro/config";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import sitemap from "@astrojs/sitemap";
+import vercel from "@astrojs/vercel";
 import { remarkReadingTime } from "./plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
+  adapter: vercel(),
   markdown: {
     rehypePlugins: [
       rehypeSlug,
