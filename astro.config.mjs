@@ -3,13 +3,14 @@ import { defineConfig } from "astro/config";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
 import vercel from "@astrojs/vercel";
 import { remarkReadingTime } from "./plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
   adapter: vercel(),
-  integrations: [sitemap()],
+  integrations: [sitemap(), tailwind()],
   markdown: {
     rehypePlugins: [
       rehypeSlug,
