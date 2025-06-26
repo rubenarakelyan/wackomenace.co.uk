@@ -53,11 +53,3 @@ export async function GET(context: APIContext) {
     }
   )
 }
-
-export async function getStaticPaths() {
-  const posts = await getCollection("blog");
-  return posts.map(post => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
-}
