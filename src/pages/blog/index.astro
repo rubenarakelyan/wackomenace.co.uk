@@ -21,5 +21,6 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf()
         />
       ))
     }
+    <p><a href="/blog/random/">Read a random blog post &rarr;</a></p>
   </section>
 </Layout>

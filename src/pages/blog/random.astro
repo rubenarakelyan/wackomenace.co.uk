@@ -1,0 +1,8 @@
+---
+import { getCollection } from "astro:content";
+
+const blog = await getCollection("blog");
+const id = blog[Math.floor((Math.random() * blog.length))].id
+
+return Astro.redirect(`/blog/${id}/`);
+---
