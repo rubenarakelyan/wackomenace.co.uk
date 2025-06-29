@@ -1,7 +1,7 @@
 ---
 title: About me
 description: Everything you need to know about Ruben Arakelyan.
-date: 2025-05-14
+date: 2025-06-27
 ---
 
 <figure>
@@ -9,10 +9,10 @@ date: 2025-05-14
     <source srcset="/images/ruben-at-work-dithered.webp" type="image/webp">
     <img src="/images/ruben-at-work-dithered.png" alt="Ruben sitting at a desk in front of a laptop">
   </picture>
-  <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives" target="_blank" aria-label="opens in a new tab">James Warbey</a></figcaption>
+  <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives">James Warbey</a></figcaption>
 </figure>
 
-<aside itemscope itemtype="https://schema.org/Person">
+<aside class="border-4 border-double border-slate-300 px-8 py-2" itemscope itemtype="https://schema.org/Person">
   <div itemprop="name">
     <p><strong role="heading">My full name is <span itemprop="givenName">Ruben</span> <span itemprop="familyName">Arakelyan</span> (<span lang="hy">Ռուբէն Առաքելեան</span> in Armenian).</strong></p>
     <p>The question I am most asked: how do you pronounce your name?</p>
@@ -26,12 +26,10 @@ date: 2025-05-14
     <p>If you speak Armenian or a similar language, here’s audio of the pronunciation:</p>
     <audio src="/assets/ruben.hy.m4a" controls></audio>
     <p>And if you understand IPA, here’s what I think is the correct rendering:</p>
-    <p><strong>ɻʊɓən ɑɹɑkelʎɑn</strong> (<a href="http://ipa-reader.xyz" target="_blank" aria-label="opens in a new tab">hear it</a>)</p>
+    <p><strong>ɻʊɓən ɑɹɑkelʎɑn</strong> (<a href="http://ipa-reader.xyz">hear it</a>)</p>
     <p>Any corrections to the above to better match the Armenian pronunciation are welcome.</p>
   </div>
 </aside>
-
-***
 
 I was born in [Wimbledon](https://en.wikipedia.org/wiki/Wimbledon,_London), south London — home of [The Championships](https://en.wikipedia.org/wiki/The_Championships,_Wimbledon) — and lived there for approximately 5 years before moving across the river to [Eastcote](https://en.wikipedia.org/wiki/Eastcote) where I lived, grew up and went to school (where my [year 11 ball](https://web.archive.org/web/20040717231151/http://education.independent.co.uk/news/story.jsp?story=539986) was featured in The Independent).
 

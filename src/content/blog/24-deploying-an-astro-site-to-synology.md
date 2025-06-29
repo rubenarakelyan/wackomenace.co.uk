@@ -12,7 +12,7 @@ I started by removing the previous GitHub Action which deployed to my shared hos
 
 I added a new, simple script, `deploy.sh`, which contains:
 
-```
+```bash
 #!/usr/bin/env bash
 npm install
 npm run build

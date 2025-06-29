@@ -4,7 +4,7 @@ date: 2024-07-09
 excerpt: Turnout in UK elections is lower than it should be, but it doesn’t have to be that way.
 ---
 
-**NOTE:** Some concepts have been simplified to keep this post readable. For example, I use “polling station” to mean both “polling place” (the building) and “polling station” (the individual booth in the building) because most people don’t differentiate between the two.
+> Some concepts have been simplified to keep this post readable. For example, I use “polling station” to mean both “polling place” (the building) and “polling station” (the individual booth in the building) because most people don’t differentiate between the two.
 
 A few days ago, the UK held a general election. Turnout was 60%[^1], which is the second lowest since 1885. This means that 40% of the eligible population did not vote, which is a shameful statistic.
 

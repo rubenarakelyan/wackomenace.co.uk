@@ -8,18 +8,36 @@ const { slug } = Astro.params;
 const posts = await getCollection("blog");
 const post = posts.find((post) => post.id === slug);
 if (!post) return Astro.redirect("/404");
-const { Content, remarkPluginFrontmatter } = await render(post);
+const { Content, headings, remarkPluginFrontmatter } = await render(post);
 ---
 
 <Layout title={post.data.title} description={post.data.excerpt}>
-  <article class="h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid={Astro.request.url}>
-    <h1 class="p-name" itemprop="name">{post.data.title}</h1>
-    <p class="p-summary" itemprop="abstract" role="heading"><strong>{post.data.excerpt}</strong></p>
-    <p class="metadata"><em>by</em> <a rel="author" class="p-author" href="mailto:ruben@arakelyan.uk">Ruben Arakelyan</a></a> &middot; <a class="u-url" href={Astro.request.url}><FormattedDate date={post.data.date} classes="dt-published" itemprop="datePublished" /></a> &middot; {remarkPluginFrontmatter.minutesRead}</p>
-    <div class="e-content">
+  <article class="h-entry grid grid-cols-[calc(50vw-28rem)_1fr_calc(50vw-28rem)] xl:grid-cols-[calc(50vw-46rem)_1fr_60vw_1fr_calc(50vw-46rem)]" itemscope itemtype="https://schema.org/BlogPosting" itemid={Astro.request.url}>
+    <header class="m-8 col-start-2 col-end-3 xl:col-start-3 xl:col-end-4">
+      <h1 class="p-name mb-6 text-6xl font-bold" itemprop="name">{post.data.title}</h1>
+      <p class="p-summary text-3xl text-slate-600" itemprop="abstract" role="heading">{post.data.excerpt}</p>
+      <hr class="my-6 border-t border-slate-300">
+      <p class="text-lg"><em>by</em> <a rel="author" class="p-author" href="mailto:ruben@arakelyan.uk">Ruben Arakelyan</a></a> &middot; <a class="u-url" href={Astro.request.url}><FormattedDate date={post.data.date} classes="dt-published" itemprop="datePublished" /></a> &middot; {remarkPluginFrontmatter.minutesRead}</p>
+      <hr class="mt-6 border-t border-slate-300">
+    </header>
+    <nav class="mx-8 mb-8 col-start-2 xl:sticky xl:top-4 xl:self-start prose prose-slate">
+      { headings.length > 0 &&
+        <h2 class="mb-2 text-xl font-bold">Table of Contents</h2>
+        <ul>
+          {
+            headings.map((heading) => (
+              <li class="my-4">
+                <a href={`#${heading.slug}`}>{heading.text}</a>
+              </li>
+            ))
+          }
+        </ul>
+      }
+    </nav>
+    <div class="e-content mx-8 mb-8 col-start-2 xl:col-start-3 prose prose-slate text-2xl drop-cap">
       <Content />
+      <p class="my-8 text-center">⁂</p>
     </div>
-    <p class="asterism">⁂</p>
-    <p><a href=`mailto:ruben@arakelyan.uk?subject=Re:%20${encodeURIComponent(post.data.title)}`>Reply via email</a></p>
+    <div class="mx-8 mb-8 col-start-2 xl:col-start-4"></div>
   </article>
 </Layout>

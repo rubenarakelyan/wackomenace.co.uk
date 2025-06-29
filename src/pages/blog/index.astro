@@ -8,19 +8,22 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf()
 ---
 
 <Layout title="Blog" description="Ruben Arakelyan’s blog">
-  <section>
-    <h1>Blog posts</h1>
-    {
-      posts.map(post => (
-        <BlogPostPreview
-          homepage={false}
-          url={"/blog/" + post.id + "/"}
-          title={post.data.title}
-          excerpt={post.data.excerpt}
-          date={post.data.date}
-        />
-      ))
-    }
-    <p><a href="/blog/random/">Read a random blog post &rarr;</a></p>
+  <section class="max-w-[60vw] mx-auto">
+    <header class="m-8">
+      <h1 class="mb-6 text-6xl font-bold">Blog posts</h1>
+    </header>
+    <div class="mx-8 mb-8 prose prose-slate text-2xl">
+      {
+        posts.map(post => (
+          <BlogPostPreview
+            url={"/blog/" + post.id + "/"}
+            title={post.data.title}
+            excerpt={post.data.excerpt}
+            date={post.data.date}
+          />
+        ))
+      }
+      <p><a href="/blog/random/">Read a random blog post &rarr;</a></p>
+    </div>
   </section>
 </Layout>

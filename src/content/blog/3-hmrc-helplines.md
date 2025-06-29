@@ -4,11 +4,7 @@ date: 2024-03-21
 excerpt: Wherein we discuss how HMRC seems hellbent on making it as difficult as possible to work with them.
 ---
 
-***
-
-**tl;dr** HMRC, nobody actually wants to call you and stay on the line for more than an hour to resolve an issue. They just have to because you give them no option to do what they need to online.
-
-***
+> **tl;dr:** HMRC, nobody actually wants to call you and stay on the line for more than an hour to resolve an issue. They just have to because you give them no option to do what they need to online.
 
 Yesterday, I read an [FT article](https://www.ft.com/content/2ba64769-0760-4ddb-b134-b586723d0c19) about the latest gambit by <abbr title="HM Revenue and Customs">HMRC</abbr> to reduce any potential contact with their customers (i.e. taxpayers). I think this sentence says everything you need to know about how much HMRC is aware of the capabilities of their own online services:
 

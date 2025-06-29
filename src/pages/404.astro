@@ -3,6 +3,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="404 Not Found" description="Sorry, the page you’re looking for doesn’t exist">
-  <h1>Sorry, the page you’re looking for doesn’t exist</h1>
-  <p>Oops! It may have been moved, deleted, or never existed. Please check the address or <a href="/">go back to the home page</a>.</p>
+  <div class="max-w-[60vw] mx-auto">
+    <header class="m-8">
+      <h1 class="mb-6 text-6xl font-bold">Sorry, the page you’re looking for doesn’t exist</h1>
+    </header>
+    <div class="mx-8 mb-8 prose prose-slate text-2xl">
+      <p>Oops! It may have been moved, deleted, or never existed. Please check the address or <a href="/">go back to the home page</a>.</p>
+    </div>
+  </div>
 </Layout>

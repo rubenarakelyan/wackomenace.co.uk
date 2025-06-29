@@ -12,11 +12,13 @@ const { Content } = await render(page);
 ---
 
 <Layout title={page.data.title} description={page.data.description}>
-  <article>
-    <h1>{page.data.title}</h1>
-    <div>
+  <article class="max-w-[80vw] lg:max-w-[70vw] xl:max-w-[60vw] mx-auto">
+    <header class="m-8">
+      <h1 class="mb-6 text-6xl font-bold">{page.data.title}</h1>
+    </header>
+    <div class="mx-8 mb-8 prose prose-slate text-2xl">
       <Content />
     </div>
-    <p class="metadata">Last updated: <FormattedDate date={page.data.date} /></p>
+    <p class="mx-8 mb-8 text-lg">Last updated: <FormattedDate date={page.data.date} /></p>
   </article>
 </Layout>
