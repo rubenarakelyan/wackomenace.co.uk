@@ -19,6 +19,7 @@ const { title, description } = Astro.props;
     <meta property="og:description" content={description}>
     <meta property="og:url" content={Astro.url}>
     <meta property="og:locale" content="en_GB">
+    { Astro.url.pathname.match(/^\/blog\/.+/g) && <meta property="og:image" content=`${Astro.url}og.png`> }
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/rss.xml">
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/blog/atom.xml">
     <link rel="alternate" type="application/feed+json" title="JSON Feed" href="/blog/feed.json">
