@@ -40,7 +40,7 @@ Around the end of 2008, wackomenace went offline as I migrated to more “respec
 
 My first job out of university was a Business Analyst at [Shell](https://www.shell.co.uk/) on the graduate programme. I stayed with Shell for four-and-a-half years, working in a number of areas and it’s also where I met my future wife.
 
-During this time, I also ran TwentyFourNine, a small web development agency, on the side. I was even one of the sponsors of [BarCamp London 9](https://nine.barcamplondon.org/sponsors/).
+During this time, I also ran TwentyFourNine, a small web development agency, on the side. I was even one of the sponsors of BarCamp London 9.
 
 After this time, I decided that I wanted to get back into hands-on development and so left the comfort of a multinational company to move to [orderswift](https://www.orderswift.com/), a small startup working in online food ordering. It was a change of industry and a massive change of pace and responsibility, doing everything from web development to hardware installation and customer service. I stayed for a year, but probably learnt about five years’ worth in the time!
 
