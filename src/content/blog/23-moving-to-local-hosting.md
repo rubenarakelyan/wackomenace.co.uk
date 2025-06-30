@@ -98,4 +98,4 @@ I then went to the [TLS configurations page](https://manage.fastly.com/network/t
 
 ## Done!
 
-That’s it. I just had to wait for the DNS to propagate, but in the meantime, I visited <http://www.wackomenace.co.uk.global.prod.fastly.net> to make sure all the configuration was working as expected. This method works for any domain that you add to Fastly appended with `global.prod.fastly.net`.
+That’s it. I just had to wait for the DNS to propagate, but in the meantime, I visited `http://www.wackomenace.co.uk.global.prod.fastly.net` to make sure all the configuration was working as expected. This method works for any domain that you add to Fastly appended with `global.prod.fastly.net`.
