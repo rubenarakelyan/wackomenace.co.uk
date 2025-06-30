@@ -10,8 +10,8 @@ Inspired by Robb Knight’s [computing origin story](https://rknight.me/blog/my-
 
 <figure>
   <picture>
-    <source srcset="/images/blog/vtech-talking-whiz-kid-notebook-dithered.webp" type="image/webp">
-    <img src="/images/blog/vtech-talking-whiz-kid-notebook-dithered.png" alt="VTech Talking Whiz-Kid Notebook">
+    <source srcset="/images/blog/vtech-talking-whiz-kid-notebook.webp" type="image/webp">
+    <img src="/images/blog/vtech-talking-whiz-kid-notebook.png" alt="VTech Talking Whiz-Kid Notebook">
   </picture>
   <figcaption>VTech Talking Whiz-Kid Notebook</figcaption>
 </figure>
@@ -22,8 +22,8 @@ The very first “computer” I had, given to me as a Christmas present, when th
 
 <figure>
   <picture>
-    <source srcset="/images/blog/hardcard-computer-dithered.webp" type="image/webp">
-    <img src="/images/blog/hardcard-computer-dithered.png" alt="The “hardcard” computer">
+    <source srcset="/images/blog/hardcard-computer.webp" type="image/webp">
+    <img src="/images/blog/hardcard-computer.png" alt="The “hardcard” computer">
   </picture>
   <figcaption>The “hardcard” computer</figcaption>
 </figure>
@@ -34,8 +34,8 @@ A generic PC clone my dad found in a charity shop and bought for £10. It ran so
 
 <figure>
   <picture>
-    <source srcset="/images/blog/packard-bell-pulsar-33-dithered.webp" type="image/webp">
-    <img src="/images/blog/packard-bell-pulsar-33-dithered.png" alt="Packard Bell Pulsar">
+    <source srcset="/images/blog/packard-bell-pulsar-33.webp" type="image/webp">
+    <img src="/images/blog/packard-bell-pulsar-33.png" alt="Packard Bell Pulsar">
   </picture>
   <figcaption>Packard Bell Pulsar</figcaption>
 </figure>
@@ -62,8 +62,8 @@ Having a Mac laptop didn’t stop my desire to build something again for myself,
 
 <figure>
   <picture>
-    <source srcset="/images/blog/imac-aluminium-dithered.webp" type="image/webp">
-    <img src="/images/blog/imac-aluminium-dithered.png" alt="Aluminium iMac">
+    <source srcset="/images/blog/imac-aluminium.webp" type="image/webp">
+    <img src="/images/blog/imac-aluminium.png" alt="Aluminium iMac">
   </picture>
   <figcaption>Aluminium iMac</figcaption>
 </figure>

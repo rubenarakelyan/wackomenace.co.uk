@@ -1,7 +1,7 @@
 ---
 title: Colophon
 description: The tools and processes I use to build, maintain and host this website.
-date: 2025-06-27
+date: 2025-06-30
 ---
 
 > An inscription placed at the end of a book or manuscript and giving details of its publication.
@@ -12,10 +12,11 @@ For the technology-minded, here are some details of how I build, maintain and ho
 
 * Built with the [Astro](https://astro.build) framework
 * Maintained with [Visual Studio Code](https://code.visualstudio.com)
-* Images dithered with [Ditherista](https://github.com/robertkist/ditherista/) (using Bayer 32&times;32) and optimised with [ImageOptim](https://imageoptim.com/)
+* Images optimised with [ImageOptim](https://imageoptim.com/)
 * Hosted on [Vercel](https://vercel.com)
 * Source code on [GitHub](https://github.com/rubenarakelyan/wackomenace.co.uk)
 * Logo designed by [Jord Riekwel](https://larkef.com)
+* Typeset in [IBM Plex](https://www.ibm.com/plex/)
 
 Thanks to [Dzmitry Kozhukh](https://www.kozhuhds.com/blog/how-to-build-a-static-lightweight-mdx-blog-with-astro-step-by-step-guide) for a brilliant guide on how to get started with Astro.
 

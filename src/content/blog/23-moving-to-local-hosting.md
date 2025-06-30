@@ -28,8 +28,8 @@ In order to use these new IP addresses, my router first needed to be aware of th
 
 <figure>
   <picture>
-    <source srcset="/images/blog/add-ip-address-to-router-dithered.webp" type="image/webp">
-    <img src="/images/blog/add-ip-address-to-router-dithered.png" alt="Adding the new IP addresses in the UniFi console">
+    <source srcset="/images/blog/add-ip-address-to-router.webp" type="image/webp">
+    <img src="/images/blog/add-ip-address-to-router.png" alt="Adding the new IP addresses in the UniFi console">
   </picture>
   <figcaption>Adding the new IP addresses in the UniFi console</figcaption>
 </figure>
@@ -44,16 +44,16 @@ Finally, I created a Web Portal, choosing my just-created service, making it por
 
 <figure>
   <picture>
-    <source srcset="/images/blog/set-up-the-nas-dithered.webp" type="image/webp">
-    <img src="/images/blog/set-up-the-nas-dithered.png" alt="Setting up the static website in Synology DSM">
+    <source srcset="/images/blog/set-up-the-nas.webp" type="image/webp">
+    <img src="/images/blog/set-up-the-nas.png" alt="Setting up the static website in Synology DSM">
   </picture>
   <figcaption>Setting up the static website in Synology DSM</figcaption>
 </figure>
 
 <figure>
   <picture>
-    <source srcset="/images/blog/set-up-the-nas-2-dithered.webp" type="image/webp">
-    <img src="/images/blog/set-up-the-nas-2-dithered.png" alt="Setting up the web portal in Synology DSM">
+    <source srcset="/images/blog/set-up-the-nas-2.webp" type="image/webp">
+    <img src="/images/blog/set-up-the-nas-2.png" alt="Setting up the web portal in Synology DSM">
   </picture>
   <figcaption>Setting up the web portal in Synology DSM</figcaption>
 </figure>
@@ -70,8 +70,8 @@ This means that if anyone tries to access the WAN IP address, it’ll just time 
 
 <figure>
   <picture>
-    <source srcset="/images/blog/add-port-forwarding-rules-dithered.webp" type="image/webp">
-    <img src="/images/blog/add-port-forwarding-rules-dithered.png" alt="Setting up port forwarding rules in the UniFi console">
+    <source srcset="/images/blog/add-port-forwarding-rules.webp" type="image/webp">
+    <img src="/images/blog/add-port-forwarding-rules.png" alt="Setting up port forwarding rules in the UniFi console">
   </picture>
   <figcaption>Setting up port forwarding rules in the UniFi console</figcaption>
 </figure>

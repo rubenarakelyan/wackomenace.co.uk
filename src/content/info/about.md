@@ -5,10 +5,7 @@ date: 2025-06-27
 ---
 
 <figure>
-  <picture>
-    <source srcset="/images/ruben-at-work-dithered.webp" type="image/webp">
-    <img src="/images/ruben-at-work-dithered.png" alt="Ruben sitting at a desk in front of a laptop">
-  </picture>
+  <img src="/images/ruben-at-work.jpg" alt="Ruben sitting at a desk in front of a laptop">
   <figcaption>Taken by <a href="https://www.jameswarbey.com/St-Ives">James Warbey</a></figcaption>
 </figure>
 

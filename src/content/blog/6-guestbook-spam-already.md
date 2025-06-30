@@ -8,8 +8,8 @@ It was only yesterday that I wrote about [Building a guestbook with Astro and Cl
 
 <figure>
   <picture>
-    <source srcset="/images/blog/guestbook-spam-dithered.webp" type="image/webp">
-    <img src="/images/blog/guestbook-spam-dithered.png" alt="Screenshot of guestbook spam entry in Astro Studio">
+    <source srcset="/images/blog/guestbook-spam.webp" type="image/webp">
+    <img src="/images/blog/guestbook-spam.png" alt="Screenshot of guestbook spam entry in Astro Studio">
   </picture>
   <figcaption>Screenshot of guestbook spam entry in Astro Studio</figcaption>
 </figure>

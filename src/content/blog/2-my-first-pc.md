@@ -24,8 +24,8 @@ After what seemed like an eternity (and a few false starts), I was finally greet
 
 <figure>
   <picture>
-    <source srcset="/images/blog/packard-bell-windows-95-in-dosbox-x-dithered.webp" type="image/webp">
-    <img src="/images/blog/packard-bell-windows-95-in-dosbox-x-dithered.png" alt="Screenshot of a fresh installation of a Packard Bell-customised Windows 95 in DOSBox-X">
+    <source srcset="/images/blog/packard-bell-windows-95-in-dosbox-x.webp" type="image/webp">
+    <img src="/images/blog/packard-bell-windows-95-in-dosbox-x.png" alt="Screenshot of a fresh installation of a Packard Bell-customised Windows 95 in DOSBox-X">
   </picture>
   <figcaption>Screenshot of a fresh installation of a Packard Bell-customised Windows 95 in DOSBox-X</figcaption>
 </figure>
