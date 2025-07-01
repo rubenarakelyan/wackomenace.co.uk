@@ -3,6 +3,7 @@ Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE).href}
 
 User-agent: *
 Allow: /
+Disallow: /test/
 
 User-agent: AI2Bot
 User-agent: Ai2Bot-Dolma
