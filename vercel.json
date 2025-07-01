@@ -10,7 +10,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; connect-src https://wackomenace.goatcounter.com/count; font-src 'self'; img-src 'self'; manifest-src 'self'; media-src 'self'; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
+          "value": "default-src 'none'; connect-src https://stats.wackomenace.co.uk/count; font-src 'self'; img-src 'self'; manifest-src 'self'; media-src 'self'; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
         },
         {
           "key": "Cross-Origin-Embedder-Policy",
