@@ -68,11 +68,11 @@ const mentions = webmentions.children
                   <div>
                     {
                       mention.author.photo &&
-                      <img src={mention.author.photo} alt={mention.author.name} width="50" height="50" class="inline-block rounded-full mr-2 not-prose" crossorigin="anonymous">
+                      <img src={mention.author.photo} alt={mention.author.name} width="50" height="50" class="inline-block rounded-full mr-2 not-prose" crossorigin="anonymous" loading="lazy">
                     }
                     {
                       mention.author.url &&
-                      <a rel="author" href={mention.author.url} class="u-author h-card">{mention.author.name}</a>
+                      <a rel="author nofollow ugc" href={mention.author.url} class="u-author h-card">{mention.author.name}</a>
                     }
                     {
                       !mention.author.url &&
