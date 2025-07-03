@@ -11,6 +11,7 @@ const post = posts.find((post) => post.id === slug);
 if (!post) return Astro.redirect("/404");
 const { Content, headings, remarkPluginFrontmatter } = await render(post);
 
+// Webmentions
 const webmentions = await fetch(`https://webmention.io/api/mentions.jf2?target=${Astro.site}blog/${post.id}/`).then((response) => response.json());
 const allowedTypes = ["mention-of", "in-reply-to"];
 const hasRequiredFields = entry => {
@@ -36,7 +37,7 @@ const mentions = webmentions.children
       <h1 class="p-name mb-6 text-6xl font-bold" itemprop="name">{post.data.title}</h1>
       <p class="p-summary text-3xl text-slate-600" itemprop="abstract" role="heading">{post.data.excerpt}</p>
       <hr class="my-6 border-t border-slate-300">
-      <p class="text-lg"><em>by</em> <a rel="author" class="p-author" href="mailto:ruben@arakelyan.uk">Ruben Arakelyan</a></a> &middot; <a class="u-url" href={Astro.request.url}><FormattedDate date={post.data.date} classes="dt-published" itemprop="datePublished" /></a> &middot; {remarkPluginFrontmatter.minutesRead}</p>
+      <p class="text-lg"><em>by</em> <a rel="author" class="p-author" href="mailto:ruben@arakelyan.uk">Ruben Arakelyan</a></a> &middot; Published on <a class="u-url" href={Astro.request.url}><FormattedDate date={post.data.date} classes="dt-published" itemprop="datePublished" /></a> { post.data.updated && <>&middot; Last updated on <FormattedDate date={post.data.updated} classes="dt-updated" itemprop="dateModified" /></> } &middot; {remarkPluginFrontmatter.minutesRead}</p>
       <hr class="mt-6 border-t border-slate-300">
     </header>
     <nav class="mx-8 mb-8 col-start-2 xl:sticky xl:top-4 xl:self-start prose prose-slate">

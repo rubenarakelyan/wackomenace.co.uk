@@ -1,6 +1,7 @@
 ---
 title: "Building Authmenace: an IndieAuth server"
 date: 2024-05-07
+updated: 2025-06-30
 excerpt: A super-simple IndieAuth authorization and token endpoint with no database.
 ---
 

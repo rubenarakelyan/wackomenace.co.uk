@@ -1,6 +1,7 @@
 ---
 title: Introducing Safran
 date: 2024-10-02
+updated: 2025-06-30
 excerpt: My new web and mobile app agency is live!
 ---
 

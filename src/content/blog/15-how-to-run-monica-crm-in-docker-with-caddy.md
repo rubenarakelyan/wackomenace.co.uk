@@ -1,6 +1,7 @@
 ---
 title: How to run Monica CRM in Docker with Caddy
 date: 2024-07-30
+updated: 2025-07-31
 excerpt: Use Caddy to proxy requests to PHP-FPM in Docker containers.
 ---
 

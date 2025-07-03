@@ -1,6 +1,7 @@
 ---
 title: Richard Stallman as a figurehead, or, knowing when you’re not the right person for the job
 date: 2024-03-28
+updated: 2024-10-17
 excerpt: Richard Stallman has admirable grit and has achieved more than a lot of other people, but he is not the right person to be the public face of the software freedom movement.
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Getting an msn.com email address in 2024
 date: 2024-02-15
+updated: 2025-01-19
 excerpt: How to rock that ’90s feeling with @msn.com.
 ---
 

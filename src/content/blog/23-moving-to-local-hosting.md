@@ -1,6 +1,7 @@
 ---
 title: Moving to local hosting
 date: 2025-02-16
+updated: 2025-06-30
 excerpt: I’ve made the plunge to host my website myself and have full control.
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Introducing JSON-WF
 date: 2024-04-23
+updated: 2025-01-09
 excerpt: A new JSON-based format for sharing blogrolls.
 ---
 

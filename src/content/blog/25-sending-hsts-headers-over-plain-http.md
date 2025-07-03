@@ -1,6 +1,7 @@
 ---
 title: Sending HSTS headers over plain HTTP
 date: 2025-02-18
+updated: 2025-06-30
 excerpt: Why I’m sending the HSTS header over plain HTTP but not redirecting to HTTPS.
 ---
 
