@@ -1,10 +1,11 @@
 ---
 const { date, classes, itemprop } = Astro.props;
+const internalDate = (date instanceof Date) ? date : new Date(date);
 ---
 
-<time datetime={date.toISOString()} class={classes} itemprop={itemprop}>
+<time datetime={internalDate.toISOString()} class={classes} itemprop={itemprop}>
   {
-    date.toLocaleDateString("en-gb", {
+    internalDate.toLocaleDateString("en-gb", {
       year: "numeric",
       month: "short",
       day: "numeric",
