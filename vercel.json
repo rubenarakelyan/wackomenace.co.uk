@@ -6,7 +6,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "*"
+          "value": "https://www.wackomenace.co.uk"
         },
         {
           "key": "Content-Security-Policy",
