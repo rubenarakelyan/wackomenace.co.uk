@@ -1,12 +1,13 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2025-06-11
+date: 2025-06-15
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
 
 * [37Signals Dev](https://dev.37signals.com)
+* [Basic Apple Guy](https://www.basicappleguy.com/basicappleblog?format=rss)
 * [Coding Horror](https://blog.codinghorror.com)
 * [Daring Fireball](https://daringfireball.net)
 * [David Heinemeier Hansson](https://world.hey.com/dhh)
@@ -19,7 +20,6 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Scott Helme](https://scotthelme.co.uk)
 * [Tedium](https://tedium.co)
 * [Thurrott.com](https://www.thurrott.com)
-* [Wired](https://www.wired.com)
 
 All these blogs are also available as an [OPML file](/blogroll/rubenarakelyan.opml) to import into your favourite feed reader.
 

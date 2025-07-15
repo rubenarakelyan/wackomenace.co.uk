@@ -3,7 +3,7 @@
   <head>
     <title>Ruben Arakelyan's blogroll</title>
     <dateCreated>Fri, 05 Apr 2024 12:00:00 BST</dateCreated>
-    <dateModified>Wed, 11 Jun 2025 20:05:00 GMT</dateModified>
+    <dateModified>Tue, 15 Jun 2025 21:55:00 GMT</dateModified>
     <ownerName>Ruben Arakelyan</ownerName>
     <ownerEmail>ruben@arakelyan.uk</ownerEmail>
     <ownerId>https://www.wackomenace.co.uk/</ownerId>
@@ -12,6 +12,7 @@
   <body>
     <outline text="Blogs">
       <outline title="37Signals Dev" text="37Signals Dev" xmlUrl="https://dev.37signals.com/feed/posts.xml" htmlUrl="https://dev.37signals.com" type="rss"></outline>
+      <outline title="Basic Apple Guy" text="Basic Apple Guy" xmlUrl="https://www.basicappleguy.com/basicappleblog?format=rss" htmlUrl="https://www.basicappleguy.com" type="rss"></outline>
       <outline title="Coding Horror" text="Coding Horror" xmlUrl="https://blog.codinghorror.com/rss/" htmlUrl="https://blog.codinghorror.com" type="rss"></outline>
       <outline title="Daring Fireball" text="Daring Fireball" xmlUrl="https://daringfireball.net/feeds/main" htmlUrl="https://daringfireball.net" type="rss"></outline>
       <outline title="David Heinemeier Hansson" text="David Heinemeier Hansson" xmlUrl="https://world.hey.com/dhh/feed.atom" htmlUrl="https://world.hey.com/dhh" type="rss"></outline>
@@ -24,7 +25,6 @@
       <outline title="Scott Helme" text="Scott Helme" xmlUrl="https://scotthelme.co.uk/rss/" htmlUrl="https://scotthelme.co.uk" type="rss"></outline>
       <outline title="Tedium" text="Tedium" xmlUrl="https://feed.tedium.co/" htmlUrl="https://tedium.co" type="rss"></outline>
       <outline title="Thurrott.com" text="Thurrott.com" xmlUrl="https://www.thurrott.com/blog/rss" htmlUrl="https://www.thurrott.com" type="rss"></outline>
-      <outline title="Wired" text="Wired" xmlUrl="https://www.wired.com/feed/rss" htmlUrl="https://www.wired.com" type="rss"></outline>
     </outline>
   </body>
 </opml>
