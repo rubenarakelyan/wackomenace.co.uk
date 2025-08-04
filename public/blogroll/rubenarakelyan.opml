@@ -3,7 +3,7 @@
   <head>
     <title>Ruben Arakelyan's blogroll</title>
     <dateCreated>Fri, 05 Apr 2024 12:00:00 BST</dateCreated>
-    <dateModified>Thu, 24 Jul 2025 15:00:00 GMT</dateModified>
+    <dateModified>Mon, 04 Aug 2025 13:00:00 GMT</dateModified>
     <ownerName>Ruben Arakelyan</ownerName>
     <ownerEmail>ruben@arakelyan.uk</ownerEmail>
     <ownerId>https://www.wackomenace.co.uk/</ownerId>
@@ -25,6 +25,7 @@
       <outline title="Scott Hanselman" text="Scott Hanselman" xmlUrl="http://feeds.hanselman.com/ScottHanselman" htmlUrl="https://www.hanselman.com/blog/" type="rss"></outline>
       <outline title="Scott Helme" text="Scott Helme" xmlUrl="https://scotthelme.co.uk/rss/" htmlUrl="https://scotthelme.co.uk" type="rss"></outline>
       <outline title="Tedium" text="Tedium" xmlUrl="https://feed.tedium.co/" htmlUrl="https://tedium.co" type="rss"></outline>
+      <outline title="Terence Eden’s Blog" text="Terence Eden’s Blog" xmlUrl="https://shkspr.mobi/blog/feed/atom" htmlUrl="https://shkspr.mobi/blog/" type="rss"></outline>
       <outline title="Thurrott.com" text="Thurrott.com" xmlUrl="https://www.thurrott.com/blog/rss" htmlUrl="https://www.thurrott.com" type="rss"></outline>
     </outline>
   </body>

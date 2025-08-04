@@ -1,7 +1,7 @@
 ---
 title: Blogroll
 description: A list of blogs that I follow and which may be of interest.
-date: 2025-07-24
+date: 2025-08-04
 ---
 
 I try to follow a variety of blogs from both individuals and organisations related to technology to get a rounded view of what’s happening.
@@ -20,6 +20,7 @@ I try to follow a variety of blogs from both individuals and organisations relat
 * [Scott Hanselman](https://www.hanselman.com/blog/)
 * [Scott Helme](https://scotthelme.co.uk)
 * [Tedium](https://tedium.co)
+* [Terence Eden’s Blog](https://shkspr.mobi/blog/)
 * [Thurrott.com](https://www.thurrott.com)
 
 All these blogs are also available as an [OPML file](/blogroll/rubenarakelyan.opml) to import into your favourite feed reader.

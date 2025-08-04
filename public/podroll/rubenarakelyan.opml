@@ -3,7 +3,7 @@
   <head>
     <title>Ruben Arakelyan's podroll</title>
     <dateCreated>Thu, 24 Oct 2024 12:20:00 BST</dateCreated>
-    <dateModified>Wed, 23 Jul 2025 10:45:00 BST</dateModified>
+    <dateModified>Mon, 04 Aug 2025 15:20:00 BST</dateModified>
     <ownerName>Ruben Arakelyan</ownerName>
     <ownerEmail>ruben@arakelyan.uk</ownerEmail>
     <ownerId>https://www.wackomenace.co.uk/</ownerId>
@@ -11,6 +11,7 @@
   </head>
   <body>
     <outline text="Podcasts">
+      <outline title="Diggnation" text="Diggnation" xmlUrl="https://feeds.transistor.fm/diggnation" htmlUrl="https://www.diggnation.show" type="rss"></outline>
       <outline title="Lex Fridman Podcast" text="Lex Fridman Podcast" xmlUrl="https://lexfridman.com/feed/podcast/" htmlUrl="https://lexfridman.com/podcast/" type="rss"></outline>
       <outline title="Rework" text="Rework" xmlUrl="https://feeds.buzzsprout.com/2260539.rss" htmlUrl="https://37signals.com/podcast/" type="rss"></outline>
       <outline title="Scott &amp; Mark Learn To..." text="Scott &amp; Mark Learn To..." xmlUrl="https://feeds.acast.com/public/shows/scott-and-mark-learn-to" htmlUrl="https://shows.acast.com/scott-and-mark-learn-to" type="rss"></outline>
