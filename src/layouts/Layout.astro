@@ -12,6 +12,12 @@ const { title, description } = Astro.props;
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{title} &middot; wackomenace</title>
+    <script data-goatcounter="https://stats.wackomenace.co.uk/count"
+      async src="/assets/scripts/count.v5.js"
+      integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
+    <Font cssVariable="--font-ibm-plex-sans" preload />
+    <Font cssVariable="--font-ibm-plex-serif" preload />
+    <Font cssVariable="--font-ibm-plex-mono" preload />
     <meta name="generator" content={Astro.generator}>
     <meta name="description" content={description}>
     <meta property="og:type" content="website">
@@ -40,12 +46,6 @@ const { title, description } = Astro.props;
     <link rel="me" type="text/html" href="https://github.com/rubenarakelyan">
     <link rel="me" type="text/html" href="mailto:ruben@arakelyan.uk">
     <link rel="webmention" href="https://webmention.io/www.wackomenace.co.uk/webmention">
-    <Font cssVariable="--font-ibm-plex-sans" preload />
-    <Font cssVariable="--font-ibm-plex-serif" preload />
-    <Font cssVariable="--font-ibm-plex-mono" preload />
-    <script data-goatcounter="https://stats.wackomenace.co.uk/count"
-        async src="/assets/scripts/count.v5.js"
-        integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
   </head>
   <body id="top" class="bg-pink-air font-(family-name:--font-ibm-plex-sans) text-slate-700 scroll-smooth">
     <header class="p-8">
