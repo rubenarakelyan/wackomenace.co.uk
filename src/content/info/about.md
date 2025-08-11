@@ -1,7 +1,7 @@
 ---
 title: About me
 description: Everything you need to know about Ruben Arakelyan.
-date: 2025-06-27
+date: 2025-08-11
 ---
 
 <figure>
@@ -34,7 +34,7 @@ At the end of 2003, I created my first website, wackomenace (named after I used 
 
 I quickly got into the then popular “blog scene” featuring such luminaries as (in no particular order) [Matt Haughey](https://a.wholelottanothing.org/), [Anil Dash](https://anildash.com/), [Jeffrey Zeldman](https://www.zeldman.com/), [Jason Kottke](https://kottke.org/), [Eric Meyer](https://meyerweb.com/), Mark Pilgrim, Cameron Barrett, [Dave Shea](http://daveshea.com/), [Dan Cederholm](https://simplebits.com/), [Douglas Bowman](https://stopdesign.com/), [Daniel Bogan](https://waferbaby.com/), [Shaun Inman](https://shauninman.com/) and [Cameron Moll](http://cameronmoll.com), amongst others, taking design and development cues as the web quickly evolved. I was one of the [kottke.org micropatrons](https://kottke.org/about/patron/) and Kickstarter backers for the reboot of [Upcoming.org](https://upcoming.org/about/backers).
 
-In 2006, I went to university at the [University of Reading](https://www.reading.ac.uk/) where I got a degree in Computer Science. During that time, I worked for a year at the [Microsoft Technology Centre in Reading](https://www.microsoft.com/en-gb/about/offices/reading/).
+In 2006, I went to university at the [University of Reading](https://www.reading.ac.uk/) where I got a degree in Computer Science. During that time, I worked for a year at the [Microsoft Technology Centre in Reading](https://www.microsoft.com/en-gb/about/offices/reading/). This is when I started dabbling in contributing to open source projects, and one of my largest projects was setting up the initial [Public Suffix List](https://web.archive.org/web/20070430042139/http://publicsuffix.org/) with [Gerv Markham](https://www.gerv.net) in 2007, now used by all major web browsers.
 
 Around the end of 2008, wackomenace went offline as I migrated to more “respectable” domain names.
 
