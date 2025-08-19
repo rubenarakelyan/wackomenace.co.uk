@@ -8,7 +8,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 
 export async function GET(context: APIContext) {
-  const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const essays = (await getCollection("essays")).sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
   const parser = unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -27,26 +27,26 @@ export async function GET(context: APIContext) {
     <name>Ruben Arakelyan</name>
   </author>
   <link href="${context.site}" />
-  <link rel="self" href="${context.site}blog/atom.xml" />
+  <link rel="self" href="${context.site}essays/atom.xml" />
   <category term="blogs" />
   <generator>${context.generator}</generator>
   <icon>${context.site}images/logo.png</icon>
   <rights>Copyright © 2024-2025 Ruben Arakelyan. All rights reserved.</rights>
   <subtitle>Ruben Arakelyan’s home on the web</subtitle>
   ${
-    (await Promise.all(posts.map(async post =>
+    (await Promise.all(essays.map(async essay =>
       `<entry>
-        <id>${context.site}blog/${post.id}/</id>
-        <title>${post.data.title}</title>
-        <updated>${new Date(post.data.date).toJSON()}</updated>
+        <id>${context.site}essays/${essay.id}/</id>
+        <title>${essay.data.title}</title>
+        <updated>${new Date(essay.data.updated).toJSON()}</updated>
         <content type="xhtml">
           <div xmlns="http://www.w3.org/1999/xhtml">
-            ${String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replaceAll('href="#', `href="${context.site!.toString()}blog/${post.id}/#`)}
+            ${String(await parser.process(essay.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replaceAll('href="#', `href="${context.site!.toString()}essays/${essay.id}/#`)}
           </div>
         </content>
-        <link rel="alternate" href="${context.site}blog/${post.id}/" />
-        <summary>${post.data.excerpt}</summary>
-        <published>${new Date(post.data.date).toJSON()}</published>
+        <link rel="alternate" href="${context.site}essays/${essay.id}/" />
+        <summary>${essay.data.excerpt}</summary>
+        <published>${new Date(essay.data.updated).toJSON()}</published>
       </entry>`
     ))).join("")
   }

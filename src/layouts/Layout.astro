@@ -25,10 +25,13 @@ const { title, description } = Astro.props;
     <meta property="og:description" content={description}>
     <meta property="og:url" content={Astro.url}>
     <meta property="og:locale" content="en_GB">
-    { Astro.url.pathname.match(/^\/blog\/.+/g) && <meta property="og:image" content=`${Astro.url}og.png`> }
+    { (Astro.url.pathname.match(/^\/blog\/.+/g) || Astro.url.pathname.match(/^\/essays\/.+/g)) && <meta property="og:image" content=`${Astro.url}og.png`> }
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/blog/rss.xml">
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="/blog/atom.xml">
     <link rel="alternate" type="application/feed+json" title="JSON Feed" href="/blog/feed.json">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0 (Essays)" href="/essays/rss.xml">
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0 (Essays)" href="/essays/atom.xml">
+    <link rel="alternate" type="application/feed+json" title="JSON Feed (Essays)" href="/essays/feed.json">
     <link rel="blogroll" type="application/xml" title="Ruben Arakelyan's blogroll" href="/blogroll/rubenarakelyan.opml">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
@@ -58,6 +61,8 @@ const { title, description } = Astro.props;
         </svg>
         <nav class="justify-self-end-safe self-center-safe text-xl">
           <a href="/" class="pe-4">Home</a>
+          <a href="/blog/" class="pe-4">Blog</a>
+          <a href="/essays/" class="pe-4">Essays</a>
           <a href="/about/" class="pe-4">About</a>
           <a href="/blogroll/" class="pe-4">Blogroll</a>
           <a href="/podroll/" class="pe-4">Podroll</a>

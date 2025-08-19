@@ -1,0 +1,8 @@
+---
+import { getCollection } from "astro:content";
+
+const essays = await getCollection("essays");
+const id = essays[Math.floor((Math.random() * essays.length))].id
+
+return Astro.redirect(`/essays/${id}/`);
+---

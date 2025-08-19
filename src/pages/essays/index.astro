@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+import EssayPreview from "../../components/EssayPreview.astro";
+
+const essays = (await getCollection("essays")).sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+---
+
+<Layout title="Essays" description="A place for long-form and longer-relevance writing">
+  <section class="max-w-[60vw] mx-auto">
+    <header class="m-8">
+      <h1 class="mb-6 text-6xl font-bold">Essays</h1>
+    </header>
+    <div class="mx-8 mb-8 prose prose-slate text-2xl">
+      {
+        essays.map(essay => (
+          <EssayPreview
+            url={"/essays/" + essay.id + "/"}
+            title={essay.data.title}
+            excerpt={essay.data.excerpt}
+            updated={essay.data.updated}
+          />
+        ))
+      }
+      <p><a href="/essays/random/">Read a random essay &rarr;</a></p>
+    </div>
+  </section>
+</Layout>

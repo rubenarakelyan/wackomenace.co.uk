@@ -1,0 +1,12 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+
+const { url, title, excerpt, updated } = Astro.props;
+---
+
+<article class="h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid=`${Astro.site}${url.substring(1)}`>
+  <h2 class="p-name" itemprop="name"><a class="u-url" href={url}>{title}</a></h2>
+  <p class="p-summary text-3xl" itemprop="abstract">{excerpt}</p>
+  <p class="text-lg">Last updated <FormattedDate date={updated} classes="dt-updated" itemprop="dateModified" /></p>
+</article>
+<hr>

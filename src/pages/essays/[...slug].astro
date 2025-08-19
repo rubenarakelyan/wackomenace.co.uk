@@ -1,0 +1,43 @@
+---
+import { getCollection, render } from "astro:content";
+
+import Layout from "../../layouts/Layout.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+
+const { slug } = Astro.params;
+const essays = await getCollection("essays");
+const essay = essays.find((essay) => essay.id === slug);
+if (!essay) return Astro.redirect("/404");
+const { Content, headings, remarkPluginFrontmatter } = await render(essay);
+---
+
+<Layout title={essay.data.title} description={essay.data.excerpt}>
+  <article class="h-entry grid grid-cols-[calc(50vw-28rem)_1fr_calc(50vw-28rem)] xl:grid-cols-[calc(50vw-46rem)_1fr_60vw_1fr_calc(50vw-46rem)]" itemscope itemtype="https://schema.org/BlogPosting" itemid={Astro.request.url}>
+    <header class="m-8 col-start-2 col-end-3 xl:col-start-3 xl:col-end-4">
+      <h1 class="p-name mb-6 text-6xl font-bold" itemprop="name">{essay.data.title}</h1>
+      <p class="p-summary text-3xl text-slate-600" itemprop="abstract" role="heading">{essay.data.excerpt}</p>
+      <hr class="my-6 border-t border-slate-300">
+      <p class="text-lg"><em>by</em> <a rel="author" class="p-author" href="mailto:ruben@arakelyan.uk">Ruben Arakelyan</a></a> &middot; Published on <a class="u-url" href={Astro.request.url}><FormattedDate date={essay.data.date} classes="dt-published" itemprop="datePublished" /></a> &middot; Last updated on <FormattedDate date={essay.data.updated} classes="dt-updated" itemprop="dateModified" /> &middot; {remarkPluginFrontmatter.minutesRead}</p>
+      <hr class="mt-6 border-t border-slate-300">
+    </header>
+    <nav class="mx-8 mb-8 col-start-2 xl:sticky xl:top-4 xl:self-start prose prose-slate">
+      { headings.length > 0 &&
+        <h2 class="mb-2 text-xl font-bold">Table of Contents</h2>
+        <ul>
+          {
+            headings.map((heading) => (
+              <li class="my-4">
+                <a href={`#${heading.slug}`}>{heading.text}</a>
+              </li>
+            ))
+          }
+        </ul>
+      }
+    </nav>
+    <div class="e-content mx-8 mb-8 col-start-2 xl:col-start-3 prose prose-slate text-2xl drop-cap">
+      <Content />
+      <p class="my-8 text-center">⁂</p>
+    </div>
+    <div class="mx-8 mb-8 col-start-2 xl:col-start-4"></div>
+  </article>
+</Layout>

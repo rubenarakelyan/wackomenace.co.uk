@@ -9,7 +9,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 
 export async function GET(context: APIContext) {
-  const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const essays = (await getCollection("essays")).sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
   const parser = unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -22,12 +22,12 @@ export async function GET(context: APIContext) {
     title: "wackomenace",
     description: "Ruben Arakelyan’s home on the web",
     site: context.site!.toString(),
-    items: await Promise.all(posts.map(async post => ({
-      title: post.data.title,
-      link: `/blog/${post.id}/`,
-      description: post.data.excerpt,
-      content: String(await parser.process(post.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replaceAll('href="#', `href="${context.site!.toString()}blog/${post.id}/#`),
-      pubDate: post.data.date,
+    items: await Promise.all(essays.map(async essay => ({
+      title: essay.data.title,
+      link: `/essays/${post.id}/`,
+      description: essay.data.excerpt,
+      content: String(await parser.process(essay.body)).replaceAll('src="/', `src="${context.site!.toString()}`).replaceAll('href="/', `href="${context.site!.toString()}`).replaceAll('href="#', `href="${context.site!.toString()}essays/${essay.id}/#`),
+      pubDate: essay.data.date,
     }))),
     customData: `
       <language>en-gb</language>
@@ -43,10 +43,6 @@ export async function GET(context: APIContext) {
         <width>111</width>
         <height>111</height>
       </image>
-      <source:blogroll>${context.site}blogroll/rubenarakelyan.opml</source:blogroll>
     `,
-    xmlns: {
-      source: "http://source.scripting.com/",
-    },
   });
 }

@@ -2,9 +2,6 @@
 import { getCollection } from "astro:content";
 
 import Layout from "../layouts/Layout.astro";
-import BlogPostPreview from "../components/BlogPostPreview.astro";
-
-const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 5);
 ---
 
 <Layout title="Ruben Arakelyan’s home on the web" description="Welcome to Ruben Arakelyan’s home on the web">
@@ -20,22 +17,6 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.date.valueOf()
       <p><strong role="heading" aria-level="2">Want me to read your blog?</strong> If you’ve just started a blog, <a href="mailto:ruben@arakelyan.uk">send it to me</a> and I’ll happily be <a href="https://manuelmoreale.com/i-ll-read-it">your first reader</a>.</p>
       <p><strong role="heading" aria-level="2">Want to just chat?</strong> <a href="mailto:ruben@arakelyan.uk">Hit me up</a> (and use <a href="/pgpkey.asc">my PGP key</a> if you like).</p>
       <hr class="my-6 border-t border-slate-300">
-    </div>
-  </section>
-  <section class="max-w-[60vw] mx-auto">
-    <div class="mx-8 mb-8 prose prose-slate text-2xl">
-      {
-        posts.map(post => (
-          <BlogPostPreview
-            url={"/blog/" + post.id + "/"}
-            title={post.data.title}
-            excerpt={post.data.excerpt}
-            date={post.data.date}
-          />
-        ))
-      }
-      <p><a href="/blog/">Read more blog posts &rarr;</a></p>
-      <p><a href="/blog/random/">Read a random blog post &rarr;</a></p>
     </div>
   </section>
 </Layout>
