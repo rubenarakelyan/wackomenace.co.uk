@@ -1,7 +1,7 @@
 ---
 title: Colophon
 description: The tools and processes I use to build, maintain and host this website.
-date: 2025-06-30
+date: 2025-11-03
 ---
 
 > An inscription placed at the end of a book or manuscript and giving details of its publication.
@@ -11,7 +11,7 @@ date: 2025-06-30
 For the technology-minded, here are some details of how I build, maintain and host this website.
 
 * Built with the [Astro](https://astro.build) framework
-* Maintained with [Visual Studio Code](https://code.visualstudio.com)
+* Maintained with [Nova](hhttps://nova.app)
 * Images optimised with [ImageOptim](https://imageoptim.com/)
 * Hosted on [Vercel](https://vercel.com)
 * Source code on [GitHub](https://github.com/rubenarakelyan/wackomenace.co.uk)
