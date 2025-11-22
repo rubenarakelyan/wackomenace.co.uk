@@ -1,7 +1,9 @@
 ---
 title: Privacy policy
 description: The privacy policy for this website.
-date: 2025-07-01
+date: 2025-11-22
 ---
 
-I use [GoatCounter](https://www.goatcounter.com) to collect some basic, anonymous analytics about the number of visitors to this site and what they visit. GoatCounter does not collect any personal data and does not use any cookies or any other form of tracking or persistent storage.
+The privacy policy is very simple - there are **no analytics** and **no cookies** on this website and no personal information is collected.
+
+You can verify this yourself using [Blacklight](https://themarkup.org/blacklight?location=eu&device=desktop&force=false&url=wackomenace.co.uk).
