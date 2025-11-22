@@ -10,25 +10,6 @@ const posts = await getCollection("blog");
 const post = posts.find((post) => post.id === slug);
 if (!post) return Astro.redirect("/404");
 const { Content, headings, remarkPluginFrontmatter } = await render(post);
-
-// Webmentions
-const webmentions = await fetch(`https://webmention.io/api/mentions.jf2?target=${Astro.site}blog/${post.id}/`).then((response) => response.json());
-const allowedTypes = ["mention-of", "in-reply-to"];
-const hasRequiredFields = entry => {
-  const { author, published, content } = entry;
-  return author.name && published && content;
-};
-const sanitize = entry => {
-  const { content } = entry;
-  if (content.html) {
-    content.html = sanitizeHtml(content.html);
-  }
-  return entry;
-};
-const mentions = webmentions.children
-  .filter(entry => allowedTypes.includes(entry["wm-property"]))
-  .filter(hasRequiredFields)
-  .map(sanitize);
 ---
 
 <Layout title={post.data.title} description={post.data.excerpt}>
@@ -57,38 +38,6 @@ const mentions = webmentions.children
     <div class="e-content mx-8 mb-8 col-start-2 xl:col-start-3 prose prose-slate text-2xl drop-cap">
       <Content />
       <p class="my-8 text-center">⁂</p>
-      {
-        mentions.length > 0 &&
-        <>
-          <h2 id="webmentions" class="text-3xl font-bold">Webmentions</h2>
-          {
-            mentions.map((mention) => (
-              <div class="u-comment h-cite border border-slate-300 p-8 pb-0" itemscope itemtype="https://schema.org/Comment" itemid={mention["wm-id"]}>
-                <div class="flex justify-between">
-                  <div>
-                    {
-                      mention.author.photo &&
-                      <img src={mention.author.photo} alt={mention.author.name} width="50" height="50" class="inline-block rounded-full mr-2 not-prose" loading="lazy">
-                    }
-                    {
-                      mention.author.url &&
-                      <a rel="author nofollow ugc" href={mention.author.url} class="u-author h-card">{mention.author.name}</a>
-                    }
-                    {
-                      !mention.author.url &&
-                      <span class="u-author h-card" itemprop="author">{mention.author.name}</span>
-                    }
-                  </div>
-                  <FormattedDate date={mention.published} classes="dt-published text-lg" itemprop="datePublished" />
-                </div>
-                <div class="e-content p-name" itemprop="comment">
-                  <Fragment set:html={mention.content.html || mention.content.text} />
-                </div>
-              </div>
-            ))
-          }
-        </>
-      }
     </div>
     <div class="mx-8 mb-8 col-start-2 xl:col-start-4"></div>
   </article>
